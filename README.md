@@ -8,7 +8,8 @@ Enunciado completo: [docs/enunciado.md](docs/enunciado.md)
 
 ```
 data/raw/         # documentos originales del corpus (PDF/md)
-data/processed/   # texto parseado y chunks
+data/interim/     # salida cruda de Docling (no versionada)
+data/processed/   # texto parseado y limpio (JSON + Markdown)
 eval/             # ground truth: 10 queries (incluye ≥2 trampa) y resultados
 src/              # pipeline: parsing, chunking, embeddings, retrieval, generación
 notebooks/        # experimentos y análisis

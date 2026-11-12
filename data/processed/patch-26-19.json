@@ -1,0 +1,2314 @@
+[
+ {
+  "patch": "26.19",
+  "section": "OVERVIEW",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "Worlds is right around the corner, more \"new\" champs join Classic, and Arena's got fresh Augments!"
+ },
+ {
+  "patch": "26.19",
+  "section": "OVERVIEW",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "Game Updates | Riot wroadie, Riot Cashmiir, sternest | 9/22/2026"
+ },
+ {
+  "patch": "26.19",
+  "section": "OVERVIEW",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "\" We're soon coming up on the Worlds patch (which is the patch after this one), so our first round of pro-focused Summoner's Rift changes are coming up here. We've identified some potential fringe picks for the tournament that could also provide some normal play variety without becoming disruptive with a nudge up in power, and knocking some individual meta outliers as well (and also Nasus). Systemically, the top lane role quest has been quite successful at freeing up top laners to skip Teleport, so we think increasing their map influence through that spell (both if you take it from the start of game or just through the quest) is a fair place to give the role some power."
+ },
+ {
+  "patch": "26.19",
+  "section": "OVERVIEW",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "Looking for more information on all things League of Legends? Check out our community-run wiki here!"
+ },
+ {
+  "patch": "26.19",
+  "section": "OVERVIEW",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "Wrong patch notes? You can find the TFT patch notes here! \""
+ },
+ {
+  "patch": "26.19",
+  "section": "PATCH HIGHLIGHTS",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "\" Coven Janna, Coven Mel, Old God Anivia, Old God Urgot will be available September 23, 2026. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "TEAM VOICE",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "\" First up, we wanted to share an update on the rollout of Team Voice, which is our planned expansion to the existing pre-made party voice chat allowing you to chat with everyone on your team. While we originally announced this as coming to North America and Oceania in Patch 26.20, after extensive testing, we've made the call to postpone this a bit to make sure we're hitting the quality bar you deserve for the experience. We don't have a target patch just yet, but we're prioritizing ironing out the kinks as efficiently as we can, since we know this is a long awaited feature we need to get right. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Aatrox",
+  "sub": null,
+  "text": "\" We think The Darkin Blade has lost a fair bit of power with Sundered Sky nerfs that were aimed more at opening up the jungle meta, so we are giving him a bump so he remains a world-ending threat. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Aatrox",
+  "sub": "W - Infernal Chains",
+  "text": "Cooldown: 20 / 18 / 16 / 14 / 12 seconds ⇒ 18 / 16.5 / 15 / 13.5 / 12 seconds"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Aatrox",
+  "sub": "E - Umbral Dash",
+  "text": "Health Heal Ratio: 1.1% per 100 bonus health ⇒ 1.3% per 100 bonus health"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Aphelios",
+  "sub": null,
+  "text": "\" Aphelios has been kiting the spotlight for a while now, even though he's a hypercarry in an enchanter meta that should favor him, so we're looking to give him a little boost to encourage him to get out of his comfort zone. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Calibrum",
+  "sub": null,
+  "text": "Moonshot Damage: 70 - 160 (+42 - 60% bonus AD) (+100% AP) ⇒ 80 - 170 (+42 - 60% bonus AD) (+100% AP)"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Severum",
+  "sub": null,
+  "text": "Healing: 2 - 7.1%, increased to 5 - 17.75% ⇒ 2 - 8%, increased to 5 - 20%"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Gravitum",
+  "sub": null,
+  "text": "Slow: 30% for 2.5 seconds, decaying to 10% after 0.7 seconds ⇒ 30% for 2.5 seconds, decaying to 15% after 0.7 seconds"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Infernum",
+  "sub": null,
+  "text": "Duskwave Cooldown: 9 / 8.25 / 7.5 / 6.75 / 6 seconds ⇒ 8 / 7.25 / 6.5 / 5.75 / 5 seconds"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Crescendum",
+  "sub": null,
+  "text": "Mini-Crescendum Damage: 15% AD, decreasing by 1.5% AD to a minimum of 5% AD for the 8th+ chakram ⇒ 16% AD, decreasing by 1.5% AD to a minimum of 5% AD for the 9th+ chakram"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Aurora",
+  "sub": null,
+  "text": "\" Despite not receiving any changes since last year, Aurora has fallen off as we've had to nerf Rocketbelt into a fairer state. We're giving our favorite Bryni a bit more power in her waveclear and outplay potential with her ultimate. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Aurora",
+  "sub": "E - The Weirding",
+  "text": "Base Damage: 70 / 110 / 150 / 190 / 230 ⇒ 80 / 120 / 160 / 200 / 240"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Aurora",
+  "sub": "R - Between Worlds",
+  "text": "Rift Duration: 1.75 / 2.5 / 3.25 seconds ⇒ 2.25 / 2.75 / 3.25 seconds"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Draven",
+  "sub": null,
+  "text": "\" Since all bot laners received significantly increased gold income thanks to role quests, Draven's potential to gain a gold advantage through his Adoration stacks has lost some of its impact. We're giving him a helping hand (axe?) by tapping up his early game damage. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Elise",
+  "sub": null,
+  "text": "\" This year started strong for AP junglers that could use Dusk and Dawn, but others like Elise have been in a weak spot for a while, so we are helping out our friendly neighborhood spider with clear speed and damage. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Elise",
+  "sub": "Passive - Spider Queen",
+  "text": "Passive Magic Damage On-Hit: 12 / 22 / 32 / 42 ⇒ 14 / 24 / 34 / 44"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Elise",
+  "sub": "W - Skittering Frenzy",
+  "text": "Bonus Attack Speed: 60 / 75 / 90 / 105 / 120% ⇒ 70 / 85 / 100 / 115 / 130%"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Fiora",
+  "sub": null,
+  "text": "\" Our Grand Duelist has room to shine a bit more when she succeeds after finding her opening, without giving her sharper 1v1 tools. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Fiora",
+  "sub": "Base Stats",
+  "text": "Health Growth: 99 ⇒ 105"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Fiora",
+  "sub": "R - Grand Challenge",
+  "text": "Heal Range: 550 ⇒ 600"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Fiora",
+  "sub": "R - Grand Challenge",
+  "text": "Heal Per Tick: 18.75 / 25 / 31.25 (+15% bonus AD) ⇒ 20 / 26.25 / 32.5 (+17.5% bonus AD)"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Fiora",
+  "sub": "R - Grand Challenge",
+  "text": "Maximum Heal: 375 / 500 / 625 (+300% bonus AD) ⇒ 400 / 525 / 650 (+350% bonus AD)"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Kha'Zix",
+  "sub": null,
+  "text": "\" Kha'Zix has been on the fringe of the meta now that the jungle is no longer dominated by Sundered Sky users. We are taking this opportunity to buff some of his weaker evolves to give him the flexibility to adapt and overcome. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Kha'Zix",
+  "sub": "Passive - Unseen Threat",
+  "text": "Damage: 17 - 136 (+50% bonus AD) ⇒ 22 - 141 (+50% bonus AD)"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Kha'Zix",
+  "sub": "W - Void Spike",
+  "text": "Evolved Slow Duration: 2 seconds ⇒ 2.25 seconds"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Kha'Zix",
+  "sub": "E - Leap",
+  "text": "Evolved Range Bonus: +200 ⇒ +300"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Lillia",
+  "sub": null,
+  "text": "\" Lillia is on the edge of being viable at higher levels of play and we believe her current pattern requires her to get in danger's way, so we're helping her durability. We also want to give Lillia opportunities to really be a playmaker so we're making the enemies she lullabies a little extra sleepy. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Lillia",
+  "sub": "Base Stats",
+  "text": "Armor: 22 ⇒ 24"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Lillia",
+  "sub": "R - Lilting Lullaby",
+  "text": "Sleep Duration: 2 seconds ⇒ 2.5 seconds"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Lucian",
+  "sub": null,
+  "text": "\" Years ago, we added the Vigilance Passive so Lucian bot players didn't feel like their champ was being nerfed because of mid laners, which ended up being super effective. We think now is a good opportunity to adjust the tuning of the passive and strike a balance between both roles. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Lucian",
+  "sub": "Passive - Vigilance",
+  "text": "Empowered On-Hit Damage: 15 (+20% AD) ⇒ 5 (+15% AD)"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Lucian",
+  "sub": "Q - Piercing Light",
+  "text": "Base Damage: 80 / 115 / 150 / 185 / 220 (+100% bonus AD) ⇒ 90 / 130 / 170 / 210 / 250 (+100% bonus AD)"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Master Yi",
+  "sub": null,
+  "text": "\" Somewhat overdue, but because Duskblade was removed a while ago, we're removing the Ability Haste penalty we had to apply to his Q CDR mechanic. This should have minimal impact on Summoner's Rift, but we see you Mayhem and Arena! \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Master Yi",
+  "sub": "Q - Alpha Strike",
+  "text": "Cooldown Refund on Hit: -1 second, scaling down with Ability Haste ⇒ 1 second"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Nasus",
+  "sub": null,
+  "text": "\" Nasus is difficult to keep down these days, and part of that is how quickly getting his early stacks leads to more reliable stacking. These higher highs will be compensated with some lower lows through some more vulnerability early on with lower damage and lifesteal lane sustain values off of that, and a bit longer before he really comes online. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Nasus",
+  "sub": "Q - Siphoning Strike",
+  "text": "Bonus Damage: 40 / 60 / 80 / 100 / 120 ⇒ 30 / 50 / 70 / 90 / 110"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Nocturne",
+  "sub": null,
+  "text": "\" Nocturne has been a popular and powerful jungler in both pro and solo-queue for a while, so we're hitting the map presence and dueling power he benefits from through his ultimate. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Nocturne",
+  "sub": "R - Paranoia",
+  "text": "Cooldown: 140 / 115 / 90 seconds ⇒ 160 / 130 / 100 seconds"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Poppy",
+  "sub": null,
+  "text": "\" Poppy's flex potential and jungle presence has been a bit problematic, suppressing many champions across the board as a strong counterpick. For this change, we're targeting her flexibility by reverting a previous buff to jungle clear. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Poppy",
+  "sub": "Q - Hammer Shock",
+  "text": "Minion/Monster Maximum Health Cap: 85 / 120 / 155 / 190 / 225 ⇒ 70 / 105 / 140 / 175 / 210"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Rumble",
+  "sub": null,
+  "text": "\" At higher levels of play, we've seen Rumble continue to take over games, even after our changes earlier this year designed to hit his power in lane. Here, we're making some modifications to his passive that's much more elite-skewed, while giving Rumble in the Jungle some compensation. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Rumble",
+  "sub": "Passive - Junkyard Titan",
+  "text": "Overheat Attack Speed: 50 - 130% ⇒ 30 - 100%"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Rumble",
+  "sub": "Passive - Junkyard Titan",
+  "text": "Monster Cap: 65 - 150 ⇒ 90 - 175"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Ryze",
+  "sub": null,
+  "text": "\" Between strong itemization options and best-in-class skirmish and roam potential demonstrated by his most skilled players, it's high time we put some restraints on the archmage, while giving him some help with bad solo queue matchups. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Ryze",
+  "sub": "Base Stats",
+  "text": "Armor Growth: 4.2 ⇒ 4.7"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Ryze",
+  "sub": "Q - Overload",
+  "text": "Flux Bonus Damage: 25 / 50 / 75 / 100% increased damage ⇒ 15 / 40 / 65 / 90% increased damage"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Ryze",
+  "sub": "E - Spell Flux",
+  "text": "Mana Cost: 35 / 45 / 55 / 65 / 75 ⇒ 40 / 50 / 60 / 70 / 80"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Vi",
+  "sub": null,
+  "text": "\" Vi has been a meta staple for the entire year, and now that Sundered Sky is in a better spot, we're going after her durability and early clear speed to make her a riskier pick who can still bring the pain if you are willing to build for it. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Vi",
+  "sub": "Base Stats",
+  "text": "Attack Damage: 63 + 3.5/Level ⇒ 61 + 3.9/Level"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Vi",
+  "sub": "Passive - Blast Shield",
+  "text": "Shield: 12% Maximum Health ⇒ 10% Maximum Health"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Volibear",
+  "sub": null,
+  "text": "\" This year we've been carefully buffing up AD Volibear, but he remains on the weak side even with his very unique AP build. We're tuning him up to help him out across both the fringe AD build and his core AP build. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Volibear",
+  "sub": "Passive - The Relentless Storm",
+  "text": "Attack Speed per Stack: 5% (+3% per 100 AP) ⇒ 5% (+4% per 100 AP)"
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Volibear",
+  "sub": "Passive - The Relentless Storm",
+  "text": "Lightning On-Hit Damage: 11 - 60 (Levels 1-18) (+45% AP) ⇒ 11 - 60 (Levels 1-18) (+45% AP) (+20% bonus AD)"
+ },
+ {
+  "patch": "26.19",
+  "section": "ITEMS",
+  "group": null,
+  "entity": "World Atlas and Runic Compass",
+  "sub": null,
+  "text": "\" We think melee supports have too much of their power in roaming and all-ins and are too weak in sustained laning. In response, we're shifting the flat health to health regen on World Atlas and Runic Compass, which will benefit them more due to their higher base health regen values. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "ITEMS",
+  "group": null,
+  "entity": "World Atlas and Runic Compass",
+  "sub": null,
+  "text": "Health: 30 / 100 / 200 ⇒ 0 / 60 / 200"
+ },
+ {
+  "patch": "26.19",
+  "section": "ITEMS",
+  "group": null,
+  "entity": "World Atlas and Runic Compass",
+  "sub": null,
+  "text": "Health Regeneration: 25% / 50% / 75% ⇒ 50% / 75% / 75%"
+ },
+ {
+  "patch": "26.19",
+  "section": "SYSTEMS",
+  "group": null,
+  "entity": "Teleport Cooldown",
+  "sub": null,
+  "text": "\" As the meta has continued to adjust to role quests, it's become clear that top lane is slightly weak, especially for split pushing. We're in turn buffing the cooldown of both the free role quest Teleport and upgraded Unleashed Teleport to promote those alternative strategies. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "SYSTEMS",
+  "group": null,
+  "entity": "Teleport Cooldown",
+  "sub": null,
+  "text": "Top Role Quest's Free Teleport Cooldown: 420 seconds ⇒ 390 seconds"
+ },
+ {
+  "patch": "26.19",
+  "section": "SYSTEMS",
+  "group": null,
+  "entity": "Teleport Cooldown",
+  "sub": null,
+  "text": "Top Role Quest's Upgraded Unleashed Teleport Cooldown: 330 - 240 seconds ⇒ 300 - 210 seconds"
+ },
+ {
+  "patch": "26.19",
+  "section": "SYSTEMS",
+  "group": null,
+  "entity": "Teleport Cooldown",
+  "sub": null,
+  "text": "Non-Top Unleashed Teleport Cooldown: 330 - 240 seconds ⇒ Unchanged"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "\" We've got our third big champion \"drop\" this patch (get it? They're water-themed) with four fresh faces and the highlight is a long-lost favorite, Graves! We've also got our first set of actions from the"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "previous Council poll. Welcome back, Cloak and Dagger, Moonflair Spellblade, and Zz'Rot Portal."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "Our fourth patch for Classic also contains more bugfixing, balance changes, and client quality. Check out those sweet new rune effects when you socket them in! \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Fizz",
+  "sub": null,
+  "text": "\" Fizz came out back in 2011 and was finally reworked in late 2016. Though many of you remember all his buttons being in the same place, he's got a missing HP bleed on his W passive, so maybe build a Sunfire Cape or two? \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Fizz",
+  "sub": "Passive - Nimble Fighter",
+  "text": "Fizz can move through units and takes reduced damage from basic attacks."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Fizz",
+  "sub": "Q - Urchin Strike",
+  "text": "Fizz dashes a fixed distance through an enemy, damaging them and applying on-hit effects."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Fizz",
+  "sub": "W - Seastone Trident",
+  "text": "Passive: Fizz's basic attacks deal additional damage over time, scaling with his target's missing health."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Fizz",
+  "sub": "W - Seastone Trident",
+  "text": "Active: For the next few seconds, Fizz's basic attacks deal bonus damage on-hit and apply Grievous Wounds for a few seconds, reducing healing by 50%."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Fizz",
+  "sub": "E - Playful/Trickster",
+  "text": "First cast: Fizz hops up on his trident, becoming untargetable. After a short delay, he will crash down, damaging and"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Fizz",
+  "sub": "E - Playful/Trickster",
+  "text": "slowing enemies around him."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Fizz",
+  "sub": "E - Playful/Trickster",
+  "text": "Second cast: Fizz can hop off the trident early to dash farther but deal damage in a smaller area and doesn't slow."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Fizz",
+  "sub": "R - Chum the Waters",
+  "text": "Fizz throws out bait that clings onto the first enemy champion it hits. After a short delay, a mighty shark stalks its prey, dealing tons of damage, knocking up, and slowing enemies in the area."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Graves",
+  "sub": null,
+  "text": "\" Welcome back, pre-rework Graves! This version from 2011-2015 is a true-to-live bot lane ADC, rewarded for long duration fights and deadly burst damage against short-range enemies. Careful though, his bonus resists take time to stack up, so assassins can still jump you in the jungle. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Graves",
+  "sub": "Passive - True Grit",
+  "text": "While in combat, Graves gains stacking Armor and Magic Resist every second, up to a cap."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Graves",
+  "sub": "Q - Buckshot",
+  "text": "Graves fires out three bullets that damage all enemies in a line. Multiple hits on the same target deal reduced damage."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Graves",
+  "sub": "W - Smokescreen",
+  "text": "Graves launches a smoke grenade that damages, slows, and nearsights enemies in an area."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Graves",
+  "sub": "E - Quickdraw",
+  "text": "Graves dashes a short distance and gains bonus attack speed for several seconds. Basic attacks reduce Quickdraw's cooldown."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Graves",
+  "sub": "R - Collateral Damage",
+  "text": "Graves fires an explosive shell that damages enemies in a line. It explodes on the first enemy champion hit, dealing reduced damage in a cone behind them."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Nami",
+  "sub": null,
+  "text": "\" Nami is back in action and not much has changed since her release in 2013. For those of you coming right from the modern game, her E buff is attack-only, so the modern Nami-Karthus synergy is gone. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Nami",
+  "sub": "Passive - Surging Tides",
+  "text": "Allies struck by Nami's abilities briefly gain bonus move speed."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Nami",
+  "sub": "Q - Aqua Prison",
+  "text": "Nami lobs a bubble that damages and stuns enemies where it lands."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Nami",
+  "sub": "W - Ebb and Flow",
+  "text": "Nami unleashes a stream of water that bounces, alternating between enemies and allies. Enemies take damage while allies are healed. Each bounce is less effective than the hit before it."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Nami",
+  "sub": "E - Tidecaller's Blessing",
+  "text": "Nami empowers an ally, causing their next three attacks to deal bonus damage and slow their target."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Nami",
+  "sub": "R - Tidal Wave",
+  "text": "Nami unleashes a massive tidal wave that damages, knocks up, and slows all enemies it crashes into."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Nautilus",
+  "sub": null,
+  "text": "\" Nautilus came out back in 2012 and as with Nami, his kit has stood the test of time. Remember that you can buy multiple Doran's Rings if you want your laning phase to work out, and he used to be quite the jungler back in the day. The biggest difference you'll find is that his ultimate is much less disruptive to targets hit by the traveling portion. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Nautilus",
+  "sub": "Passive - Staggering Blow",
+  "text": "Nautilus's basic attacks deal bonus damage and root their enemies. Each enemy can only be Staggered once every few seconds."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Nautilus",
+  "sub": "Q - Dredge Line",
+  "text": "Nautilus throws out his anchor, colliding with the first enemy or piece of terrain it hits. Enemies are damaged and pulled in, while Nautilus pulls himself to his target. Hitting terrain refunds part of Dredge Line's cooldown."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Nautilus",
+  "sub": "W - Titan's Wrath",
+  "text": "Nautilus gains a shield. While it holds, his attacks deal damage over time to enemies in the area."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Nautilus",
+  "sub": "E - Riptide",
+  "text": "Nautilus slams the ground, sending out cascading shockwaves that damage and slow enemies. Enemies may be hit by multiple shockwaves, taking reduced damage for subsequent hits."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Nautilus",
+  "sub": "R - Depth Charge",
+  "text": "Nautilus fires a shockwave into the earth that damages and knocks up enemies in its path. When it reaches his target, it damages, knocks up, and stuns all enemies in the immediate area."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Akali",
+  "sub": null,
+  "text": "\" As the dust has settled, Akali appears weak, so we're swinging by for some buffs. Crescent Slash can feel like it's a waste of energy, so we're both improving its late-game energy efficiency and its overall DPS, which are buffs from 2012 and 2015, respectively. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Akali",
+  "sub": "E - Crescent Slash",
+  "text": "Energy Cost: 60 / 60 / 60 / 60 / 60 ⇒ 60 / 55 / 50 / 45 / 40"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Akali",
+  "sub": "E - Crescent Slash",
+  "text": "Cooldown: 7 / 6 / 5 / 4 / 3s ⇒ 5 / 4 / 3 / 2 / 1s"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Akali",
+  "sub": "E - Crescent Slash",
+  "text": "Ability Power Ratio: 30% ⇒ 40%"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Fiora",
+  "sub": null,
+  "text": "\" Fiora is doing far too well, so it's nerf time. First up, we're fixing several bugs and implementation mismatches compared to her 3.11 version, which is why you're seeing some low-impact changes here. For her balance, we're pulling in an adjustment from 2014 and reverting a buff from 2012. The change to her ultimate will deal similar damage to a single isolated target but weaken her AoE teamfighting. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Fiora",
+  "sub": "W - Riposte",
+  "text": "Bugfix: Fixed a bug where the reflected damage could be blocked by enemies in the way."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Fiora",
+  "sub": "R - Blade Waltz",
+  "text": "Damage: 160 / 330 / 500 (+115% bonus AD) ⇒ 125 / 255 / 385 (+85% bonus AD) Maximum Single Target Damage: 320 / 660 / 1000 (+230% bonus AD) ⇒ 325 / 663 / 1001 (+221% bonus AD) Cooldown: 130 / 120 / 110s ⇒ 150 / 130 / 110s Damage Timing: Starts dealing damage 0.25s later into the animation. Target Prioritization: Now always tries to prioritize unstruck enemies if possible. Maximum Return Range: 1500 ⇒ 2500"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Fiora",
+  "sub": "R - Blade Waltz",
+  "text": "Bugfix: Fixed a bug where Fiora could be locked out of attacking or moving for 2 seconds if her target immediately became untargetable."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Galio",
+  "sub": null,
+  "text": "\" While Fiora landed as pretty much the strongest champion in the game, Galio is arguably the weakest. We're delivering a huge swath of buffs and some bugfixes for his initial state. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Galio",
+  "sub": "W - Bulwark",
+  "text": "Bugfix: Fixed a bug where the first heal was receiving the -20% heal reduction."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Galio",
+  "sub": "E - Righteous Gust",
+  "text": "Cast Time: 0.4s ⇒ 0.25s"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Galio",
+  "sub": "E - Righteous Gust",
+  "text": "Missile Speed: 1200 ⇒ 1300 Missile Width: 60 ⇒ 160 Missile Range: 1100 ⇒ 1175 Bugfix: Fixed a bug where it was dealing 15 more damage than it should have."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Galio",
+  "sub": "E - Righteous Gust",
+  "text": "Bugfix: Fixed a bug where it was applying the wrong VFX on its target."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Kassadin",
+  "sub": null,
+  "text": "\" As we've buffed up the bottom end of the mid lane pool, Kassadin has wound up as the actual worst-performing mid laner. Our primary buff is increasing his Riftwalk range. Instead of using his formerly Dominion-only 600 max range, he's regaining his full Summoner's Rift 700 range Riftwalk. We're also shipping adjustments that adhere more closely to his tuning during Worlds 2013. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Kassadin",
+  "sub": "Q - Null Sphere",
+  "text": "Ability Power Ratio: 60% ⇒ 70%"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Kassadin",
+  "sub": "E - Force Pulse",
+  "text": "Damage: 60 / 120 / 180 / 240 / 300 (+80% AP) ⇒ 80 / 130 / 180 / 230 / 280 (+70% AP)"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Kassadin",
+  "sub": "E - Force Pulse",
+  "text": "Slow: 20 / 30 / 40 / 50 / 60% ⇒ 30 / 35 / 40 / 45 / 50%"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Kassadin",
+  "sub": "R - Riftwalk",
+  "text": "Range: 600 ⇒ 700"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Malphite",
+  "sub": null,
+  "text": "\" We've got a few historical-accuracy changes and bugfixes for Malphite this patch. Crit AD Malphite now has sweet AoE damage and he no longer halves Dragon's attack speed. Infinity Edge is calling to you. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Malphite",
+  "sub": "W - Brutal Strikes",
+  "text": "Splash Damage: Now crits if the main attack does."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Malphite",
+  "sub": "W - Brutal Strikes",
+  "text": "Activation: No longer interrupts Malphite's attack mid-swing."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Malphite",
+  "sub": "E - Ground Slam",
+  "text": "Bugfix: Fixed a bug where it could slow Epic Monster attack speed."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Malphite",
+  "sub": "R - Unstoppable Force",
+  "text": "Bugfix: Fixed a bug where Malphite could get locked out of casting Flash for too long."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Morgana",
+  "sub": null,
+  "text": "\" Morgana is one of the strongest mid laners in the game and is a little too good in support as well, so we're pushing in some mid-skewed nerfs by reverting some of her 2010-2012 era buffs and adjustments. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Morgana",
+  "sub": "W - Tormented Soil",
+  "text": "Mana Cost: 70 / 85 / 100 / 115 / 130 ⇒ 80 / 100 / 120 / 140 / 160"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Morgana",
+  "sub": "W - Tormented Soil",
+  "text": "Cooldown: 10s ⇒ 12s"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Morgana",
+  "sub": "E - Black Shield",
+  "text": "Shield: 95 / 160 / 225 / 290 / 355 ⇒ 100 / 150 / 200 / 250 / 300"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Morgana",
+  "sub": "R - Soul Shackles",
+  "text": "Cooldown: 120 / 110 / 100s ⇒ 120 / 120 / 120s"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Nidalee",
+  "sub": null,
+  "text": "\" We're putting in a few more historical-accuracy changes for Nidalee this patch. There won't be a huge power gain here, but it will allow oldschool expert Nidalee players to activate their old combos. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Nidalee",
+  "sub": "W - Bushwhack",
+  "text": "Vision: Now gives 250u of vision for 0.5s when cast."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Nidalee",
+  "sub": "W - Bushwhack",
+  "text": "Damage Duration: 4s ⇒ 2.5s. Total damage unchanged."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Nidalee",
+  "sub": "R - Aspect of the Cougar",
+  "text": "Attack Timer: Now resets Nidalee's basic attack timer."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Poppy",
+  "sub": null,
+  "text": "\" Poppy re-released fairly balanced but had a few bugs and oversights in her scripts. Both of these changes represent period-accurate power to Season Three and constitute small buffs. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Poppy",
+  "sub": "Q - Devastating Blow",
+  "text": "Critical Strike: Now crits her total AD ratio if she crits."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Poppy",
+  "sub": "Q - Devastating Blow",
+  "text": "Spellblade Damage: Now converts all Spellblade damage to magic."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Poppy",
+  "sub": "Q - Devastating Blow",
+  "text": "Tooltip: Updated to clarify crit damage, damage cap, and the Spellblade interaction."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Shyvana",
+  "sub": null,
+  "text": "\" Shyvana isn't doing too hot, so it's time for buffs. We're leading with a revert of some nerfs from 2012, which should help her stay in step with her opponents. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Shyvana",
+  "sub": "W - Burnout",
+  "text": "Maximum Duration Extension: 4 ⇒ 6"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Shyvana",
+  "sub": "R - Dragon's Descent",
+  "text": "Bonus Resistances: 10 / 15 / 20 ⇒ 15 / 20 / 25, still doubled during dragon form."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Twisted Fate",
+  "sub": null,
+  "text": "\" Twisted Fate is too good in both mid and support, so it's nerf time. As support is the better-performing role, we're lowering his map-wide omnipresence and frontloading the nerfs. These nerfs come in the form of patch 3.7's Destiny cooldown and 1.0.0.75's Gate cooldown, the last time it was ever its own spell. We're also matching his passive's behavior with other global passives: It's disabled while he's dead. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Twisted Fate",
+  "sub": "Passive - Loaded Dice",
+  "text": "Bonus Gold While Dead: Allies no longer gain bonus gold while Twisted Fate is dead."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Twisted Fate",
+  "sub": "E - Gate",
+  "text": "Cooldown: 120 / 105 / 90 / 75 / 60s ⇒ 135 / 120 / 105 / 90 / 75s"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Twisted Fate",
+  "sub": "R - Destiny",
+  "text": "Cooldown: 130 / 110 / 90s ⇒ 180 / 150 / 120s"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Twisted Fate",
+  "sub": "R - Destiny",
+  "text": "Mana Cost: 150 ⇒ 150 / 125 / 100"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Zilean",
+  "sub": null,
+  "text": "\" Zilean has some small anachronisms in his cast paradigms and ability functionality, which we're fixing this patch. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Zilean",
+  "sub": "Passive - Heightened Learning",
+  "text": "Bonus Experience While Dead: No longer grants bonus XP while Zilean is dead."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Zilean",
+  "sub": "Q - Time Bomb",
+  "text": "Cast Visibility: Casting the spell now reveals Zilean if cast from fog of war."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Champions",
+  "entity": "Zilean",
+  "sub": "E - Time Warp",
+  "text": "Cast Range: 550 edge to edge (around 650 in practical use) ⇒ 700 center to center"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Items",
+  "entity": "Cloak and Dagger",
+  "sub": null,
+  "text": "Recipe: Cloak of Agility + Dagger. 1130 total cost."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Items",
+  "entity": "Cloak and Dagger",
+  "sub": null,
+  "text": "Attack Speed: 20%"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Items",
+  "entity": "Cloak and Dagger",
+  "sub": null,
+  "text": "Critical Strike Chance: 20%"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Items",
+  "entity": "Cloak and Dagger",
+  "sub": null,
+  "text": "Unique Passive: 35% Tenacity, shared with Mercury's Treads, Zephyr, and Moonflair Spellblade."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Items",
+  "entity": "Moonflair Spellblade",
+  "sub": null,
+  "text": "Recipe: Seeker's Armguard + Negatron Cloak. 2300 total cost."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Items",
+  "entity": "Moonflair Spellblade",
+  "sub": null,
+  "text": "Ability Power: 50"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Items",
+  "entity": "Moonflair Spellblade",
+  "sub": null,
+  "text": "Armor: 50"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Items",
+  "entity": "Moonflair Spellblade",
+  "sub": null,
+  "text": "Magic Resistance: 50"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Items",
+  "entity": "Moonflair Spellblade",
+  "sub": null,
+  "text": "Unique Passive: 35% Tenacity, shared with Mercury's Treads, Zephyr, and Cloak and Dagger."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Items",
+  "entity": "Zz'Rot Portal",
+  "sub": null,
+  "text": "Recipe: Chain Vest + Negatron Cloak + Rejuvenation Bead. 2700 total cost."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Items",
+  "entity": "Zz'Rot Portal",
+  "sub": null,
+  "text": "Armor: 50"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Items",
+  "entity": "Zz'Rot Portal",
+  "sub": null,
+  "text": "Magic Resistance: 50"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Items",
+  "entity": "Zz'Rot Portal",
+  "sub": null,
+  "text": "Health Regeneration: 5 per 5 seconds"
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Items",
+  "entity": "Zz'Rot Portal",
+  "sub": null,
+  "text": "Active: Place down a void gate for 150 seconds. Voidlings with decaying health periodically spawn and march down the nearest lane, damaging enemies in their path. 150-second cooldown."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Systems",
+  "entity": "Council Vote",
+  "sub": null,
+  "text": "\" Welcome to our second League Classic community poll! This time around, we want your feedback on six specific areas, including which champion's kit we prioritize restoring next. Head over to \"The Council\" tab in the League client to cast your votes! Voting will be open for seven days and you're free to update your answers while the poll is active. And keep an eye out, as poll results will be published in the next Patch Notes."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Systems",
+  "entity": "Council Vote",
+  "sub": null,
+  "text": "In case you missed it, we previously posted the results of our inaugural Council vote in the Patch 26.18 Notes, and some of those results are starting to go to live, including the three items you voted to revive in this patch! \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Systems",
+  "entity": "Miscellaneous",
+  "sub": null,
+  "text": "Added more in-game negative behavior detections."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Systems",
+  "entity": "Miscellaneous",
+  "sub": null,
+  "text": "Updated in-game pings to use oldschool art."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Systems",
+  "entity": "Miscellaneous",
+  "sub": null,
+  "text": "Updated start-of-champion select visuals to make team and position more apparent."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Systems",
+  "entity": "Miscellaneous",
+  "sub": null,
+  "text": "Updated the loading screen to look more classic."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Systems",
+  "entity": "Miscellaneous",
+  "sub": null,
+  "text": "Improved visual clarity in The Council voting."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Systems",
+  "entity": "Miscellaneous",
+  "sub": null,
+  "text": "Added a new \"Recommended\" sort in the Runes store, making it easier for new players to identify good early-account runes."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where Janna's Tailwind could persist on allies for up to 5 seconds after death."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where the Overview, Abilities, and Skins tabs in Classic champion profiles were misaligned and unclickable."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where purchasing Royal Guard Fiora did not grant the associated Classic chroma."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where Release Date sorting did not sort Classic Store runes from newest to oldest or oldest to newest."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where Recommended was missing from the Classic Store Runes sort options."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where Classic homepage images loaded when logging into a non-Classic mode tab."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where the Imperial Classic chroma name was missing in Champion Select for Xin Zhao."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where Runaan's Hurricane Volley could trigger minions' Call for Help when hitting enemy champions near minions."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where Sona's Song of Celerity description incorrectly stated that its effect applied only to champions."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where rapidly pressing Recall granted Guinsoo's Rageblade stacks."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where Sivir's Spell Shield did not block damage from Miss Fortune's Double Up."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where Tristana's Explosive Charge did not trigger its explosion when bonus damage killed a minion."
+ },
+ {
+  "patch": "26.19",
+  "section": "CLASSIC",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where Release Date ascending and descending sorting had the same effect in Classic Collection portraits."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARAM: MAYHEM",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "\" Hello Mayhemers! In this patch, we're focusing on bugfixes and small quality-of-life improvements. We're continuing to assess Augment offerings so that each Augment you're offered feels like a reasonable and meaningful option for your champion. For balance, High Roller has caught our attention for how powerful it can be when picked up early in the game. We're giving it another nerf to bring down some of that early snowballing potential. See you on the Bridge! \""
+ },
+ {
+  "patch": "26.19",
+  "section": "ARAM: MAYHEM",
+  "group": "Augments",
+  "entity": "High Roller",
+  "sub": null,
+  "text": "Drop Rate: Further reduced."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARAM: MAYHEM",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where Clown College used the wrong text color for true damage."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARAM: MAYHEM",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where King Me had debug Augment name shoutouts, including Hellbent, Overloaded, Surge Field, and Spirit Bomb."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARAM: MAYHEM",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where Mad Scientist granted both +30% Attack Damage and Ability Power instead of 30% Adaptive Force."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARAM: MAYHEM",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where Multishot had extra quest step requirements for Nami's and Ezreal's ultimate abilities."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARAM: MAYHEM",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where Yuumi could spam Bilgewater Cannon landing effects when she was attached to a unit."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARAM: MAYHEM",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where Bursting Teeth did not trigger due to a per-target cooldown."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARAM: MAYHEM",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where Bel'Veth's Q did not reset after using her ultimate when she had Ultimate Awakening."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARAM: MAYHEM",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where Item Quest Progress broke when re-adding quest Augment offerings."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARAM: MAYHEM",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where Vel'Koz's W did not get the correct refund with Skilled Sniper."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARAM: MAYHEM",
+  "group": "Bugfixes",
+  "entity": null,
+  "sub": null,
+  "text": "Fixed a bug where removing Upgrade Ravenous resulted in negative Life Steal for all your items."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "\" We've got something special for this Arena patch. We've created three Guests of Honor, brought over ten Augments from Mayhem, and we've got two brand-new Augments (Death Dealer and Got That Dog In Em) created in collaboration with the champions, VestionOCE and SoyJamiie, from the For The Win Creator Invitational we held in Season 2!"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "For balance, we're tapping down the power level of some of the strongest and most consistent champions while buffing up some who were struggling. We've also targeted some of the strongest and weakest Augments to bring them closer into line so there's a little bit more freedom of choice. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Aphelios",
+  "sub": "Base Stats",
+  "text": "Health Growth: 102 ⇒ 114"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Aphelios",
+  "sub": "Base Stats",
+  "text": "Attack Damage Growth: 2.3 ⇒ 3.3"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Aphelios",
+  "sub": "Base Stats",
+  "text": "Move Speed: 325 ⇒ 330"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Bard",
+  "sub": "Passive - Traveler's Call",
+  "text": "Chimes per Upgrade: 4 ⇒ 3"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Bel'Veth",
+  "sub": "E - Royal Maelstrom",
+  "text": "On-Hit/Attack Effectiveness: 12 - 24 ⇒ 8 - 16"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Bel'Veth",
+  "sub": "R - Endless Banquet",
+  "text": "Passive Bonus Attack Damage Ratio: 3 ⇒ 1"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Dr. Mundo",
+  "sub": "E - Blunt Force Trauma",
+  "text": "Active Minimum-Health Ratio: 5 ⇒ 4"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Dr. Mundo",
+  "sub": "E - Blunt Force Trauma",
+  "text": "Passive Health Ratio: 2 - 3.2 ⇒ 1.5 - 2.7"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Elise",
+  "sub": "E - Cocoon",
+  "text": "Cooldown: 12 / 11.5 / 11 / 10.5 / 10s ⇒ 8 / 7.5 / 7 / 6.5 / 6s"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Elise",
+  "sub": "W - Skittering Frenzy",
+  "text": "Cooldown: 12s ⇒ 10s"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Ezreal",
+  "sub": "Q - Mystic Shot",
+  "text": "Refund: 1.5 ⇒ 2.5"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Lee Sin",
+  "sub": "W - Safeguard",
+  "text": "Ability Power Ratio: 80% ⇒ 120%"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Lillia",
+  "sub": "Passive - Dream-Laden Bough",
+  "text": "Percentage Maximum Health: 4% ⇒ 3%"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Locke",
+  "sub": "Passive - Silver Stake",
+  "text": "Minimum Damage: 7.5 - 60 ⇒ 10 - 80"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Locke",
+  "sub": "Passive - Silver Stake",
+  "text": "Maximum Damage: 15 - 120 ⇒ 20 - 160"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Locke",
+  "sub": "R - Purgatory",
+  "text": "Percentage per Stack: 0.5 ⇒ 1"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Neeko",
+  "sub": "Q - Blooming Burst",
+  "text": "Secondary-Hit Ability Power Ratio: 25% ⇒ 50%"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Ornn",
+  "sub": "Passive - Living Forge",
+  "text": "Stat Discount: 100 ⇒ 75"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Ornn",
+  "sub": "Passive - Living Forge",
+  "text": "Legendary Discount: 200 ⇒ 150"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Rammus",
+  "sub": "Q - Powerball",
+  "text": "Cooldown: 11 / 9.5 / 8 / 6.5 / 5s ⇒ 12 / 10.5 / 9 / 7.5 / 6s"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Rell",
+  "sub": "Passive - Break The Mold",
+  "text": "Stat Steal: 3 - 15% ⇒ 2 - 10%"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Sion",
+  "sub": "Passive - Glory in Death",
+  "text": "Stacks per Round: 133 ⇒ 111"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Veigar",
+  "sub": "Passive - Phenomenal Evil Power",
+  "text": "Stacks per Round: 12 ⇒ 10"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Veigar",
+  "sub": "E - Event Horizon",
+  "text": "Cooldown: 23 / 21.75 / 20.5 / 19.25 / 18s ⇒ 24 / 23 / 22 / 21 / 20s"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Zed",
+  "sub": "Q - Razor Shuriken",
+  "text": "Bonus Attack Damage Ratio: 110% ⇒ 100%"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Zed",
+  "sub": "W - Living Shadow",
+  "text": "Cooldown: 18 - 15s ⇒ 20 - 16s"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Zeri",
+  "sub": "Q - Burst Fire",
+  "text": "Attack Damage Ratio: 102 - 110% ⇒ 107 - 115%"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Champions",
+  "entity": "Zeri",
+  "sub": "E - Spark Surge",
+  "text": "Refund: 0.75 ⇒ 1"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Archmage",
+  "sub": null,
+  "text": "Whenever you cast an ability, refund the cooldown of another, randomly selected ability by 30% of the cast ability's cooldown."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Crit N Cast",
+  "sub": null,
+  "text": "Gain Ability Haste equal to 40% of your Critical Strike Chance."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Death Dealer",
+  "sub": null,
+  "text": "Replacement: Replaces Flee."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Death Dealer",
+  "sub": null,
+  "text": "Activate on a target champion to enter the Death Realm for 4 / 8 seconds. Entering the Death Realm causes you to become invisible for the first 2 seconds."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Death Dealer",
+  "sub": null,
+  "text": "Cap Stone: At Max Level, killing your target grants your team another revive and delays the slain player's revive by 1 second."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Got That Dog In Em",
+  "sub": null,
+  "text": "Every 3 seconds spawn a nearby hot dog. This can be picked up by anyone, causing them to breathe fire."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Got That Dog In Em",
+  "sub": null,
+  "text": "Enemies who pick this up can damage their allies."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Got That Dog In Em",
+  "sub": null,
+  "text": "If you die while breathing fire, you explode, dealing magic damage per stack."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Hellbent",
+  "sub": null,
+  "text": "\" Generate a stack of Revivemaxxing for each enemy champion you hit with basic attacks or abilities, lasting for 6 seconds, refreshing on subsequent hits, and stacking up to 10 times. At maximum stacks, you become Hellbent. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Hellbent",
+  "sub": null,
+  "text": "Hellbent: Upon taking lethal damage, you enter resurrection for 4 seconds, during which you are invulnerable, untargetable, and unable to act. Afterwards, you revive with 35 - 75% (based on level) of your maximum health with a 90-second cooldown. Additionally, you become empowered for the next 15 seconds, granting you 15 - 120 (based on level) bonus Attack Damage or 25 - 200 (based on level) Ability Power (Adaptive), 20% - 40% (based on level) bonus Move Speed while facing toward nearby enemy champions, and 15% - 30% (based on level) Omnivamp for the duration."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Hellbent",
+  "sub": null,
+  "text": "\" Upon entering a patch of brush, you are healed for 40 - 300 (based on level) (+15% of your missing health) over 1.5 seconds. This has a 10-second cooldown per brush patch. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Rite of Ascension",
+  "sub": null,
+  "text": "\" Scoring a takedown against an enemy champion within 3 seconds of damaging them causes them to leave behind their Essence for 8 seconds. You can basic attack the Essence within 400 units to consume it, causing you to blink to its location after winding up for 1.25 seconds, during which you are untargetable, displacement immune, and unable to act. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Rite of Ascension",
+  "sub": null,
+  "text": "Upon consumption of the Essence, you gain 100% bonus Move Speed decaying over 2 seconds, heal yourself for 75 - 300 (based on level) (+50% bonus AD) (+25% AP), and reset the cooldowns of your basic abilities. The heal is increased by 0% - 100% (based on your missing health), for a maximum heal of 150 - 600 (based on level) (+100% bonus AD) (+50% AP)."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Shark Bait",
+  "sub": null,
+  "text": "\" Upon taking fatal damage, you become a Shark Bait, causing you to enter a zombie state for 3.5 seconds, during which your Move Speed is set to a static 400, you gain Ghosting, and enemies within 400 units of you are slowed by 40%. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Shark Bait",
+  "sub": null,
+  "text": "At the end of the duration, a massive shark emerges from beneath you that lets out a powerful chomp in a 400 radius, dealing 120 - 350 (based on level) (+10 / 30% of the target's missing health) magic damage to all enemies within the area and knocking them up for 1 second."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Shark Bait",
+  "sub": null,
+  "text": "While under the zombie state, you are able to move and become invulnerable, untargetable, and immune to crowd control, but you are also rendered unable to declare basic attacks, cast abilities, use summoner spells, and activate items."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Shark Bait",
+  "sub": null,
+  "text": "At Max Level, everyone on your team will turn into a shark on death."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Sonata",
+  "sub": null,
+  "text": "\" Alternate between automatically casting a modified version of Sona's Aria of Perseverance and modified Song of Celerity, with the former being cast first on a 7.5-second cooldown. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Sonata",
+  "sub": null,
+  "text": "Aria of Perseverance: Heal yourself for 60 (+60% AP) and send out a tone to the most wounded allied champion within 1000 units that heals them for the same amount. Additionally, generate an aura that grants you and tagged allied champions an 80 (+40% AP) shield for 1.5 seconds."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Sonata",
+  "sub": null,
+  "text": "Song of Celerity: Gain 30% bonus Move Speed for 7 seconds. If you take damage during this time, the duration ends prematurely once or if 3 seconds have elapsed. Additionally, generate an aura that grants tagged allied champions 20% bonus Move Speed for 3 seconds."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Surge Field",
+  "sub": null,
+  "text": "\" Upon casting your ultimate ability, you spawn a surge zone beneath you that has a 300 radius. While you are within the zone, you gain 50 Ability Haste and 40% bonus Move Speed, and your damage dealt to enemy champions fires missiles at them that deal 20% of the triggering damage instance pre-mitigation as bonus magic damage. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Surge Field",
+  "sub": null,
+  "text": "The missile effect cannot trigger from itself."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Surge Field",
+  "sub": null,
+  "text": "The zone lasts indefinitely as long as you stay within its radius."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Surge Field",
+  "sub": null,
+  "text": "If you leave the zone's radius for the first time, it moves to your current location."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Surge Field",
+  "sub": null,
+  "text": "Exiting the zone a second time causes it to disappear if you do not re-enter the area within 1.25 seconds."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Titan's Resolve",
+  "sub": null,
+  "text": "\" Dealing and receiving champion damage grants you 1 stack of Juggernauting for 6 seconds. For every 10 stacks of Juggernauting you gain 25-75 Adaptive Force, 5-10 Armor and Magic Resist, Size, and 8% Tenacity. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Titan's Resolve",
+  "sub": null,
+  "text": "Rank 1 Stacks Gained: 1"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Titan's Resolve",
+  "sub": null,
+  "text": "Rank 2 Stacks Gained: 2"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Warlock Juicebox",
+  "sub": null,
+  "text": "\" Gain Omnivamp based on your Ability Power. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Wee Woo Wee Woo",
+  "sub": null,
+  "text": "\" Gain up to 50% Move Speed toward nearby allies based on their missing Health. Your healing and shielding are also increased up to 50% based on the target's missing Health. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Angel of Retribution",
+  "sub": null,
+  "text": "Health Scaling Ratio: 350 ⇒ 450"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Chroma Flux",
+  "sub": null,
+  "text": "Rarity: Prismatic ⇒ Gold"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Giant Slayer",
+  "sub": null,
+  "text": "Rank 1 Damage Bonus: 10 - 30 ⇒ 5 - 25"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Giant Slayer",
+  "sub": null,
+  "text": "Rank 2 Damage Bonus: 15 - 35 ⇒ 10 - 30"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Giant Slayer",
+  "sub": null,
+  "text": "Rank 3 Damage Bonus: 20 - 40 ⇒ 15 - 35"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Protein Shake",
+  "sub": null,
+  "text": "Base Health Scaling: 15 ⇒ 25"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Scavenger",
+  "sub": null,
+  "text": "Gold: 500 ⇒ 1000"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Spellcraft",
+  "sub": null,
+  "text": "Cooldown: 15 seconds ⇒ 10 seconds"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Augments",
+  "entity": "Spellcraft",
+  "sub": null,
+  "text": "Base Damage: 100 ⇒ 150"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Systems",
+  "entity": null,
+  "sub": null,
+  "text": "Bonus Energy Regen Based on Missing Health"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Systems",
+  "entity": null,
+  "sub": null,
+  "text": "Maximum Bonus Energy Regeneration: Up to 100% ⇒ Up to 400%"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Systems",
+  "entity": "Ivern",
+  "sub": null,
+  "text": "When a team loses a round, spawn a brush at each of their locations. This brush lasts the rest of the game."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Systems",
+  "entity": "Senna",
+  "sub": null,
+  "text": "Opens up 3 portals to the Death Realm. Anyone can enter the portal to go to the Death Realm. While in the Death Realm, you can go through any of the portals to return to the living realm."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Systems",
+  "entity": "Thresh",
+  "sub": null,
+  "text": "While downed, throw a lantern to your allies every few (8) seconds. This grants allies near the lantern a shield. Anyone can click the lantern to be pulled to the downed player."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Systems",
+  "entity": "Thresh",
+  "sub": null,
+  "text": "Fixed a bug where Renata's R would not amp damage caused by Berserk targets."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Systems",
+  "entity": "Thresh",
+  "sub": null,
+  "text": "Updated the Practice Tool Stack Item cheat to include: Dark Seal, Mejai's, Heartsteel, Gluttonous Greaves, and Force of Nature."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Systems",
+  "entity": "Thresh",
+  "sub": null,
+  "text": "Fixed a bug where Taliyah's W terrain was smaller than the hitbox."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Systems",
+  "entity": "Thresh",
+  "sub": null,
+  "text": "Fixed a bug where Yone's R warning VFX was not visible in very specific circumstances."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Systems",
+  "entity": "Thresh",
+  "sub": null,
+  "text": "Fixed a bug where Yunara's auto resets would not extend Hail of Blades appropriately."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Systems",
+  "entity": "Thresh",
+  "sub": null,
+  "text": "Fixed a bug where Renekton would not gain 20 fury from his ult when it was cast immediately after W."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Systems",
+  "entity": "Thresh",
+  "sub": null,
+  "text": "Fixed a bug where Nunu & Willump could unlock his camera during W."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Systems",
+  "entity": "Thresh",
+  "sub": null,
+  "text": "Fixed a bug where clones would not receive Homeguards after running back to the fountain"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Systems",
+  "entity": "Thresh",
+  "sub": null,
+  "text": "Fixed a bug where Target Champions Only could be toggled on unexpectedly"
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Systems",
+  "entity": "Thresh",
+  "sub": null,
+  "text": "Fixed a bug where Camille's W would count as two hits when triggering bone plating."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Systems",
+  "entity": "Thresh",
+  "sub": null,
+  "text": "Fixed a bug where Camille's Passive would sometimes not proc Shield Bash."
+ },
+ {
+  "patch": "26.19",
+  "section": "ARENA",
+  "group": "Systems",
+  "entity": "Thresh",
+  "sub": null,
+  "text": "Fixed a bug where Aatrox Q sweetspots use crit text instead of enhanced damage text."
+ },
+ {
+  "patch": "26.19",
+  "section": "UPCOMING SKINS & CHROMAS",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "The following skins will be released in this patch:"
+ },
+ {
+  "patch": "26.19",
+  "section": "UPCOMING SKINS & CHROMAS",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "Coven Janna"
+ },
+ {
+  "patch": "26.19",
+  "section": "UPCOMING SKINS & CHROMAS",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "Coven Mel"
+ },
+ {
+  "patch": "26.19",
+  "section": "UPCOMING SKINS & CHROMAS",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "Old God Anivia"
+ },
+ {
+  "patch": "26.19",
+  "section": "UPCOMING SKINS & CHROMAS",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "Old God Urgot"
+ },
+ {
+  "patch": "26.19",
+  "section": "UPCOMING SKINS & CHROMAS",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "Coven Ahri"
+ },
+ {
+  "patch": "26.19",
+  "section": "UPCOMING SKINS & CHROMAS",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "Coven Ashe"
+ },
+ {
+  "patch": "26.19",
+  "section": "UPCOMING SKINS & CHROMAS",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "Coven Janna"
+ },
+ {
+  "patch": "26.19",
+  "section": "UPCOMING SKINS & CHROMAS",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "Coven Mel"
+ },
+ {
+  "patch": "26.19",
+  "section": "UPCOMING SKINS & CHROMAS",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "Coven Morgana"
+ },
+ {
+  "patch": "26.19",
+  "section": "UPCOMING SKINS & CHROMAS",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "Old God Anivia"
+ },
+ {
+  "patch": "26.19",
+  "section": "UPCOMING SKINS & CHROMAS",
+  "group": null,
+  "entity": null,
+  "sub": null,
+  "text": "Old God Urgot"
+ }
+]

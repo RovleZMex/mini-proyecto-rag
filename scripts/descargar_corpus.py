@@ -39,6 +39,22 @@ def main() -> None:
                 }"""
             )
             page.wait_for_timeout(1000)
+            # Preparar la página para imprimir:
+            # 1. La barra de navegación es fija y Chromium la repite encima de cada
+            #    página del PDF, tapando texto. Se ocultan todos los elementos fixed/sticky.
+            # 2. Las tarjetas de cambios (.patch-change-block) no deben partirse entre páginas.
+            page.evaluate(
+                """() => {
+                    for (const el of document.querySelectorAll('body *')) {
+                        const pos = getComputedStyle(el).position;
+                        if (pos === 'fixed' || pos === 'sticky') el.style.display = 'none';
+                    }
+                    const css = document.createElement('style');
+                    css.textContent = `.patch-change-block, .content-border, li, blockquote
+                        { break-inside: avoid; page-break-inside: avoid; }`;
+                    document.head.appendChild(css);
+                }"""
+            )
             base = DESTINO / f"patch-26-{n}"
             base.with_suffix(".html").write_text(page.content(), encoding="utf-8")
             page.pdf(path=str(base.with_suffix(".pdf")), format="A4", print_background=True)

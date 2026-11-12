@@ -11,3 +11,6 @@ chroma_db/
 # Corpus descargado (se regenera con scripts/descargar_corpus.py)
 data/raw/*
 !data/raw/.gitkeep
+
+# Salida intermedia de Docling (se regenera con scripts/convertir_docling.py)
+data/interim/
