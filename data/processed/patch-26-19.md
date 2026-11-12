@@ -27,19 +27,19 @@
 #### Aphelios
 > " Aphelios has been kiting the spotlight for a while now, even though he's a hypercarry in an enchanter meta that should favor him, so we're looking to give him a little boost to encourage him to get out of his comfort zone. "
 
-#### Calibrum
+##### Calibrum
 - Moonshot Damage: 70 - 160 (+42 - 60% bonus AD) (+100% AP) ⇒ 80 - 170 (+42 - 60% bonus AD) (+100% AP)
 
-#### Severum
+##### Severum
 - Healing: 2 - 7.1%, increased to 5 - 17.75% ⇒ 2 - 8%, increased to 5 - 20%
 
-#### Gravitum
+##### Gravitum
 - Slow: 30% for 2.5 seconds, decaying to 10% after 0.7 seconds ⇒ 30% for 2.5 seconds, decaying to 15% after 0.7 seconds
 
-#### Infernum
+##### Infernum
 - Duskwave Cooldown: 9 / 8.25 / 7.5 / 6.75 / 6 seconds ⇒ 8 / 7.25 / 6.5 / 5.75 / 5 seconds
 
-#### Crescendum
+##### Crescendum
 - Mini-Crescendum Damage: 15% AD, decreasing by 1.5% AD to a minimum of 5% AD for the 8th+ chakram ⇒ 16% AD, decreasing by 1.5% AD to a minimum of 5% AD for the 9th+ chakram
 
 #### Aurora
@@ -53,6 +53,9 @@
 
 #### Draven
 > " Since all bot laners received significantly increased gold income thanks to role quests, Draven's potential to gain a gold advantage through his Adoration stacks has lost some of its impact. We're giving him a helping hand (axe?) by tapping up his early game damage. "
+
+##### Base Stats
+- Attack Damage: 62 ⇒ 64
 
 #### Elise
 > " This year started strong for AP junglers that could use Dusk and Dawn, but others like Elise have been in a weak spot for a while, so we are helping out our friendly neighborhood spider with clear speed and damage. "

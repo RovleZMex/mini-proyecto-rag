@@ -53,6 +53,9 @@ RE_NUEVO = re.compile(r"^NEW\s*-?\s*")
 # Nombres oficiales de campeones (Data Dragon). Sirven para separar líneas que
 # Docling unió, como "Q - Decimate Jinx" (habilidad de Darius + siguiente campeón).
 CAMPEONES = json.loads((RAIZ / "data" / "campeones.json").read_text())["champions"]
+# Las armas de Aphelios llevan encabezado propio, pero son parte del campeón.
+ARMAS_APHELIOS = {"Calibrum", "Severum", "Gravitum", "Infernum", "Crescendum"}
+
 RE_AUTOR = re.compile(r'^[A-Z .\'-]+ "RIOT [A-Z0-9 ]+" [A-Z .\'-]+$')
 RE_RUIDO = re.compile(r"^(\+|[A-Z]|曲)$")  # restos de íconos: "Q", "U", "+", etc.
 
@@ -116,7 +119,9 @@ def parsear(doc: DoclingDocument, parche: str) -> list[dict]:
 
         if t.startswith(f"LEAGUE OF LEGENDS PATCH") or RE_AUTOR.match(t):
             continue
-        if RE_HABILIDAD.match(t) or t == "Base Stats":
+        if RE_HABILIDAD.match(t) or t == "Base Stats" or (
+            t in ARMAS_APHELIOS and estado["entity"] == "Aphelios"
+        ):
             estado["sub"] = t
             continue
         if es_seccion(t) and t.startswith("GAME UPDATES"):
@@ -150,6 +155,96 @@ def parsear(doc: DoclingDocument, parche: str) -> list[dict]:
     return bloques
 
 
+# Longitud máxima del tramo de PDF del que se recuperan cambios (caracteres).
+# Los casos reales miden menos de 100; un tramo de miles es un límite mal detectado.
+MAX_TRAMO = 600
+
+
+def normalizar_comillas(t: str) -> str:
+    return t.translate(str.maketrans({"“": '"', "”": '"', "‘": "'", "’": "'"}))
+
+
+def patron_cita(cita: str) -> re.Pattern:
+    """Regex que encuentra una cita en el texto del PDF a pesar de los saltos de línea."""
+    palabras = normalizar_comillas(cita).strip('" ').split()[:8]
+    return re.compile(r"\s+".join(map(re.escape, palabras)))
+
+
+def recuperar_cambios(bloques: list[dict], ruta_pdf: Path) -> list[dict]:
+    """Recupera cambios que Docling no entregó, usando la capa de texto del PDF.
+
+    Docling a veces omite la única línea de cambios de un campeón (Draven en 26.19,
+    Darius en 26.21): la entidad queda solo con la cita del diseñador. Para cada
+    campeón con cita pero sin ningún "⇒", se busca en el texto del PDF el tramo entre
+    el final de su cita y el inicio de la cita de la siguiente entidad, y se toman de
+    ahí los cambios. Los bloques recuperados se marcan con "recuperado": "pdf-texto".
+    """
+    import pypdfium2
+
+    pdf = pypdfium2.PdfDocument(ruta_pdf)
+    texto = normalizar_comillas(
+        "\n".join(pdf[i].get_textpage().get_text_range() for i in range(len(pdf)))
+    ).replace("\r\n", "\n")
+
+    # Entidades en orden, con su cita (primer bloque citado) y sus bloques.
+    clave = lambda b: (b["section"], b["group"], b["entity"])
+    entidades: dict[tuple, list[dict]] = {}
+    for b in bloques:
+        if b["entity"]:
+            entidades.setdefault(clave(b), []).append(b)
+    con_cita = [(k, next(b for b in bs if es_cita(b["text"]))["text"])
+                for k, bs in entidades.items() if any(es_cita(b["text"]) for b in bs)]
+
+    nuevos: dict[tuple, list[dict]] = {}
+    for i, (k, cita) in enumerate(con_cita):
+        # Solo campeones sin ningún cambio. Las entidades narrativas ("Council Vote",
+        # "Art"...) también tienen cita y no tienen "⇒", pero ahí no falta nada.
+        if k[2] not in CAMPEONES or any("⇒" in b["text"] for b in entidades[k]):
+            continue
+        m = patron_cita(cita).search(texto)
+        if not m:
+            continue
+        inicio = texto.find('"', m.end())  # cierre de la cita
+        fin = len(texto)
+        if i + 1 < len(con_cita):
+            m2 = patron_cita(con_cita[i + 1][1]).search(texto, inicio)
+            if m2:
+                fin = texto.rfind('"', inicio, m2.start())
+        tramo = texto[inicio + 1 : fin]
+        siguiente = con_cita[i + 1][0][2] if i + 1 < len(con_cita) else None
+        if siguiente and siguiente in tramo:
+            tramo = tramo[: tramo.rfind(siguiente)]
+        # Un tramo largo indica que no se encontró bien el límite: mejor no recuperar.
+        if len(tramo) > MAX_TRAMO:
+            continue
+
+        sub, lineas = None, []
+        for linea in (l.strip() for l in tramo.split("\n")):
+            if not linea:
+                continue
+            if RE_HABILIDAD.match(linea) or linea == "Base Stats":
+                sub = linea
+            elif re.match(r"^[A-Z][^:⇒]{0,60}:", linea) or not lineas:
+                lineas.append([sub, linea])
+            else:
+                lineas[-1][1] += " " + linea
+        base = entidades[k][0]
+        nuevos[k] = [
+            {**{c: base[c] for c in ("patch", "section", "group", "entity")},
+             "sub": s, "text": limpiar(t), "recuperado": "pdf-texto"}
+            for s, t in lineas if "⇒" in t
+        ]
+
+    salida = []
+    for i, b in enumerate(bloques):
+        salida.append(b)
+        k = clave(b)
+        ultimo = i + 1 == len(bloques) or clave(bloques[i + 1]) != k
+        if b["entity"] and ultimo and nuevos.get(k):
+            salida.extend(nuevos.pop(k))
+    return salida
+
+
 def a_markdown(bloques: list[dict], parche: str) -> str:
     niveles = ("section", "group", "entity", "sub")
     lineas = [f"# Patch {parche}"]
@@ -173,10 +268,15 @@ def main() -> None:
         nombre = ruta.name.removesuffix(".docling.json")
         parche = nombre.removeprefix("patch-").replace("-", ".")
         bloques = parsear(DoclingDocument.load_from_json(ruta), parche)
+        bloques = recuperar_cambios(bloques, RAIZ / "data" / "raw" / f"{nombre}.pdf")
+        recuperados = [b for b in bloques if b.get("recuperado")]
         (DESTINO / f"{nombre}.json").write_text(json.dumps(bloques, ensure_ascii=False, indent=1))
         (DESTINO / f"{nombre}.md").write_text(a_markdown(bloques, parche))
         entidades = {(b["section"], b["entity"]) for b in bloques if b["entity"]}
-        print(f"{parche}: {len(bloques)} bloques, {len(entidades)} entidades")
+        print(f"{parche}: {len(bloques)} bloques, {len(entidades)} entidades, "
+              f"{len(recuperados)} cambios recuperados del texto del PDF")
+        for b in recuperados:
+            print(f"    + {b['entity']} · {b['sub']} · {b['text']}")
 
 
 if __name__ == "__main__":

@@ -38,6 +38,9 @@
 #### Darius
 > " Darius has moved a bit too far away from being a persistently durable damage threat that needs to be kited to more of a one shot combo playstyle. Since he has some room for power, we're giving him a slight boost so he can swing that axe more often in sustained fights. "
 
+##### Q - Decimate
+- Cooldown: 9 / 8 / 7 / 6 / 5s ⇒ 9 / 8 / 7 / 6 / 4s
+
 #### Jinx
 > " Like her best friend Caitlyn, Jinx has been similarly dominant in the meta, even with the Hurricane nerf last patch. We're slowing her roll to make it a tad harder to get her snowballing. "
 

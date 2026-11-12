@@ -91,40 +91,40 @@
   "patch": "26.19",
   "section": "CHAMPIONS",
   "group": null,
-  "entity": "Calibrum",
-  "sub": null,
+  "entity": "Aphelios",
+  "sub": "Calibrum",
   "text": "Moonshot Damage: 70 - 160 (+42 - 60% bonus AD) (+100% AP) ⇒ 80 - 170 (+42 - 60% bonus AD) (+100% AP)"
  },
  {
   "patch": "26.19",
   "section": "CHAMPIONS",
   "group": null,
-  "entity": "Severum",
-  "sub": null,
+  "entity": "Aphelios",
+  "sub": "Severum",
   "text": "Healing: 2 - 7.1%, increased to 5 - 17.75% ⇒ 2 - 8%, increased to 5 - 20%"
  },
  {
   "patch": "26.19",
   "section": "CHAMPIONS",
   "group": null,
-  "entity": "Gravitum",
-  "sub": null,
+  "entity": "Aphelios",
+  "sub": "Gravitum",
   "text": "Slow: 30% for 2.5 seconds, decaying to 10% after 0.7 seconds ⇒ 30% for 2.5 seconds, decaying to 15% after 0.7 seconds"
  },
  {
   "patch": "26.19",
   "section": "CHAMPIONS",
   "group": null,
-  "entity": "Infernum",
-  "sub": null,
+  "entity": "Aphelios",
+  "sub": "Infernum",
   "text": "Duskwave Cooldown: 9 / 8.25 / 7.5 / 6.75 / 6 seconds ⇒ 8 / 7.25 / 6.5 / 5.75 / 5 seconds"
  },
  {
   "patch": "26.19",
   "section": "CHAMPIONS",
   "group": null,
-  "entity": "Crescendum",
-  "sub": null,
+  "entity": "Aphelios",
+  "sub": "Crescendum",
   "text": "Mini-Crescendum Damage: 15% AD, decreasing by 1.5% AD to a minimum of 5% AD for the 8th+ chakram ⇒ 16% AD, decreasing by 1.5% AD to a minimum of 5% AD for the 9th+ chakram"
  },
  {
@@ -158,6 +158,15 @@
   "entity": "Draven",
   "sub": null,
   "text": "\" Since all bot laners received significantly increased gold income thanks to role quests, Draven's potential to gain a gold advantage through his Adoration stacks has lost some of its impact. We're giving him a helping hand (axe?) by tapping up his early game damage. \""
+ },
+ {
+  "patch": "26.19",
+  "section": "CHAMPIONS",
+  "group": null,
+  "entity": "Draven",
+  "sub": "Base Stats",
+  "text": "Attack Damage: 62 ⇒ 64",
+  "recuperado": "pdf-texto"
  },
  {
   "patch": "26.19",

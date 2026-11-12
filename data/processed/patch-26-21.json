@@ -115,6 +115,15 @@
   "patch": "26.21",
   "section": "CHAMPIONS",
   "group": null,
+  "entity": "Darius",
+  "sub": "Q - Decimate",
+  "text": "Cooldown: 9 / 8 / 7 / 6 / 5s ⇒ 9 / 8 / 7 / 6 / 4s",
+  "recuperado": "pdf-texto"
+ },
+ {
+  "patch": "26.21",
+  "section": "CHAMPIONS",
+  "group": null,
   "entity": "Jinx",
   "sub": null,
   "text": "\" Like her best friend Caitlyn, Jinx has been similarly dominant in the meta, even with the Hurricane nerf last patch. We're slowing her roll to make it a tad harder to get her snowballing. \""

@@ -33,6 +33,8 @@ Cada bloque de `data/processed/*.json` es una línea de contenido con su posici�
 5. **Líneas unidas.** Docling juntó el título de una habilidad con el nombre del siguiente campeón ("Q - Decimate Jinx"). *Solución:* separar usando la lista oficial de campeones de Data Dragon (`data/campeones.json`).
 6. **Encabezados repetidos por modo.** "CHAMPIONS", "AUGMENTS" y "BUGFIXES" aparecen también dentro de Classic, ARAM: Mayhem y Arena. *Solución:* dentro de un modo se tratan como subdivisiones, no como secciones nuevas.
 7. **Pie de página.** Artículos relacionados y avisos de cookies. *Solución:* cortar en el primer "GAME UPDATES <fecha>".
+8. **Docling omite líneas completas.** En 2 casos Docling no entregó el único cambio de un campeón (Draven en 26.19, Darius en 26.21). *Solución:* verificar contra la capa de texto del PDF (pypdfium2). Si un campeón tiene cita del diseñador pero ningún "⇒", se recuperan los cambios del tramo correspondiente del texto. Para evitar falsos positivos, solo aplica a campeones de la lista oficial y a tramos cortos.
+9. **Armas de Aphelios.** Tienen encabezado propio y quedaban como entidades. *Solución:* tratarlas como subsecciones de Aphelios.
 
 ## Validación
 
@@ -41,10 +43,6 @@ El HTML original sirve como referencia independiente:
 | Métrica | Resultado |
 |---|---|
 | Campeones e items de la Grieta (encabezados `h3` del HTML) detectados como entidad | **140 / 140** |
-| Cambios "antes ⇒ después" del PDF conservados en el JSON | **931 / 933** |
+| Cambios "antes ⇒ después" del PDF conservados en el JSON | **933 / 933** (2 recuperados de la capa de texto) |
 
-Los 2 cambios perdidos (Base Stats de un campeón en 26.19 y un cooldown en 26.21) no aparecen en la salida de Docling. Es una pérdida del propio parser, no de las reglas.
-
-**Errores conocidos que se dejan así:**
-- **26.19:** las armas de Aphelios quedan como entidades separadas.
-- **26.20:** "Scoreboard Cleanup" queda dentro de ITEMS.
+**Error conocido que se deja así:** en 26.20, "Scoreboard Cleanup" queda dentro de ITEMS. Solo afecta la etiqueta de sección. El detalle de cada decisión está en `docs/bitacora.md`.

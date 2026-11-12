@@ -128,11 +128,34 @@ Las entradas de una misma fase van numeradas (D = decisión, P = problema).
 - **Resultado:** 140/140 entidades y 931/933 cambios.
 - **Por qué:** da una métrica objetiva del parsing para la presentación, en lugar de revisar a ojo.
 
-### D-10 · Errores de parsing que se aceptan
-- **Contexto:** quedan tres errores menores:
-  - 2 cambios que Docling no extrae: Base Stats en 26.19 y un cooldown en 26.21.
-  - Las armas de Aphelios quedan como entidades propias en 26.19.
-  - "Scoreboard Cleanup" queda dentro de ITEMS en 26.20.
-- **Decisión:** dejarlos y documentarlos.
-- **Por qué:** corregirlos requiere reglas ad hoc para un solo caso. Ninguno afecta las queries que se planean, y sirven como ejemplos para el análisis de errores. Si alguna query de evaluación depende de ellos, se corrigen.
-- **Quién decidió:** Claude. Pendiente de confirmación de Santiago.
+### D-10 · Qué hacer con los tres errores restantes del parsing
+- **Contexto:** después de D-09 quedaban tres errores. En una primera versión se propuso dejarlos todos documentados como "menores". Al revisarlos en contexto, uno resultó grave:
+  - **Cambios perdidos (grave).** Docling no entregó 2 de los 933 cambios, y cada uno era *el único cambio* de su campeón: Draven en 26.19 (Attack Damage 62 ⇒ 64) y Darius en 26.21 (Q - Decimate, cooldown). Ambos quedaban solo con la cita del diseñador, sin ningún número, así que no se podría responder ninguna pregunta sobre ellos.
+  - **Armas de Aphelios (moderado).** Calibrum, Severum, etc. quedaban como entidades separadas en 26.19. Un chunk de "Calibrum" no diría que pertenece a Aphelios.
+  - **"Scoreboard Cleanup" (leve).** Queda dentro de ITEMS en 26.20. Solo cambia la etiqueta de sección; el contenido está bien.
+- **Decisión:** corregir los dos primeros y dejar documentado el tercero (ver P-10 y P-12).
+- **Por qué:** los dos primeros afectan lo que el sistema puede responder. El tercero no.
+- **Quién decidió:** Claude propuso; Santiago aprobó.
+- **Lección:** clasificar un error como "menor" por su número (2 de 933) fue un error. Hay que mirar qué información se pierde, no cuántas líneas.
+
+### P-10 · Recuperar los cambios que Docling omite
+- **Contexto:** ver D-10. El texto sí está en la capa de texto del PDF, pero Docling no lo entrega.
+- **Opciones:** reglas para esos dos casos; cambiar de parser; o una verificación general contra la capa de texto.
+- **Solución:** paso `recuperar_cambios()` en `parsear_corpus.py`. Para cada campeón que tiene cita del diseñador pero ningún "⇒", busca en el texto del PDF (pypdfium2) el tramo entre el final de su cita y el inicio de la cita de la siguiente entidad, y extrae de ahí los cambios. Los bloques recuperados quedan marcados con `"recuperado": "pdf-texto"`.
+- **Por qué:** es una regla general, no un parche para dos casos, y aprovecha que el PDF tiene dos representaciones del mismo contenido. Docling sigue siendo el parser principal (D-07), y la capa de texto actúa solo como red de seguridad.
+
+### P-11 · La recuperación generó falsos positivos
+- **Contexto:** la primera versión de P-10 se aplicaba a cualquier entidad con cita y sin "⇒". Las entidades narrativas (como "Council Vote" o "Art") cumplen esa condición sin que les falte nada. Además, cuando no encontraba bien la cita siguiente, el tramo abarcaba miles de caracteres. El resultado fueron 70 "recuperaciones" falsas que duplicaban contenido de Arena.
+- **Solución:** dos restricciones.
+  - Solo se recupera para nombres que están en la lista oficial de campeones.
+  - Solo si el tramo mide 600 caracteres o menos. Los casos reales miden menos de 100.
+- **Por qué:** la recuperación debe ser conservadora. Es preferible no recuperar algo a meter texto equivocado en el corpus. Con las restricciones recupera exactamente los 2 casos reales.
+
+### P-12 · Armas de Aphelios como subsecciones
+- **Solución:** lista cerrada `ARMAS_APHELIOS` (Calibrum, Severum, Gravitum, Infernum, Crescendum). Si aparecen dentro de la entidad Aphelios, se tratan como subsección, igual que una habilidad.
+- **Por qué:** son 5 nombres fijos del juego, así que una lista es más confiable que una heurística.
+
+### D-11 · Resultado final del parsing
+- **Validación:** 140/140 entidades y 933/933 cambios "⇒".
+- **Error conocido que se acepta:** "Scoreboard Cleanup" dentro de ITEMS (26.20).
+- **Observación pendiente:** en 26.19, la parte final de Arena (augments, "Guests of Honor") es la zona con la estructura más irregular. Los bugfixes generales quedan colgados de la última entidad ("Thresh"), porque Docling no entregó el encabezado "BUGFIXES & QOL CHANGES". El texto está completo, solo cambia la etiqueta. Se revisará si alguna query lo necesita.
