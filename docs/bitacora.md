@@ -186,3 +186,58 @@ Las opciones y sus tradeoffs se discutieron en un documento aparte, con ejemplos
 - **Decisión:** anteponer la ruta a cada chunk de D antes de calcular su embedding, por ejemplo `Patch 26.21 › CHAMPIONS › Darius › Q - Decimate`.
 - **Por qué:** el mismo campeón aparece en varios parches con texto casi idéntico (Locke está en 6), y el número de parche no está en el texto. Con el encabezado, BM25 y el retriever denso pueden distinguir el parche. Además, el encabezado le da contexto semántico a los chunks de una sola línea.
 - **Quién decidió:** Santiago, sobre la propuesta de Claude.
+
+### D-15 · La cita del diseñador va en un chunk propio ("Developer note")
+- **Contexto:** con chunking por habilidad (D-12), la cita del diseñador no pertenece a ninguna habilidad. Riot la pone al inicio de cada campeón. Hay 320 citas, con una mediana de 56 tokens.
+- **Opciones:**
+  - **(a)** Chunk propio.
+  - **(b)** Copiarla en cada chunk de habilidad del campeón.
+  - **(c)** Ponerla solo en el primer chunk de habilidad.
+- **Decisión:** (a). Encabezado del tipo `Patch 26.22 › CHAMPIONS › Locke › Developer note`.
+- **Por qué:** cada tipo de chunk tiene un solo propósito: las preguntas de "por qué" van a la nota y las de números a la habilidad. Con (b), la cita (56 tokens) dominaría el embedding de chunks de ~15 tokens, y los chunks de un mismo campeón quedarían casi idénticos. (c) es arbitraria.
+- **Quién decidió:** Santiago, sobre la propuesta de Claude.
+
+### D-16 · Contenido sin habilidad: un chunk por entidad
+- **Contexto:** 258 unidades no tienen habilidad: stats de items, descripciones de augments, textos de modos de juego.
+- **Decisión:** el chunk es la entidad completa, por ejemplo `Patch 26.21 › ITEMS › Hubris`. Si tampoco hay entidad (listas de bugfixes, introducciones de sección), el chunk es la sección o el grupo.
+- **Por qué:** es la extensión natural de D-12: se usa el nivel más fino que tiene el contenido.
+- **Quién decidió:** Santiago, sobre la propuesta de Claude.
+
+### D-17 · Unidades largas: partir en trozos de máximo 250 tokens
+- **Contexto:** 15 unidades pasan de 300 tokens, sobre todo listas de bugfixes (la mayor tiene 568).
+- **Decisión:** partirlas en trozos de máximo 250 tokens, cortando entre líneas y repitiendo el encabezado de contexto en cada trozo. Los trozos llevan sufijo `#1`, `#2`…
+- **Por qué:** mantiene los chunks en el mismo orden de magnitud que el resto, y el encabezado repetido evita que el trozo 2 pierda el contexto.
+- **Quién decidió:** Santiago, sobre la propuesta de Claude.
+
+### P-13 · Docling unió listas enteras en un solo párrafo
+- **Contexto:** al aplicar D-17 aparecieron chunks de hasta 581 tokens formados por una sola línea. En algunas secciones de modos de juego, Docling juntó varios elementos de una lista en un párrafo:
+  - todos los bugfixes de Classic en 26.17;
+  - el campeón "NEW Fiora" mezclado con el texto de Classic en 26.18;
+  - varios augments en uno ("Gold Arcane Axiom" en 26.21).
+- **Solución:** en el chunking, si una línea sola excede el máximo, se parte por oraciones. Queda un solo chunk de 278 tokens (una oración muy larga en 26.15), que se acepta.
+- **Por qué:** resuelve el tamaño sin tocar el parsing. **Limitación conocida:** en esos casos la jerarquía sigue mal, porque Fiora (26.18) y los augments unidos (26.21) no son entidades propias. Afecta solo secciones de Classic y ARAM: Mayhem. Si una query de evaluación depende de ellos, se corrige en el parser.
+
+### D-18 · Ground truth independiente del chunking (`unit_ids`)
+- **Contexto:** para comparar A contra D con Precision@k y Recall@k, el ground truth no puede apuntar a IDs de chunk, porque cada chunking tiene los suyos.
+- **Decisión:** se define la **unidad de contenido** como parche/sección/grupo/entidad/subsección, por ejemplo `26.21/CHAMPIONS/Darius/Q - Decimate`. Cada chunk guarda en `unit_ids` las unidades que contiene: en D, exactamente una; en A, todas las que aparecen en la ventana (8 de mediana). El ground truth se anota en unidades, y un chunk es relevante si contiene alguna unidad correcta.
+- **Por qué:** un solo ground truth sirve para cualquier chunking.
+
+### P-14 · El mapeo de A perdía unidades con líneas largas
+- **Contexto:** al principio, una unidad contaba como contenida en un chunk de A solo si alguna de sus líneas aparecía completa. Las líneas largas que la ventana corta a la mitad no aparecen completas en ningún chunk, así que 11 unidades quedaban sin chunk.
+- **Solución:** contar la unidad si el inicio o el final (60 caracteres) de alguna de sus líneas aparece en el chunk.
+- **Resultado:** las 1,124 unidades quedan cubiertas en A.
+
+### D-19 · Resultado del chunking
+| | Chunks | Tokens (mediana) | Mín – máx |
+|---|---|---|---|
+| D (habilidad + encabezado) | 1,149 | 57 | 15 – 278 |
+| A (fijo 512/50) | 151 | 512 | 83 – 512 |
+
+Tipos de chunk en D:
+
+| Tipo | Chunks |
+|---|---|
+| Habilidad o stats | 564 |
+| Nota del diseñador | 304 |
+| Entidad sin habilidad | 184 |
+| Sección | 97 |
