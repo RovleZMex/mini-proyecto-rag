@@ -13,7 +13,7 @@ data/processed/   # texto parseado y limpio (JSON + Markdown)
 eval/             # ground truth: 10 queries (incluye ≥2 trampa) y resultados
 src/              # pipeline: parsing, chunking, embeddings, retrieval, generación
 notebooks/        # experimentos y análisis
-docs/             # enunciado, diagramas y presentación
+docs/             # enunciado, bitácora de decisiones, diagramas y presentación
 ```
 
 ## Entregables
