@@ -159,3 +159,30 @@ Las entradas de una misma fase van numeradas (D = decisión, P = problema).
 - **Validación:** 140/140 entidades y 933/933 cambios "⇒".
 - **Error conocido que se acepta:** "Scoreboard Cleanup" dentro de ITEMS (26.20).
 - **Observación pendiente:** en 26.19, la parte final de Arena (augments, "Guests of Honor") es la zona con la estructura más irregular. Los bugfixes generales quedan colgados de la última entidad ("Thresh"), porque Docling no entregó el encabezado "BUGFIXES & QOL CHANGES". El texto está completo, solo cambia la etiqueta. Se revisará si alguna query lo necesita.
+
+---
+
+## Fase 3 · Chunking (12 nov 2026)
+
+Las opciones y sus tradeoffs se discutieron en un documento aparte, con ejemplos reales del corpus: A tamaño fijo, B recursivo, C por entidad, D por habilidad, E semántico, F jerárquico.
+
+### D-12 · Chunking principal: un chunk por habilidad o bloque de stats (opción D)
+- **Opciones:** C (un chunk por entidad: 564 chunks, mediana de 82 tokens) o D (un chunk por habilidad o Base Stats: 1,037 chunks, mediana de 38 tokens).
+- **Decisión:** D.
+- **Por qué:** es el más intuitivo y su granularidad encaja con las preguntas puntuales que esperamos, como "¿cuánto cooldown tiene ahora la Q de Darius?". Claude había propuesto C.
+- **Riesgos conocidos, a mitigar en la implementación:**
+  - La cita del diseñador no pertenece a ninguna habilidad, así que hay que decidir dónde va.
+  - Hay chunks muy pequeños: 238 tienen menos de 20 tokens.
+  - Una pregunta general ("¿qué cambió en Mel?") necesita varios chunks, lo que limita el Recall@k con k pequeño.
+- **Quién decidió:** Santiago.
+
+### D-13 · Línea base: tamaño fijo de 512 tokens con overlap de 50 (opción A)
+- **Decisión:** se implementa también A para comparar contra D.
+- **Por qué:** permite demostrar con números, y no solo argumentar, si el chunking estructural mejora la recuperación.
+- **Consecuencia:** el ground truth se anota con unidades independientes del chunking. Un chunk de A cuenta como relevante si contiene el texto de la unidad correcta.
+- **Quién decidió:** Santiago, sobre la propuesta de Claude.
+
+### D-14 · Encabezado de contexto en cada chunk
+- **Decisión:** anteponer la ruta a cada chunk de D antes de calcular su embedding, por ejemplo `Patch 26.21 › CHAMPIONS › Darius › Q - Decimate`.
+- **Por qué:** el mismo campeón aparece en varios parches con texto casi idéntico (Locke está en 6), y el número de parche no está en el texto. Con el encabezado, BM25 y el retriever denso pueden distinguir el parche. Además, el encabezado le da contexto semántico a los chunks de una sola línea.
+- **Quién decidió:** Santiago, sobre la propuesta de Claude.
