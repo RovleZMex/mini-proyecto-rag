@@ -7,3 +7,7 @@ venv/
 .DS_Store
 chroma_db/
 *.faiss
+
+# Corpus descargado (se regenera con scripts/descargar_corpus.py)
+data/raw/*
+!data/raw/.gitkeep
