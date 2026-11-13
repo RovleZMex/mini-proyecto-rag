@@ -353,3 +353,34 @@ Es la primera evidencia del problema anticipado en D-14: el retriever denso casi
 ### Implementación · Los retrievers (`src/retrievers.py`)
 - `DenseRetriever`, `BM25Retriever` y `HybridRetriever` comparten la interfaz `buscar(query, k=10) -> list[Resultado]`, con id, score, `unit_ids` y texto. Cada uno se instancia sobre "D" o "A", lo que da 4 combinaciones para la evaluación (más 2 si se mide el interruptor de cifras).
 - **Prueba rápida, ilustrativa:** en D, el híbrido pone el chunk correcto en el lugar 1 en las 4 preguntas, incluido Locke 26.22, donde BM25 solo lo dejaba en el lugar 2. En A, el denso falla 2 de 4 dentro del top-10. Latencia por query: Dense ≈ 0.4 s (incluye el embedding de la query en MPS), BM25 < 0.01 s, Hybrid ≈ 0.06 s una vez cargado el modelo.
+
+---
+
+## Fase 6 · Ground truth (12 nov 2026)
+
+### D-29 · Proceso del ground truth: Claude propone, Santiago elige y corrige
+- **Decisión:** Claude propone 16 candidatas (13 normales y 3 trampa) con respuesta ideal y unidades correctas. Santiago elige 10 (mínimo 2 trampa), corrige lo necesario y confirma las unidades. La revisión se hace en una página web con almacenamiento: lo que Santiago cambia queda guardado, y Claude lo lee de ahí para escribir `eval/ground_truth.json`.
+- **Por qué:** el enunciado pide definir el ground truth "manualmente". La revisión final y la elección son de Santiago. Proponer candidatas ahorra tiempo y asegura variedad de tipos.
+- **Quién decidió:** Santiago, sobre la propuesta de Claude.
+
+### Diseño de las candidatas (`eval/candidatas.json`)
+Cada candidata pone a prueba algo distinto del sistema:
+
+| Tipo | Qué prueba |
+|---|---|
+| Cambio numérico puntual (Darius Q, 26.21) | Lo básico. Además es un cambio recuperado de la capa de texto (P-10). |
+| Mismo campeón en varios parches (Locke Q, 26.22) | Si el retriever distingue el parche. |
+| "Por qué" + "qué" (Thresh, 26.22) | La nota del diseñador junto con los cambios numéricos. |
+| Sin parche en la pregunta (Draven) | El sistema tiene que encontrar el parche por sí solo. |
+| Pregunta general (Mel, 26.22) | 7 unidades: Recall@10 con chunking por habilidad (riesgo anotado en D-12). |
+| Comparación entre parches (Locke W, 26.21 y 26.22) | Recuperar dos chunks de parches distintos. |
+| Item (Doran's Bow) | Contenido fuera de campeones. |
+| Modos de juego (Classic, ARAM: Mayhem, Arena) | Secciones con la estructura más irregular. |
+| Sistemas y eventos (replays, TFT, Hall of Legends) | Contenido que no es de balance. |
+
+Hay 3 trampas, todas de tipos distintos:
+- **Parche que no existe:** 26.23.
+- **Campeón sin cambios:** Teemo en la Grieta en 26.22. Solo aparece en Arena.
+- **Dato que las notas no dan:** win rate de Locke. Hay contexto relacionado, pero no el dato.
+
+**Verificación:** todas las unidades citadas existen en el índice. Al redactar la candidata de Classic 26.21, la primera idea era "Hecarim y Lucian"; revisando la nota de la sección resultaron ser cuatro campeones nuevos (también Mordekaiser y Yorick).

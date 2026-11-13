@@ -1,0 +1,223 @@
+[
+ {
+  "order": 1,
+  "type": "Cambio numérico puntual",
+  "query": "How did Darius's Q cooldown change in patch 26.21?",
+  "answer": "In patch 26.21, Darius's Q (Decimate) cooldown changed from 9 / 8 / 7 / 6 / 5s to 9 / 8 / 7 / 6 / 4s: only the rank-5 cooldown was reduced, by one second. Riot buffed him so he can swing his axe more often in sustained fights.",
+  "units": [
+   "26.21/CHAMPIONS/Darius/Q - Decimate"
+  ],
+  "trap": false,
+  "selected": false,
+  "notes": "",
+  "claude_note": "Pregunta directa. Ojo: este cambio lo recuperamos de la capa de texto del PDF (Docling lo había perdido)."
+ },
+ {
+  "order": 2,
+  "type": "Mismo campeón en varios parches",
+  "query": "What changes did Locke's Q - Ritual Nails receive in patch 26.22?",
+  "answer": "In patch 26.22, Locke's Q (Ritual Nails) was nerfed: Stack Bonus Damage went from 18 / 26 / 34 / 42 / 50 to 15 / 22 / 29 / 36 / 43, and Maximum Stack Damage from 75.6 / 109.2 / 142.8 / 176.4 / 210 to 63 / 92.4 / 121.8 / 151.2 / 180.6.",
+  "units": [
+   "26.22/CHAMPIONS/Locke/Q - Ritual Nails"
+  ],
+  "trap": false,
+  "selected": false,
+  "notes": "",
+  "claude_note": "El caso difícil: Locke Q también cambió en 26.15 y 26.21. Pone a prueba si el retriever distingue el parche."
+ },
+ {
+  "order": 3,
+  "type": "Por qué + qué",
+  "query": "Why did Riot nerf Thresh in patch 26.22, and what was changed?",
+  "answer": "Despite a previous nerf, Thresh remained at the very top of the support pecking order for top-tier players, so Riot nerfed him again in 26.22: base Attack Damage went from 56 to 54, and R (The Box) damage from 250 / 400 / 550 (+100% AP) to 200 / 350 / 500 (+100% AP).",
+  "units": [
+   "26.22/CHAMPIONS/Thresh/Developer note",
+   "26.22/CHAMPIONS/Thresh/Base Stats",
+   "26.22/CHAMPIONS/Thresh/R - The Box"
+  ],
+  "trap": false,
+  "selected": false,
+  "notes": "",
+  "claude_note": "Mezcla nota del diseñador con cambios numéricos."
+ },
+ {
+  "order": 4,
+  "type": "Sin parche en la pregunta",
+  "query": "In which patch did Draven's base Attack Damage change, and why?",
+  "answer": "Draven's base Attack Damage went from 62 to 64 in patch 26.19. Since all bot laners received significantly more gold income from role quests, Draven's gold advantage from Adoration stacks had lost impact, so Riot buffed his early-game damage.",
+  "units": [
+   "26.19/CHAMPIONS/Draven/Developer note",
+   "26.19/CHAMPIONS/Draven/Base Stats"
+  ],
+  "trap": false,
+  "selected": false,
+  "notes": "",
+  "claude_note": "El sistema tiene que encontrar el parche por sí solo. También es un cambio recuperado de la capa de texto del PDF."
+ },
+ {
+  "order": 5,
+  "type": "Pregunta general de un campeón",
+  "query": "What changed for Mel in patch 26.22?",
+  "answer": "Mel received a midscope update in 26.22 that moves power from early game to scaling. Base stats changed (e.g. Health 640 + 99/level → 590 + 107/level). Her passive's bonus damage per bolt at low levels was lowered (8 → 4 minimum). Q (Radiant Volley) first-hit damage was cut to 60 (+25% AP) while multi-hit damage rose, and it now refunds cooldown when it hits a champion. W (Rebuttal) was reworked into a nova that destroys enemy projectiles and shields, grants move speed and retaliates against destroyed missiles. E (Solar Snare) root duration now scales with distance. R (Golden Eclipse) cooldown went from 120 / 100 / 80 to 120 / 90 / 60 seconds.",
+  "units": [
+   "26.22/CHAMPIONS/Mel/Developer note",
+   "26.22/CHAMPIONS/Mel/Base Stats",
+   "26.22/CHAMPIONS/Mel/Passive - Searing Brilliance",
+   "26.22/CHAMPIONS/Mel/Q - Radiant Volley",
+   "26.22/CHAMPIONS/Mel/W - Rebuttal - Reworked",
+   "26.22/CHAMPIONS/Mel/E - Solar Snare",
+   "26.22/CHAMPIONS/Mel/R - Golden Eclipse"
+  ],
+  "trap": false,
+  "selected": false,
+  "notes": "",
+  "claude_note": "7 unidades: pone a prueba el Recall@10 con chunking por habilidad. La respuesta ideal resume; ajústala al nivel de detalle que quieras exigir."
+ },
+ {
+  "order": 6,
+  "type": "Comparación entre parches",
+  "query": "How did Locke's W - Soul Ignition change in patches 26.21 and 26.22?",
+  "answer": "In 26.21, Soul Ignition's mana cost rose from 50 / 55 / 60 / 65 / 70 to 60 / 65 / 70 / 75 / 80, the grey health stored based on current health went from 40 - 200 to 20 - 200, and the current health store went from 150 - 450 to 100 - 500 (+60% AP). In 26.22, its duration was reduced from 6s to 5s.",
+  "units": [
+   "26.21/CHAMPIONS/Locke/W - Soul Ignition",
+   "26.22/CHAMPIONS/Locke/W - Soul Ignition"
+  ],
+  "trap": false,
+  "selected": false,
+  "notes": "",
+  "claude_note": "Necesita dos chunks de parches distintos. Locke W también cambió en 26.15 (no se pregunta)."
+ },
+ {
+  "order": 7,
+  "type": "Item",
+  "query": "What did patch 26.22 change about Doran's Bow, and why?",
+  "answer": "Doran's Bow's Attack Damage was reduced from 8 to 7 in patch 26.22. Riot considered it slightly but clearly too strong: marksmen expected to lean towards Doran's Blade were almost exclusively buying Doran's Bow.",
+  "units": [
+   "26.22/ITEMS/Doran's Bow/Developer note",
+   "26.22/ITEMS/Doran's Bow"
+  ],
+  "trap": false,
+  "selected": false,
+  "notes": "",
+  "claude_note": ""
+ },
+ {
+  "order": 8,
+  "type": "Modo de juego (Classic)",
+  "query": "Which champions were added to League Classic in patch 26.21?",
+  "answer": "Patch 26.21 brought four classic-era champions to League Classic: Mordekaiser (with his 2010-2015 kit), Yorick, Hecarim and Lucian.",
+  "units": [
+   "26.21/CLASSIC/Developer note",
+   "26.21/CLASSIC/Champions/Mordekaiser/Developer note",
+   "26.21/CLASSIC/Champions/Yorick/Developer note",
+   "26.21/CLASSIC/Champions/Hecarim/Developer note",
+   "26.21/CLASSIC/Champions/Lucian/Developer note"
+  ],
+  "trap": false,
+  "selected": false,
+  "notes": "",
+  "claude_note": "Ojo: en Classic 26.21 también aparecen Aatrox, Irelia, Karma y Kassadin, pero con ajustes de balance, no como nuevos. Buena prueba de precisión."
+ },
+ {
+  "order": 9,
+  "type": "Modo de juego (ARAM: Mayhem)",
+  "query": "What does the RISE! augment do after the ARAM: Mayhem changes in patch 26.22?",
+  "answer": "In patch 26.22, RISE! got a new effect: killing enemy champions with your Ultimate resets its cooldown, up to 3 times.",
+  "units": [
+   "26.22/ARAM: MAYHEM/Augments/RISE!"
+  ],
+  "trap": false,
+  "selected": false,
+  "notes": "",
+  "claude_note": "Pregunta de nicho sobre un augment, fuera de la Grieta."
+ },
+ {
+  "order": 10,
+  "type": "Modo de juego (Arena)",
+  "query": "How was Bel'Veth changed in Arena in patch 26.21?",
+  "answer": "In Arena in patch 26.21, Bel'Veth was nerfed: her Q (Void Surge) Attack Damage ratio went from 105% to 95%, and her R (Endless Banquet) bonus Attack Damage ratio per stack from 1% to 0.5%.",
+  "units": [
+   "26.21/ARENA/Champions/Bel'Veth/Q - Void Surge",
+   "26.21/ARENA/Champions/Bel'Veth/R - Endless Banquet"
+  ],
+  "trap": false,
+  "selected": false,
+  "notes": "",
+  "claude_note": "Bel'Veth también tuvo un gameplay update grande en la Grieta (26.15): el retriever no debe confundir modo ni parche."
+ },
+ {
+  "order": 11,
+  "type": "Sistema (no es balance)",
+  "query": "What limit on replay downloads was introduced in patch 26.21, and why?",
+  "answer": "Starting in patch 26.21, replay downloads are limited to 10 per hour. Players can still download their own replays and those of friends and other players. The limit prevents large-scale abuse by bad actors using apps to scrape thousands of replays; a time-based limit was chosen so creators can still make content.",
+  "units": [
+   "26.21/REPLAY DOWNLOAD LIMITS/Developer note",
+   "26.21/REPLAY DOWNLOAD LIMITS"
+  ],
+  "trap": false,
+  "selected": false,
+  "notes": "",
+  "claude_note": ""
+ },
+ {
+  "order": 12,
+  "type": "Sistema (fechas)",
+  "query": "When does TFT move to its own standalone client, and what happens to TFT cosmetics in League?",
+  "answer": "TFT moves to its own standalone client starting November 4th, 2026. Existing TFT cosmetics remain usable in League; the first TFT-only Little Legends arrive on December 1st, and December 15th marks the full separation of TFT cosmetics, including emotes and icons.",
+  "units": [
+   "26.22/TFT STANDALONE CLIENT/Developer note",
+   "26.22/TFT STANDALONE CLIENT"
+  ],
+  "trap": false,
+  "selected": false,
+  "notes": "",
+  "claude_note": "Pregunta sin número de parche y con fechas."
+ },
+ {
+  "order": 13,
+  "type": "Evento",
+  "query": "Who was inducted into the Hall of Legends in patch 26.18?",
+  "answer": "Rasmus \"Caps\" Winther was inducted as the third member of the Hall of Legends, becoming the first Western League of Legends pro to earn the distinction. His Hall of Legends pass includes rewards such as the Risen Legend Orianna skin.",
+  "units": [
+   "26.18/HALL OF LEGENDS/Developer note",
+   "26.18/HALL OF LEGENDS"
+  ],
+  "trap": false,
+  "selected": false,
+  "notes": "",
+  "claude_note": ""
+ },
+ {
+  "order": 14,
+  "type": "TRAMPA · parche que no existe",
+  "query": "What are the champion balance changes in patch 26.23?",
+  "answer": "The available patch notes only cover patches 26.15 to 26.22, so there is no information about the balance changes in patch 26.23.",
+  "units": [],
+  "trap": true,
+  "selected": false,
+  "notes": "",
+  "claude_note": "El 26.23 todavía no sale. El sistema debe decir que no tiene la información."
+ },
+ {
+  "order": 15,
+  "type": "TRAMPA · campeón sin cambios",
+  "query": "What changes did Teemo receive on Summoner's Rift in patch 26.22?",
+  "answer": "The patch 26.22 notes do not list any changes to Teemo. (In this corpus, Teemo only appears in Arena changes in patches 26.17 and 26.21.)",
+  "units": [],
+  "trap": true,
+  "selected": false,
+  "notes": "",
+  "claude_note": "Plausible pero falso: Teemo no cambió en 26.22. El riesgo es que el sistema invente cambios o use los de Arena."
+ },
+ {
+  "order": 16,
+  "type": "TRAMPA · dato que las notas no dan",
+  "query": "What is Locke's win rate in patch 26.22?",
+  "answer": "The patch notes do not report win rates. They only state that Riot considers Locke still clearly too strong for players who have mastered him, especially in the early game, which is why his Q and W were nerfed in 26.22.",
+  "units": [],
+  "trap": true,
+  "selected": false,
+  "notes": "",
+  "claude_note": "Hay contexto relacionado (Locke 26.22) pero no el dato pedido. El riesgo es que el modelo invente un porcentaje."
+ }
+]
