@@ -472,3 +472,10 @@ Hay 3 trampas, todas de tipos distintos:
 - **q08 (campeones nuevos en Classic):** R@10 de 0.20 o menos en todas. La pregunta dice "added" y las notas dicen "is back" o "four more ghosts". Además, hay notas de Classic muy parecidas en 26.16, 26.17 y 26.18.
 - **q02 (Locke Q):** el ruido sí habla de Locke, pero de otro parche o modo: el sonido de su Q en 26.16 y su daño en ARAM en 26.20.
 - **q05 (Mel):** una pregunta general se parece a la nota del diseñador más que a los chunks de números, así que Dense trae solo 3 de 7 unidades.
+
+### D-36 · Retriever para la generación: Por habilidad · Hybrid sin cifras
+- **Opciones:** Hybrid estándar o Hybrid sin cifras. Las dos tienen el mismo Recall@10 (0.84) y el mismo MRR (0.75).
+- **Decisión:** Hybrid sin cifras: BM25 ignora los valores numéricos al tokenizar, salvo el número de parche. El texto que recibe el LLM y el retriever denso no cambian.
+- **Por qué:** empata o gana en todas las métricas promedio. Mejora el Recall@3 (0.59 → 0.69) y sube la q02 (Locke Q) del lugar 4 al 2, el caso que motivó el ajuste (los valores alargaban el chunk correcto y BM25 lo penalizaba por longitud).
+- **Riesgo conocido:** una pregunta que busque por un valor ("which ability went from 6s to 5s?") pierde el apoyo léxico. Ninguna pregunta del ground truth es de ese tipo.
+- **Quién decidió:** Santiago, sobre la propuesta de Claude, después de pedir que se le explicara qué se quitaba y dónde.
