@@ -495,3 +495,13 @@ Hay 3 trampas, todas de tipos distintos:
 - **Datos (noviembre 2026):** USD 0.10 por millón de tokens de entrada y 0.50 de salida. 12 preguntas con ~10 chunks de contexto cuestan menos de un centavo.
 - **Por qué:** modelo rápido y barato, suficiente para responder a partir de un contexto dado.
 - **Quién decidió:** Santiago.
+
+### D-39 · Juez de RAGAS: Claude Sonnet 5.5
+- **Decisión:** las métricas de RAGAS (faithfulness, answer relevancy, context precision/recall, answer correctness) las calcula `claude-sonnet-5-5` como juez.
+- **Por qué:** que Haiku, el modelo que genera, se califique a sí mismo es una evaluación débil. Un juez más capaz es la práctica habitual, y con 12 preguntas el costo es de centavos.
+- **Quién decidió:** Santiago.
+
+### D-40 · Entregables: presentación y repositorio
+- **Contexto:** el enunciado dice "La presentación deberá cubrir los 4 aspectos" (arquitectura con código clave, documentos y procesamiento, evaluación y resultados, visión de producción). No pide notebooks.
+- **Decisión:** el entregable es la presentación más este repositorio. Al final se hará una demo sencilla (un notebook o una página) para correr el sistema el día de la presentación.
+- **Quién decidió:** Santiago.
