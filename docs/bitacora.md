@@ -531,3 +531,43 @@ Retriever: por habilidad · Hybrid sin cifras, top-10. 12 preguntas, USD 0.004 e
   - **q08:** nombra a Lucian, infiere que hubo más campeones de las Shadow Isles sin inventar nombres, y no cuenta a Mordekaiser porque su fragmento no dice que sea nuevo.
 - **q02:** usa solo el chunk de 26.22 y descarta los de Locke de otros parches que venían en el contexto.
 - **Observación:** cuando el retriever falla, el modelo lo dice en vez de alucinar. Falta confirmarlo con la faithfulness de RAGAS.
+
+---
+
+## Fase 9 · Evaluación de la generación con RAGAS (12 nov 2026)
+
+### D-42 · Métricas de RAGAS y tratamiento de las trampas
+- **Métricas:** sobre las 10 preguntas normales, con Claude Sonnet 5.5 como juez (D-39) y Qwen3-Embedding-0.6B como embeddings:
+  - **faithfulness:** si la respuesta está respaldada por los chunks.
+  - **answer_relevancy:** si contesta la pregunta.
+  - **context_precision:** si los chunks relevantes salieron arriba, comparando con la respuesta ideal.
+  - **context_recall:** si los chunks traen todo lo que dice la respuesta ideal.
+  - **answer_correctness:** si coincide con la respuesta ideal.
+- **Trampas (q11, q12):** se miden con la tasa de rechazo correcto, detectada por la frase fija del prompt (D-41). También se revisa que ninguna pregunta normal se rechace por error.
+- **Por qué:** las métricas que comparan contra el contexto o contra una respuesta ideal no aplican bien a una respuesta que es solo la negativa.
+- **Quién decidió:** Santiago aprobó la propuesta de Claude.
+
+### P-17 · RAGAS 0.4.3 incompatible con las versiones actuales de LangChain y del SDK de Anthropic
+- **Problemas, en el orden en que aparecieron:**
+  1. `ragas` importa `langchain_community.chat_models.vertexai`, que `langchain-community` 0.4.2 ya no trae. **Solución:** fijar `langchain-community==0.4.1`.
+  2. RAGAS se conecta a Anthropic a través de `instructor`, que envía `temperature`. El SDK actual de Anthropic (2.8) ya no acepta ese parámetro, porque la API lo retiró. Además, `instructor` obtiene salidas estructuradas forzando una herramienta, y Sonnet 5.5 rechaza ese modo.
+- **Solución del segundo punto:** un adaptador propio (`src/juez.py`), una subclase de la interfaz de LLM de RAGAS que llama a Sonnet con las salidas estructuradas nativas de la API (`messages.parse` con el modelo Pydantic que pide cada métrica). Otra subclase conecta los embeddings de Qwen3.
+- **Por qué:** evita depender de dos capas de librerías desfasadas, y son unas 40 líneas fáciles de mostrar. Se verificó con una pregunta antes de correr la evaluación completa.
+
+### Resultados de RAGAS (`eval/resultados/ragas.json`)
+Juez: Claude Sonnet 5.5, 190 llamadas, USD 1.14.
+
+| Métrica | Promedio |
+|---|---|
+| faithfulness | **0.971** |
+| answer_relevancy | 0.921 |
+| context_precision | 0.758 |
+| context_recall | 0.816 |
+| answer_correctness | 0.680 |
+
+- **Trampas:** 2 de 2 rechazadas. Ningún rechazo indebido en las preguntas normales.
+- **Faithfulness casi perfecta:** Haiku no inventó datos del juego. Los dos descuentos se revisaron afirmación por afirmación:
+  - **q02 (0.89):** error real pero menor. Haiku dijo que el chunk "26.22 › OVERVIEW" mencionaba a Locke, y ese chunk no lo menciona (la mención está en otro chunk, la nota del diseñador de la introducción). Es un error al describir un fragmento, no un dato inventado.
+  - **q08 (0.82):** limitación de la métrica. Las afirmaciones descontadas son sobre lo que *falta* ("falta la parte de los otros campeones", "no puedo listar a Mordekaiser"). El juez no puede verificarlas contra el contexto y las marca como no respaldadas, aunque son la conducta correcta pedida por la regla 5 del prompt.
+- **Answer correctness baja donde falló el retriever:** q06 0.29 (falta la W de 26.21), q08 0.36 (solo Lucian), q05 0.51 (5 de 7 partes). Haiku respondió con honestidad lo que tenía, pero la respuesta queda incompleta frente a la ideal. Confirma que el cuello de botella es el retrieval, no la generación.
+- **La métrica también castiga lo que sobra:** answer_correctness baja en respuestas correctas que agregan aclaraciones sobre lo que no está (q02 0.64). Es una propiedad de la métrica a mencionar en la presentación.

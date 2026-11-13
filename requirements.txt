@@ -9,3 +9,5 @@ umap-learn
 nltk
 anthropic
 python-dotenv
+ragas==0.4.3
+langchain-community==0.4.1  # 0.4.2 quita un módulo que ragas 0.4.3 importa (P-17)
