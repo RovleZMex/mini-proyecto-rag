@@ -1,27 +1,27 @@
 <section id="deployment">
-<p class="eyebrow">4 · Visión de producción</p>
-<h2>Deployment: dos servicios con ritmos distintos</h2>
-<div class="row">
-<div class="card">
-<h3>Ingesta (por lotes)</h3>
-<p class="label">Se dispara cada vez que sale un parche, cada dos semanas</p>
-<ul style="font-size:26px;">
+<h2>En producción, la ingesta y la consulta son servicios separados</h2>
+<div class="dep">
+<div class="dep-col">
+<h3>Ingesta, por lotes</h3>
+<p class="small">Se dispara cada vez que sale un parche, cada dos semanas</p>
+<ul>
 <li>Descarga, parsing con Docling y chunking</li>
 <li>Validación automática: entidades y cambios contra el HTML</li>
 <li>Embeddings e índice nuevo; se publica solo si la validación pasa</li>
 </ul>
 </div>
-<div class="card">
-<h3>Consulta (en línea)</h3>
-<p class="label">Una API pequeña en un contenedor</p>
-<ul style="font-size:26px;">
+<div class="dep-mid"><p class="small">índice</p><x-shape kind="arrow-right" class="arrow"></x-shape></div>
+<div class="dep-col">
+<h3>Consulta, en línea</h3>
+<p class="small">Una API pequeña en un contenedor</p>
+<ul>
 <li>Recibe la pregunta, corre Dense + BM25 y la fusión RRF</li>
 <li>Llama al LLM con los 10 chunks y devuelve la respuesta con citas</li>
 <li>Base vectorial en modo servidor o administrada</li>
 </ul>
 </div>
 </div>
-<p class="note">Separar las fases permite que la ingesta sea lenta y revisable sin afectar la latencia de las consultas. La validación del parsing pasa de ser un experimento a ser una compuerta del proceso.</p>
-<div class="footer"><p>Mini-proyecto RAG · PLN</p><p class="pg"></p></div>
+<p class="note">Así la ingesta puede ser lenta y revisable sin afectar la latencia de las consultas. La validación del parsing pasa de ser un experimento a ser una compuerta del proceso.</p>
+<div class="footer"><p>4 · Visión de producción</p><p class="pg"></p></div>
 <aside>La ingesta no necesita ser rápida: un parche nuevo cada dos semanas. Lo que sí necesita es no publicar un índice roto; por eso la validación que hicimos a mano, 140 de 140 entidades y 933 de 933 cambios, se vuelve una prueba automática antes de publicar. La consulta es un servicio sin estado: el modelo de embeddings y BM25 caben en memoria, y el LLM es una llamada a una API.</aside>
 </section>

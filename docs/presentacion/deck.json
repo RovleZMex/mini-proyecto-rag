@@ -4,7 +4,7 @@
   "lists": "css",
   "format": {"v": 1, "shared": ["project/deck.css"]},
   "title": "RAG sobre notas de parche de LoL",
-  "order": ["cover", "agenda", "corpus", "pipeline", "herramientas", "codigo-retrieval", "codigo-generacion", "parsing-retos", "parsing-validacion", "chunking", "ground-truth", "metricas", "retrieval-tabla", "retrieval-preguntas", "errores", "ragas", "hallazgo", "deployment", "llm", "escala", "conclusiones", "cierre"],
+  "order": ["cover", "agenda", "corpus", "pipeline", "herramientas", "codigo-retrieval", "codigo-generacion", "parsing-retos", "parsing-validacion", "chunking", "ground-truth", "metricas", "retrieval-tabla", "retrieval-grafica", "retrieval-preguntas", "errores", "ragas", "hallazgo", "deployment", "llm", "escala", "conclusiones", "cierre"],
   "sections": {
     "s0": {"description": "Portada y agenda.", "start": "cover"},
     "s1": {"description": "Arquitectura RAG: corpus, pipeline, herramientas y código clave.", "start": "corpus"},

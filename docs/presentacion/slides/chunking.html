@@ -1,28 +1,27 @@
 <section id="chunking">
-<p class="eyebrow">2 · Documentos y procesamiento</p>
-<h2>Chunking: por habilidad, con la línea base de tamaño fijo</h2>
-<div class="row" style="align-items:stretch;">
-<div class="card">
-<h3>Por habilidad (principal)</h3>
-<p class="label">1,149 chunks · mediana de 57 tokens</p>
-<div class="code" style="font-size:22px; padding:16px 20px;">
+<h2>Un chunk por habilidad, con el parche en el encabezado</h2>
+<div class="row">
+<div style="display:flex; flex-direction:column; gap:16px; width:880px; flex:none;">
+<h3>Por habilidad · estrategia principal</h3>
+<div class="stat"><p class="stat-n">1,149</p><p class="stat-l">chunks · mediana de 57 tokens</p></div>
+<div class="sample">
 <p><span class="k">Patch 26.21 › CHAMPIONS › Darius › Q - Decimate</span></p>
 <p>Cooldown: 9 / 8 / 7 / 6 / 5s ⇒ 9 / 8 / 7 / 6 / 4s</p>
 </div>
-<p>Un chunk por habilidad o bloque de stats. La nota del diseñador va en un chunk propio. El encabezado lleva el parche, que el texto no menciona.</p>
+<p class="sec">Un chunk por habilidad o bloque de stats; la nota del diseñador va en un chunk propio. El encabezado lleva el parche, que el texto no menciona.</p>
 </div>
-<div class="card">
-<h3>Tamaño fijo (línea base)</h3>
-<p class="label">151 chunks · 512 tokens, overlap de 50</p>
-<div class="code" style="font-size:22px; padding:16px 20px;">
+<div class="col">
+<h3>Tamaño fijo · línea base</h3>
+<div class="stat"><p class="stat-n2">151</p><p class="stat-l">chunks · 512 tokens, overlap de 50</p></div>
+<div class="sample">
 <p>…he has some more space to be better…</p>
 <p>##### R - Missile Barrage <span class="c">← ¿de quién?</span></p>
 <p>… #### Kayle … #### Locke … #### Maokai</p>
 </div>
-<p>Corta sin mirar la estructura: mezcla 3 o 4 campeones por chunk y deja habilidades sin el nombre del campeón.</p>
+<p class="sec">Corta sin mirar la estructura: mezcla 3 o 4 campeones por chunk y deja habilidades sin el nombre del campeón.</p>
 </div>
 </div>
-<p class="note">También se evaluaron: recursivo por encabezados, por entidad, semántico y jerárquico. El ground truth se anota por <b>unidad de contenido</b> (parche/sección/entidad/habilidad), así sirve para comparar ambos chunkings.</p>
-<div class="footer"><p>Mini-proyecto RAG · PLN</p><p class="pg"></p></div>
-<aside>La elección del chunking por habilidad fue mía como responsable del proyecto, por su granularidad; la alternativa propuesta era un chunk por campeón. Sus riesgos: chunks muy pequeños y preguntas generales que necesitan varios chunks. El encabezado de contexto es la pieza clave: sin él, el chunk de la Q de Locke en 26.21 y en 26.22 son casi idénticos. El ejemplo de la derecha es un chunk real de tamaño fijo del parche 26.22.</aside>
+<p class="note">También se evaluaron: recursivo por encabezados, por entidad, semántico y jerárquico.</p>
+<div class="footer"><p>2 · Documentos y procesamiento</p><p class="pg"></p></div>
+<aside>Elegí el chunking por habilidad por su granularidad; la alternativa considerada era un chunk por campeón. Sus riesgos: chunks muy pequeños y preguntas generales que necesitan varios chunks. El encabezado de contexto es la pieza clave: sin él, el chunk de la Q de Locke en 26.21 y en 26.22 son casi idénticos. El ejemplo de la derecha es un chunk real de tamaño fijo del parche 26.22. El ground truth se anota por unidad de contenido (parche/sección/entidad/habilidad), así sirve para comparar ambos chunkings; eso se ve en la siguiente diapositiva.</aside>
 </section>

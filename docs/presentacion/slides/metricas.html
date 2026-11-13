@@ -1,12 +1,23 @@
-<section id="metricas" class="alt">
-<p class="eyebrow">3 · Evaluación y resultados</p>
-<h2>Cómo se miden Precision@k y Recall@k</h2>
-<div class="row">
-<div class="card"><h3>Precision@k</h3><p>Chunks relevantes en los top-k, entre k. Un chunk es relevante si contiene al menos una unidad correcta.</p><p class="label">Mide cuánto ruido le llega al LLM.</p></div>
-<div class="card"><h3>Recall@k</h3><p>Unidades relevantes cubiertas por los top-k, entre las unidades relevantes de la pregunta.</p><p class="label">Mide si la información necesaria llegó. Se cuenta sobre unidades para comparar ambos chunkings.</p></div>
-<div class="card"><h3>MRR</h3><p>Promedio de 1 / posición del primer chunk relevante.</p><p class="label">Resume qué tan arriba sale la respuesta, sin depender de k.</p></div>
+<section id="metricas">
+<h2>Precision@k cuenta chunks; Recall@k cuenta unidades de contenido</h2>
+<div class="defs">
+<div class="def">
+<p class="def-name">Precision@k</p>
+<div class="def-f"><div class="frac"><p class="fr-under">chunks relevantes en los top-k</p><p class="fr">k</p></div></div>
+<p class="def-m">Cuánto ruido le llega al LLM. Es relevante el chunk con al menos una unidad correcta.</p>
 </div>
-<p class="note">Se reporta k = 1, 3, 5 y 10 sobre las 10 preguntas normales; las trampas se evalúan en la generación. Dos sesgos: con una sola unidad relevante, P@10 no puede pasar de 0.10 en el chunking por habilidad, y el tamaño fijo cuenta como relevante un chunk aunque traiga otras 7 unidades ajenas.</p>
-<div class="footer"><p>Mini-proyecto RAG · PLN</p><p class="pg"></p></div>
-<aside>Con 10 preguntas, una sola pregunta mueve cualquier promedio en 0.10. Por eso el análisis pregunta por pregunta pesa tanto como la tabla. La búsqueda densa es exacta: con la búsqueda aproximada de Chroma, los resultados cambiaban entre corridas.</aside>
+<div class="def">
+<p class="def-name">Recall@k</p>
+<div class="def-f"><div class="frac"><p class="fr-under">unidades relevantes cubiertas por los top-k</p><p class="fr">unidades relevantes de la pregunta</p></div></div>
+<p class="def-m">Si llegó la información necesaria. Contar unidades permite comparar ambos chunkings.</p>
+</div>
+<div class="def">
+<p class="def-name">MRR</p>
+<div class="def-f"><p class="fr-pre">promedio de</p><div class="frac"><p class="fr">1</p><p class="fr-over">posición del primer chunk relevante</p></div></div>
+<p class="def-m">Qué tan arriba sale la respuesta, sin depender de k.</p>
+</div>
+</div>
+<p class="note">Se reporta k = 1, 3, 5 y 10 sobre las 10 preguntas normales; las trampas se evalúan en la generación. Con una sola unidad relevante, P@10 no puede pasar de 0.10 en el chunking por habilidad.</p>
+<div class="footer"><p>3 · Evaluación y resultados</p><p class="pg"></p></div>
+<aside>Dos sesgos de estas métricas: con una sola unidad relevante, P@10 no puede pasar de 0.10 en el chunking por habilidad, y el tamaño fijo cuenta como relevante un chunk aunque traiga otras 7 unidades ajenas. Con 10 preguntas, una sola pregunta mueve cualquier promedio en 0.10. Por eso el análisis pregunta por pregunta pesa tanto como la tabla. La búsqueda densa es exacta: con la búsqueda aproximada de Chroma, los resultados cambiaban entre corridas.</aside>
 </section>

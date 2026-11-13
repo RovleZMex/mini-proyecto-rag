@@ -1,30 +1,34 @@
 <section id="pipeline">
-<p class="eyebrow">1 · Arquitectura</p>
-<h2>El pipeline, en dos fases</h2>
-<p class="small" style="margin-top:8px;">INDEXADO · una vez por parche</p>
+<h2>Indexado una vez por parche, consulta por cada pregunta</h2>
+<div class="band">
+<p class="flow-label"><b>Indexado</b> · una vez por parche</p>
 <div class="flow">
-<div class="step"><h3>Descarga</h3><p>Playwright imprime la página a PDF</p></div>
+<div class="step"><h3 class="step-t">Descarga</h3><p class="step-d">Playwright imprime la página a PDF</p></div>
 <x-shape kind="arrow-right" class="arrow"></x-shape>
-<div class="step"><h3>Parsing</h3><p>Docling + reglas de jerarquía</p></div>
+<div class="step"><h3 class="step-t">Parsing</h3><p class="step-d">Docling + reglas de jerarquía</p></div>
 <x-shape kind="arrow-right" class="arrow"></x-shape>
-<div class="step"><h3>Chunking</h3><p>Uno por habilidad, con encabezado</p></div>
+<div class="step"><h3 class="step-t">Chunking</h3><p class="step-d">Uno por habilidad, con encabezado</p></div>
 <x-shape kind="arrow-right" class="arrow"></x-shape>
-<div class="step"><h3>Embeddings</h3><p>Modelo Qwen3 (0.6B), local</p></div>
+<div class="step"><h3 class="step-t">Embeddings</h3><p class="step-d">Modelo Qwen3 (0.6B), local</p></div>
 <x-shape kind="arrow-right" class="arrow"></x-shape>
-<div class="step"><h3>Índices</h3><p>Chroma (vectores) y BM25</p></div>
+<div class="step"><h3 class="step-t">Índices</h3><p class="step-d">Chroma (vectores) y BM25</p></div>
 </div>
-<p class="small" style="margin-top:24px;">CONSULTA · por cada pregunta</p>
+</div>
+<div class="band">
+<p class="flow-label"><b>Consulta</b> · por cada pregunta</p>
 <div class="flow">
-<div class="step"><h3>Pregunta</h3><p>En inglés, como el corpus</p></div>
+<div class="step"><h3 class="step-t">Pregunta</h3><p class="step-d">En inglés, como el corpus</p></div>
 <x-shape kind="arrow-right" class="arrow"></x-shape>
-<div class="step"><h3>Dense + BM25</h3><p>Dos rankings del índice</p></div>
+<div class="step"><h3 class="step-t">Dense + BM25</h3><p class="step-d">Dos rankings del índice</p></div>
 <x-shape kind="arrow-right" class="arrow"></x-shape>
-<div class="step"><h3>Fusión RRF</h3><p>Top-10 chunks, k = 60</p></div>
+<div class="step"><h3 class="step-t">Fusión RRF</h3><p class="step-d">Top-10 chunks, k = 60</p></div>
 <x-shape kind="arrow-right" class="arrow"></x-shape>
-<div class="step"><h3>Generación</h3><p>Claude Haiku 5.5, solo con el contexto</p></div>
+<div class="step"><h3 class="step-t">Generación</h3><p class="step-d">Claude Haiku 5.5, solo con el contexto</p></div>
 <x-shape kind="arrow-right" class="arrow"></x-shape>
-<div class="step"><h3>Respuesta</h3><p>Con citas al chunk usado</p></div>
+<div class="step"><h3 class="step-t">Respuesta</h3><p class="step-d">Con citas al chunk usado</p></div>
 </div>
-<div class="footer"><p>Mini-proyecto RAG · PLN</p><p class="pg"></p></div>
+</div>
+<p class="body">La estrategia <b>Dense</b> usa solo el ranking de embeddings. La estrategia <b>Hybrid</b> fusiona los dos rankings.</p>
+<div class="footer"><p>1 · Arquitectura RAG</p><p class="pg"></p></div>
 <aside>La primera fila corre una vez por parche y no necesita ser rápida. La segunda corre por cada pregunta. La estrategia Dense usa solo la rama de embeddings; la estrategia Hybrid combina los dos rankings con Reciprocal Rank Fusion. El generador recibe los 10 chunks con su encabezado de contexto y responde citándolos.</aside>
 </section>

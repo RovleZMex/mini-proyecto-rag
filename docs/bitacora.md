@@ -600,3 +600,15 @@ Juez: Claude Sonnet 5.5, 190 llamadas, USD 1.14.
 - **Logo:** el escudo azul oficial, tomado de identidadbuho.unison.mx (la página de identidad institucional de la Unison). Va a la **izquierda**, como pide el manual de identidad institucional; en la primera versión estaba a la derecha y se corrigió.
 - **Pendientes de Santiago (marcados entre corchetes en la portada):** nombre del programa de maestría, profesor y fecha de presentación.
 - Todas las cifras salen de `eval/resultados/` y de la bitácora. Cada diapositiva tiene notas del orador.
+
+### Rediseño de la presentación
+- **Contexto:** Santiago pidió más "taste" y quitar el olor a texto generado ("AI slop").
+- **Cambios:**
+  - **Sistema visual:** un solo fondo claro y una única diapositiva oscura. Sin barras decorativas ni tarjetas para todo. La sección va en el pie.
+  - **Escala tipográfica fija:** 24 / 26 / 28 / 32 / 56 px.
+  - **Gráficas en lugar de solo tablas:** una diapositiva nueva con la comparación de configuraciones, y barras para RAGAS y para el Recall@10 por pregunta.
+  - **Títulos:** todos enuncian el hallazgo, y el detalle pasó a las notas del orador. Quedan 23 diapositivas.
+- **Verificación:**
+  - Ninguna cifra visible es nueva: se compararon todos los números del texto contra la versión anterior.
+  - Se mantienen el código real, el logo a la izquierda, los datos entre corchetes de la portada y los nombres descriptivos de los chunkings.
+- **Corrección posterior:** el rediseño había convertido la diapositiva de escalamiento en "lo que más pesa es distinguir documentos casi idénticos", poniendo el retrieval por encima del parsing. Eso contradecía D-43 (dos cuellos de botella al mismo nivel), así que se restauró: título "A 500 documentos, el parsing y el retrieval son los dos cuellos de botella", parsing primero, y la conclusión 4 ajustada en el mismo sentido.

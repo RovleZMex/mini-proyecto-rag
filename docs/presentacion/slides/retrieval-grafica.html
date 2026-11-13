@@ -1,0 +1,33 @@
+<section id="retrieval-grafica">
+<h2>El chunking pesa más que la estrategia de recuperación</h2>
+<div class="chart">
+<div class="ch-labels">
+<p class="ch-head">Chunking · retriever</p>
+<p class="ch-l">Por habilidad · Hybrid</p>
+<p class="ch-l">Por habilidad · Dense</p>
+<p class="ch-l">Tamaño fijo · Hybrid</p>
+<p class="ch-l">Tamaño fijo · Dense</p>
+</div>
+<div class="ch-panel">
+<p class="ch-head">Recall@5</p>
+<div class="ch-row"><div class="ch-track"><div class="b-hh" style="width:398px;"></div></div><p class="ch-v">0.83</p></div>
+<div class="ch-row"><div class="ch-track"><div class="b-hd" style="width:317px;"></div></div><p class="ch-v">0.66</p></div>
+<div class="ch-row"><div class="ch-track"><div class="b-fh" style="width:274px;"></div></div><p class="ch-v">0.57</p></div>
+<div class="ch-row"><div class="ch-track"><div class="b-fd" style="width:245px;"></div></div><p class="ch-v">0.51</p></div>
+</div>
+<div class="ch-panel">
+<p class="ch-head">Recall@10</p>
+<div class="ch-row"><div class="ch-track"><div class="b-hh" style="width:403px;"></div></div><p class="ch-v">0.84</p></div>
+<div class="ch-row"><div class="ch-track"><div class="b-hd" style="width:365px;"></div></div><p class="ch-v">0.76</p></div>
+<div class="ch-row"><div class="ch-track"><div class="b-fh" style="width:293px;"></div></div><p class="ch-v">0.61</p></div>
+<div class="ch-row"><div class="ch-track"><div class="b-fd" style="width:293px;"></div></div><p class="ch-v">0.61</p></div>
+</div>
+</div>
+<div class="gloss">
+<p class="gloss-p">Con el mismo retriever Hybrid, el tamaño fijo baja el Recall@10 de 0.84 a 0.61.</p>
+<p class="gloss-p">Sobre el chunking por habilidad, Hybrid lo sube de 0.76 a 0.84 frente a Dense.</p>
+</div>
+<p class="small">Promedio sobre las 10 preguntas normales. Cada barra se mide sobre una escala de 0 a 1.</p>
+<div class="footer"><p>3 · Evaluación y resultados</p><p class="pg"></p></div>
+<aside>La misma tabla de la diapositiva anterior, dibujada para las cuatro combinaciones de chunking y retriever. Azul es el chunking por habilidad y gris el de tamaño fijo; el tono oscuro es Hybrid y el claro es Dense. El salto grande está entre los dos chunkings: con tamaño fijo el Recall@10 se queda en 0.61 con cualquiera de los dos retrievers. Dentro del chunking por habilidad, la ventaja de Hybrid sobre Dense es mayor con k pequeño: en Recall@5, 0.83 contra 0.66.</aside>
+</section>

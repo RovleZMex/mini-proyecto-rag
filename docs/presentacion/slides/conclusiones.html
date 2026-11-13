@@ -1,13 +1,12 @@
-<section id="conclusiones" class="alt">
-<p class="eyebrow">Conclusiones</p>
-<h2>Lo que deja el proyecto</h2>
-<ol style="font-size:30px; display:flex; flex-direction:column; gap:20px; width:1550px;">
-<li>En este corpus, la recuperación híbrida supera a la densa: Recall@5 de 0.83 contra 0.66. Los nombres propios y los números de parche favorecen la parte léxica.</li>
-<li>El chunking estructural importa más que la estrategia de retrieval: el tamaño fijo baja el Recall@10 a 0.61 y falla por completo en tres preguntas.</li>
-<li>Con un prompt restrictivo, el LLM reconoce lo que falta en vez de inventarlo: faithfulness de 0.97 y 2 de 2 trampas rechazadas.</li>
-<li>El límite del sistema está en distinguir documentos casi idénticos. Es también lo que más pesa al escalar.</li>
-</ol>
+<section id="conclusiones">
+<h2>Conclusiones</h2>
+<div class="mx">
+<div class="cc-row"><p class="cc-t">La recuperación híbrida supera a la densa en este corpus</p><p class="cc-e">Recall@5 de 0.83 contra 0.66. Los nombres propios y los números de parche favorecen la parte léxica.</p></div>
+<div class="cc-row"><p class="cc-t">El chunking estructural importa más que la estrategia de retrieval</p><p class="cc-e">El tamaño fijo baja el Recall@10 a 0.61 y falla por completo en tres preguntas.</p></div>
+<div class="cc-row"><p class="cc-t">Con un prompt restrictivo, el LLM reconoce lo que falta en vez de inventarlo</p><p class="cc-e">Faithfulness de 0.97 y 2 de 2 trampas rechazadas.</p></div>
+<div class="cc-row"><p class="cc-t">El límite del sistema está en distinguir documentos casi idénticos</p><p class="cc-e">Al escalar, es uno de los dos cuellos de botella, junto con el parsing.</p></div>
+</div>
 <p class="note">Limitación: 10 preguntas normales. Una sola pregunta mueve cualquier promedio en 0.10, por eso el análisis por pregunta acompaña a cada tabla.</p>
-<div class="footer"><p>Mini-proyecto RAG · PLN</p><p class="pg"></p></div>
+<div class="footer"><p>RAG sobre notas de parche de LoL</p><p class="pg"></p></div>
 <aside>Cuatro conclusiones, cada una con su evidencia en las diapositivas anteriores. La limitación del tamaño de la muestra conviene decirla de frente: con 10 preguntas, las diferencias pequeñas entre configuraciones no son concluyentes por sí solas.</aside>
 </section>

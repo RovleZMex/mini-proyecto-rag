@@ -1,18 +1,17 @@
 <section id="ground-truth">
-<p class="eyebrow">3 · Evaluación y resultados</p>
-<h2>Ground truth: 12 preguntas</h2>
+<h2>El ground truth tiene 12 preguntas; dos son trampas</h2>
 <table style="font-size:24px;">
-<tr><th style="width:8%">Id</th><th style="width:52%">Pregunta</th><th style="width:40%">Qué pone a prueba</th></tr>
+<tr><th style="width:9%">Id</th><th style="width:51%">Pregunta</th><th style="width:40%">Qué pone a prueba</th></tr>
 <tr><td>q01</td><td>How did Darius's Q cooldown change in patch 26.21?</td><td>Cambio numérico puntual</td></tr>
 <tr><td>q02</td><td>What changes did Locke's Q get in patch 26.22?</td><td>Mismo campeón en varios parches</td></tr>
-<tr><td>q03</td><td>Why did Riot nerf Thresh in patch 26.22…?</td><td>"Por qué" y "qué" a la vez</td></tr>
+<tr><td>q03</td><td>Why did Riot nerf Thresh in patch 26.22…?</td><td>“Por qué” y “qué” a la vez</td></tr>
 <tr><td>q04</td><td>In which patch did Draven's base AD change…?</td><td>Sin parche en la pregunta</td></tr>
 <tr><td>q05</td><td>What changed for Mel in patch 26.22?</td><td>Pregunta general: 7 unidades</td></tr>
 <tr><td>q06</td><td>How did Locke's W change in 26.21 and 26.22?</td><td>Dos parches a la vez</td></tr>
 <tr><td>q07–q10</td><td>Doran's Bow · Classic · Arena · cliente de TFT</td><td>Items, modos de juego y sistemas</td></tr>
 <tr><td>q11–q12</td><td>Parche 26.23 · win rate de Locke</td><td>Trampas: la respuesta no está</td></tr>
 </table>
-<p class="note">Se partió de 16 candidatas; las 12 finales se eligieron y corrigieron a mano. Cada una tiene su respuesta ideal y sus <b>unidades</b> relevantes, por ejemplo <b>26.21/CHAMPIONS/Darius/Q - Decimate</b>.</p>
-<div class="footer"><p>Mini-proyecto RAG · PLN</p><p class="pg"></p></div>
-<aside>La unidad de contenido es una pieza de información según su lugar en el parche: parche, sección, entidad y habilidad. No depende del chunking. Así el mismo ground truth sirve para el chunking por habilidad y para el de tamaño fijo: un chunk cuenta como relevante si contiene alguna unidad correcta. En q02 y q06 se quitó a propósito el nombre de la habilidad, porque un usuario real escribe "la Q", no "Ritual Nails"; eso las vuelve las más difíciles.</aside>
+<p class="note">Se partió de 16 candidatas; las 12 finales se eligieron y corrigieron a mano. Cada una tiene su respuesta ideal y sus <b>unidades</b> relevantes, por ejemplo <b>26.21/CHAMPIONS/Darius/Q - Decimate</b>. La unidad no depende del chunking.</p>
+<div class="footer"><p>3 · Evaluación y resultados</p><p class="pg"></p></div>
+<aside>La unidad de contenido es una pieza de información según su lugar en el parche: parche, sección, entidad y habilidad. No depende del chunking. Así el mismo ground truth sirve para el chunking por habilidad y para el de tamaño fijo: un chunk cuenta como relevante si contiene alguna unidad correcta. En q02 y q06 se quitó a propósito el nombre de la habilidad, porque un usuario real escribe “la Q”, no “Ritual Nails”; eso las vuelve las más difíciles.</aside>
 </section>
