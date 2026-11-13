@@ -1,0 +1,130 @@
+<title>Mapa de embeddings</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: encabezado corto, barra de controles y el mapa a ancho completo; notas de lectura debajo. */
+:root {
+  --bg: #f6f7f9; --surface: #ffffff; --fg: #1b2230; --muted: #5b6577; --line: #dde2ea;
+  --accent: #1f6f8b; --accent-soft: #e3f0f5; --dim: #c9d0da; --star: #c2410c;
+  --font-display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #11151c; --surface: #19202a; --fg: #e6eaf0; --muted: #9aa5b6; --line: #2a3340; --accent: #6cc0dc; --accent-soft: #1a2f39; --dim: #2c3542; --star: #fb923c; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --bg: #11151c; --surface: #19202a; --fg: #e6eaf0; --muted: #9aa5b6; --line: #2a3340; --accent: #6cc0dc; --accent-soft: #1a2f39; --dim: #2c3542; --star: #fb923c; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 32px 56px; }
+.wrap { max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+h1, h2 { font-family: var(--font-display); margin: 0; line-height: 1.2; text-wrap: balance; }
+h1 { font-size: 1.8rem; } h2 { font-size: 1.15rem; }
+p { margin: 0; max-width: 70ch; }
+.lead { color: var(--muted); }
+.eyebrow { font-family: var(--font-mono); font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.controls { display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: end; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+.ctl { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+.ctl > span { font-family: var(--font-mono); font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.seg button { font: inherit; font-size: .88rem; background: transparent; color: var(--fg); border: 0; padding: 6px 12px; cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--surface); }
+.seg button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+input[type="search"] { font: inherit; font-size: .9rem; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--fg); width: 200px; max-width: 100%; }
+#count { font-family: var(--font-mono); font-size: .8rem; color: var(--muted); margin-left: auto; font-variant-numeric: tabular-nums; }
+#plot { width: 100%; height: min(72vh, 720px); min-height: 420px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+.notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.notes > div { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.notes p { font-size: .92rem; color: var(--muted); }
+code { font-family: var(--font-mono); font-size: .86em; background: var(--accent-soft); padding: 1px 5px; border-radius: 4px; }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Mini-proyecto RAG · Índice en Chroma</div>
+    <h1>Mapa de embeddings</h1>
+    <p class="lead">Los 1,300 chunks indexados con Qwen3-Embedding-0.6B, proyectados de 1,024 a 2 dimensiones con UMAP. Los puntos cercanos tienen significado parecido para el modelo. Las estrellas son tres preguntas de prueba: el retriever denso devuelve los chunks más cercanos a cada estrella.</p>
+  </header>
+
+  <div class="controls" role="group" aria-label="Controles del mapa">
+    <div class="ctl"><span>Chunks</span>
+      <div class="seg" id="col">
+        <button type="button" data-v="D" aria-pressed="true">D · habilidad</button>
+        <button type="button" data-v="A" aria-pressed="false">A · fijo</button>
+        <button type="button" data-v="DA" aria-pressed="false">Ambos</button>
+      </div></div>
+    <div class="ctl"><span>Color por</span>
+      <div class="seg" id="color">
+        <button type="button" data-v="patch" aria-pressed="true">Parche</button>
+        <button type="button" data-v="section" aria-pressed="false">Sección</button>
+        <button type="button" data-v="kind" aria-pressed="false">Tipo</button>
+      </div></div>
+    <div class="ctl"><span>Resaltar campeón o texto</span>
+      <input type="search" id="q" placeholder="Locke, Thresh, cooldown…" autocomplete="off"></div>
+    <div id="count"></div>
+  </div>
+
+  <div id="plot" aria-label="Gráfico de dispersión de los embeddings"></div>
+
+  <div class="notes">
+    <div><h2>Qué buscar</h2><p>Escribe <code>Locke</code> en el buscador: sus chunks de los 6 parches donde aparece quedan amontonados casi en el mismo punto, con colores de parche mezclados. Es la razón por la que el retriever denso casi no distingue el parche, el problema que vimos en la prueba (0.68 contra 0.67).</p></div>
+    <div><h2>Color por tipo</h2><p>Las notas del diseñador tienden a agruparse: el 43 % de sus vecinos más cercanos son también notas, contra 26 % si estuvieran repartidas al azar. No forman una región aparte, pero sí se separan de los chunks de habilidad con números.</p></div>
+    <div><h2>Cómo leerlo con cuidado</h2><p>UMAP conserva bien los vecinos cercanos, pero no las distancias grandes: que dos grupos estén lejos en el mapa no dice cuánto. La búsqueda real usa los 1,024 valores completos, no esta proyección.</p></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.34.0/plotly.min.js"></script>
+<script>
+const PTS = __DATOS__;
+const state = { col: "D", color: "patch", q: "" };
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const PAL = ["#1f77b4","#ff7f0e","#2ca02c","#d62728","#9467bd","#8c564b","#e377c2","#17becf","#bcbd22","#7f7f7f","#393b79","#ad494a","#637939","#8c6d31","#843c39","#7b4173"];
+const NOMBRE_TIPO = { ability_or_stats: "Habilidad o stats", developer_note: "Nota del diseñador", entity: "Entidad sin habilidad", section: "Sección", fixed: "Fijo 512" };
+function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+function wrap(s){ return esc(s).replace(/\n/g,"<br>").replace(/(.{1,70})(\s|$)/g,"$1<br>"); }
+function draw(){
+  const vis = PTS.filter(p => p.col !== "Q" && state.col.includes(p.col));
+  const q = state.q.toLowerCase();
+  const match = p => !q || (p.entity||"").toLowerCase().includes(q) || p.text.toLowerCase().includes(q);
+  const keyOf = p => state.color === "kind" ? (NOMBRE_TIPO[p.kind]||p.kind) : (p[state.color] || "—");
+  const keys = [...new Set(vis.map(keyOf))].sort();
+  const traces = [];
+  if (q) traces.push({ type:"scattergl", mode:"markers", name:"(otros)", showlegend:false, hoverinfo:"skip",
+    x: vis.filter(p=>!match(p)).map(p=>p.x), y: vis.filter(p=>!match(p)).map(p=>p.y), marker:{ size:5, color: css("--dim") } });
+  keys.forEach((k,i) => {
+    const s = vis.filter(p => keyOf(p) === k && match(p));
+    traces.push({ type:"scattergl", mode:"markers", name:k, x:s.map(p=>p.x), y:s.map(p=>p.y),
+      text:s.map(p => `<b>${esc(p.id)}</b><br>${wrap(p.text)}`), hovertemplate:"%{text}<extra></extra>",
+      marker:{ size: q ? 9 : 6, color: PAL[i % PAL.length], opacity: .85, line:{ width: q ? 1 : 0, color: css("--fg") } } });
+  });
+  const Q = PTS.filter(p => p.col === "Q");
+  traces.push({ type:"scatter", mode:"markers", name:"Pregunta", x:Q.map(p=>p.x), y:Q.map(p=>p.y),
+    text:Q.map(p=>`<b>Pregunta</b><br>${wrap(p.text)}`), hovertemplate:"%{text}<extra></extra>",
+    marker:{ symbol:"star", size:18, color: css("--star"), line:{ width:1.5, color: css("--fg") } } });
+  const fg = css("--fg"), muted = css("--muted");
+  Plotly.react("plot", traces, {
+    paper_bgcolor:"rgba(0,0,0,0)", plot_bgcolor:"rgba(0,0,0,0)", margin:{ l:10, r:10, t:10, b:10 },
+    font:{ family:"Inter, system-ui, sans-serif", color: fg, size: 12 },
+    xaxis:{ visible:false }, yaxis:{ visible:false, scaleanchor:"x" },
+    legend:{ font:{ color: muted, size: 11 }, bgcolor:"rgba(0,0,0,0)", itemsizing:"constant" },
+    hoverlabel:{ bgcolor: css("--surface"), bordercolor: css("--line"), font:{ color: fg, family:"Inter, system-ui, sans-serif", size: 12 }, align:"left" },
+    dragmode:"pan"
+  }, { responsive:true, displaylogo:false, scrollZoom:true, modeBarButtonsToRemove:["select2d","lasso2d","toImage"] });
+  const n = vis.filter(match).length;
+  document.getElementById("count").textContent = q ? `${n} de ${vis.length} chunks coinciden` : `${vis.length} chunks`;
+}
+function seg(id, key){
+  document.querySelectorAll(`#${id} button`).forEach(b => b.addEventListener("click", () => {
+    state[key] = b.dataset.v;
+    document.querySelectorAll(`#${id} button`).forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+    draw();
+  }));
+}
+seg("col","col"); seg("color","color");
+document.getElementById("q").addEventListener("input", e => { state.q = e.target.value.trim(); draw(); });
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", draw);
+new MutationObserver(draw).observe(document.documentElement, { attributes:true, attributeFilter:["data-theme"] });
+if (window.Plotly) draw(); else window.addEventListener("load", draw);
+</script>

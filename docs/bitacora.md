@@ -287,3 +287,41 @@ Se probaron 3 preguntas a mano:
 Es la primera evidencia del problema anticipado en D-14: el retriever denso casi no distingue parches, ni siquiera con el número en el encabezado. Es la motivación concreta del retriever híbrido.
 
 **Rendimiento:** embeddear D tardó 67 s y A 46 s en la Mac M4. La primera descarga del modelo (~1.2 GB) tardó unos 3 minutos.
+
+---
+
+## Fase 5 · Retrievers (12 nov 2026)
+
+### D-24 · Constante de RRF: 60
+- **Decisión:** `k = 60` en Reciprocal Rank Fusion: `score = Σ 1 / (60 + rank)`.
+- **Por qué:** es el valor estándar del artículo original de RRF (Cormack et al., 2009), y funciona bien sin ajuste. Queda como punto de partida.
+- **Quién decidió:** Santiago.
+
+### D-25 · Top-k = 10
+- **Decisión:** cada retriever devuelve 10 chunks.
+- **Por qué:** con el chunking por habilidad (D-12), una pregunta general como "¿qué cambió en Mel?" necesita varios chunks, y k = 10 deja margen para el Recall. Se puede reportar Precision@k y Recall@k también para k menores a partir del mismo ranking.
+- **Quién decidió:** Santiago.
+
+### Observación · Visualización del índice
+- **Contexto:** Santiago preguntó cómo "ver" Chroma y los embeddings. Chroma local no trae interfaz visual.
+- **Solución:** `scripts/visualizar_embeddings.py` proyecta los 1,300 vectores a 2D con UMAP (coseno, `random_state=42`) y genera un visor interactivo (`docs/visor_embeddings.html`, con Plotly). Tiene color por parche, sección o tipo, búsqueda por texto y las preguntas de prueba marcadas como estrellas.
+- **Lo que muestra:**
+  - Los 19 chunks de Locke de 6 parches quedan amontonados: dispersión de 0.21 contra 2.32 del corpus completo. Confirma visualmente que el retriever denso casi no distingue parches (D-14).
+  - Las notas del diseñador tienden a agruparse (43 % de sus vecinos son notas, contra 26 % al azar).
+- **Error propio corregido:** en la primera versión del visor afirmé que las notas "formaban su propia región". Lo medí y era exagerado, así que corregí el texto antes de publicarlo.
+
+### Experimento · Tokenización para BM25 (exploratorio, 4 preguntas)
+- **Contexto:** se compararon 5 tokenizadores sobre los 1,149 chunks de D:
+  1. espacios;
+  2. regex `\w+`;
+  3. clásico (regex + stopwords + Porter);
+  4. de dominio (posesivos, apóstrofos, parche como un token, nombres de campeón sin stemming);
+  - 4b. de dominio sin cifras.
+- **Hallazgos:**
+  - **Espacios** deja la puntuación pegada (`26.21?`, `darius's`) y el chunk de Darius cae al lugar 128.
+  - **Regex** parte `26.21` en `26` + `21`, y `vel'koz` en `vel` + `koz`.
+  - **Stemming de Porter** convierte "Locke" en `lock`, que choca con "locked out" y "lock down" en 4 chunks ajenos. Motiva proteger los nombres de campeón.
+  - **Ninguna variante ubica a Locke en 26.22 en primer lugar,** ni siquiera la 4, que tiene el token `26.22`. La causa es la normalización por longitud de BM25: el chunk de 26.22 tiene diez cifras y mide 33 tokens, contra 20 del de 26.21. Las cifras alargan el chunk sin aportar al match.
+  - **La variante 4b** (sin cifras) arregla Locke pero baja a Vel'Koz al lugar 2. Bajar `b` a 0.3 no ayudó.
+- **Conclusión:** con 4 preguntas no se puede elegir entre 2, 3, 4 y 4b; difieren en casos que estas preguntas no tocan. Se decide con el ground truth.
+- **Error propio corregido:** en el primer intento de la variante 4b, el filtro de cifras también borraba el `26.22` del encabezado, que es justo el token que había que conservar. Se detectó al imprimir los tokens, antes de sacar conclusiones.
