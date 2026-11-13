@@ -612,3 +612,12 @@ Juez: Claude Sonnet 5.5, 190 llamadas, USD 1.14.
   - Ninguna cifra visible es nueva: se compararon todos los números del texto contra la versión anterior.
   - Se mantienen el código real, el logo a la izquierda, los datos entre corchetes de la portada y los nombres descriptivos de los chunkings.
 - **Corrección posterior:** el rediseño había convertido la diapositiva de escalamiento en "lo que más pesa es distinguir documentos casi idénticos", poniendo el retrieval por encima del parsing. Eso contradecía D-43 (dos cuellos de botella al mismo nivel), así que se restauró: título "A 500 documentos, el parsing y el retrieval son los dos cuellos de botella", parsing primero, y la conclusión 4 ajustada en el mismo sentido.
+
+### D-45 · Repositorio público, con el texto procesado incluido
+- **Opciones:**
+  - público tal cual;
+  - público sin `data/processed/`, `data/chunks/` y `eval/resultados/` (regenerables con los scripts);
+  - privado con acceso al profesor.
+- **Decisión:** público tal cual. Los PDF y HTML originales de Riot siguen fuera del repo (D-05). Se verificó antes que `.env` (con la API key) nunca se subió y que ningún commit lleva atribución.
+- **Por qué:** es texto de notas públicas usado con fines académicos, y así cualquiera puede revisar y correr la evaluación sin regenerar el pipeline.
+- **Quién decidió:** Santiago.
