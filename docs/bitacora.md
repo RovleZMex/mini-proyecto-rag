@@ -11,6 +11,8 @@ Registro de las decisiones tomadas y los problemas encontrados durante el proyec
 
 Las entradas de una misma fase van numeradas (D = decisión, P = problema).
 
+**Nombres de los chunkings:** en las primeras entradas se usan las letras de la discusión original. **"D" es el chunking por habilidad** (el principal: un chunk por habilidad, bloque de stats o nota del diseñador, con encabezado de contexto; archivo `chunks_D.jsonl`). **"A" es el chunking de tamaño fijo** (la línea base: ventanas de 512 tokens con overlap de 50; archivo `chunks_A.jsonl`). Desde la Fase 7 se usan solo los nombres descriptivos.
+
 ---
 
 ## Fase 0 · Configuración del repositorio (12 nov 2026)
@@ -401,3 +403,17 @@ Hay 3 trampas, todas de tipos distintos:
 - **Consecuencia para la evaluación:** las dos preguntas se vuelven más difíciles. BM25 pierde los términos "Ritual Nails" y "Soul Ignition", y el único vínculo léxico entre "Q" y el chunk es el encabezado de contexto (`… › Locke › Q - Ritual Nails`). La q02 combina además el problema de distinguir el parche (Locke Q cambió en 26.15, 26.21 y 26.22): es la pregunta que más debería separar a Dense de Hybrid.
 - **Corrección menor:** al editarla, a la q02 le faltaba el verbo. Se corrigió a "get" con la aprobación de Santiago.
 - **Quién decidió:** Santiago.
+
+---
+
+## Fase 7 · Evaluación del retrieval (12 nov 2026)
+
+### D-32 · El Recall@k se calcula sobre unidades, no sobre chunks
+- **Contexto:** un chunk de tamaño fijo contiene unas 8 unidades y uno por habilidad exactamente una. Si se contaran chunks, el denominador dependería del chunking (Mel 26.22 son 7 chunks por habilidad y 2 de tamaño fijo) y los dos chunkings no serían comparables.
+- **Decisión:** `Recall@k = unidades relevantes cubiertas por los top-k / unidades relevantes de la pregunta`.
+- **Por qué:** los dos chunkings se miden contra lo mismo (las unidades del ground truth), y la métrica responde lo que importa: si la información necesaria le llegó al LLM.
+- **Ejemplo real (q05, Mel 26.22, 7 unidades):**
+  - Por habilidad · Hybrid cubre 5/7 (0.71).
+  - Tamaño fijo · Hybrid cubre 4/7 (0.57).
+  - Por habilidad · Dense cubre solo 2/7 (0.29).
+- **Quién decidió:** Santiago, sobre la propuesta de Claude, después de pedir que se le explicara qué es una unidad.
