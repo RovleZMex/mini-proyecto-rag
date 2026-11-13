@@ -505,3 +505,29 @@ Hay 3 trampas, todas de tipos distintos:
 - **Contexto:** el enunciado dice "La presentación deberá cubrir los 4 aspectos" (arquitectura con código clave, documentos y procesamiento, evaluación y resultados, visión de producción). No pide notebooks.
 - **Decisión:** el entregable es la presentación más este repositorio. Al final se hará una demo sencilla (un notebook o una página) para correr el sistema el día de la presentación.
 - **Quién decidió:** Santiago.
+
+### D-41 · Prompt de generación
+- **Decisión** (`src/generacion.py`):
+  - **Solo el contexto:** prohibido usar lo que el modelo sabe del juego.
+  - **Parche siempre indicado** en cada dato de la respuesta.
+  - **Números exactos,** con su antes ⇒ después.
+  - **Negativa con frase fija:** "The provided patch notes do not contain this information."
+  - **Respuesta parcial explícita:** si falta una parte, dice cuál.
+  - **Citas `[n]`** al chunk usado. Se quitan antes de RAGAS.
+  - **Idioma:** inglés, como el ground truth.
+  - **Effort:** `medium`.
+- **Por qué:**
+  - La frase fija permite medir automáticamente el rechazo de las trampas.
+  - La regla de respuesta parcial cubre el caso conocido de la q06, cuyo retriever no trae la W de 26.21.
+  - La prohibición de conocimiento previo evita que Haiku rellene huecos con valores de parches viejos que conoce.
+- **Quién decidió:** Santiago aprobó la propuesta de Claude sin cambios.
+
+### Resultados de la generación (`eval/resultados/generacion.json`)
+Retriever: por habilidad · Hybrid sin cifras, top-10. 12 preguntas, USD 0.004 en total, de 1.0 a 4.0 s por pregunta.
+- **Trampas:** las 2 rechazadas con la frase exacta.
+- **Información parcial reconocida en las 3 preguntas donde el retriever falló:**
+  - **q06:** da la W de 26.22 y dice que no encontró la de 26.21.
+  - **q05:** responde 5 de 7 partes y dice que faltan la Q y la W.
+  - **q08:** nombra a Lucian, infiere que hubo más campeones de las Shadow Isles sin inventar nombres, y no cuenta a Mordekaiser porque su fragmento no dice que sea nuevo.
+- **q02:** usa solo el chunk de 26.22 y descarta los de Locke de otros parches que venían en el contexto.
+- **Observación:** cuando el retriever falla, el modelo lo dice en vez de alucinar. Falta confirmarlo con la faithfulness de RAGAS.

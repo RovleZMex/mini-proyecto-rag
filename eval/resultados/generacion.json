@@ -1,0 +1,957 @@
+{
+ "modelo": "claude-haiku-5-5",
+ "effort": "medium",
+ "retriever": "Por habilidad · Hybrid sin cifras",
+ "resultados": [
+  {
+   "id": "q01",
+   "trap": false,
+   "query": "How did Darius's Q cooldown change in patch 26.21?",
+   "ideal_answer": "In patch 26.21, Darius's Q (Decimate) cooldown changed from 9 / 8 / 7 / 6 / 5s to 9 / 8 / 7 / 6 / 4s: only the rank-5 cooldown was reduced, by one second. Riot buffed him so he can swing his axe more often in sustained fights.",
+   "contexts": [
+    {
+     "n": 1,
+     "id": "26.21/CHAMPIONS/Darius/Q - Decimate",
+     "text": "Patch 26.21 › CHAMPIONS › Darius › Q - Decimate\nCooldown: 9 / 8 / 7 / 6 / 5s ⇒ 9 / 8 / 7 / 6 / 4s",
+     "relevant": true
+    },
+    {
+     "n": 2,
+     "id": "26.21/CHAMPIONS/Darius/Developer note",
+     "text": "Patch 26.21 › CHAMPIONS › Darius › Developer note\n\" Darius has moved a bit too far away from being a persistently durable damage threat that needs to be kited to more of a one shot combo playstyle. Since he has some room for power, we're giving him a slight boost so he can swing that axe more often in sustained fights. \"",
+     "relevant": false
+    },
+    {
+     "n": 3,
+     "id": "26.22/CHAMPIONS/Zaahen/Q - The Darkin Glaive",
+     "text": "Patch 26.22 › CHAMPIONS › Zaahen › Q - The Darkin Glaive\nCooldown: 10 / 9 / 8 / 7 / 6s\n⇒ 8 / 7.5 / 7 / 6.5 / 6s",
+     "relevant": false
+    },
+    {
+     "n": 4,
+     "id": "26.21/CHAMPIONS/Locke/Q - Ritual Nails",
+     "text": "Patch 26.21 › CHAMPIONS › Locke › Q - Ritual Nails\nUnused Charge Refund: 20 - 35% mana and cooldown refund ⇒ 10 - 40% mana and cooldown refund",
+     "relevant": false
+    },
+    {
+     "n": 5,
+     "id": "26.21/MID-PATCH UPDATES/Varus/Developer note",
+     "text": "Patch 26.21 › MID-PATCH UPDATES › Varus › Developer note\n\" This patch we did work to adjust Varus' top and bottom power skew, which involved shifting the balance between his Q and W for laning. While the resulting changes have seemed promising, we unfortunately added a major bug to his Q during this work, causing it to no longer deal reduced damage to subsequent targets. We are fixing that bug, and compensating with a buff. \"",
+     "relevant": false
+    },
+    {
+     "n": 6,
+     "id": "26.19/ARENA/Champions/Rammus/Q - Powerball",
+     "text": "Patch 26.19 › ARENA › Champions › Rammus › Q - Powerball\nCooldown: 11 / 9.5 / 8 / 6.5 / 5s ⇒ 12 / 10.5 / 9 / 7.5 / 6s",
+     "relevant": false
+    },
+    {
+     "n": 7,
+     "id": "26.21/CHAMPIONS/Taric/Q - Starlight's Touch",
+     "text": "Patch 26.21 › CHAMPIONS › Taric › Q - Starlight's Touch\nCast Behavior: Q casts when allies are untargetable will now successfully fire.",
+     "relevant": false
+    },
+    {
+     "n": 8,
+     "id": "26.18/CHAMPIONS/Zaahen/Q - The Darkin Glaive",
+     "text": "Patch 26.18 › CHAMPIONS › Zaahen › Q - The Darkin Glaive\nNEW Cooldown Behavior: If Q is active, it is now placed on Cooldown immediately upon being put in Resurrection\nQ2 Damage: 25 / 50 / 75 / 100 / 125 (+20 / 25 / 30 / 35 / 40% bonus AD) ⇒ 30 / 60 / 90 / 120 / 150 (+20 / 25 / 30 / 35 / 40% bonus AD)",
+     "relevant": false
+    },
+    {
+     "n": 9,
+     "id": "26.21/ARENA/Champions/Morgana/Q - Dark Binding",
+     "text": "Patch 26.21 › ARENA › Champions › Morgana › Q - Dark Binding\nCooldown: 12s ⇒ 14s",
+     "relevant": false
+    },
+    {
+     "n": 10,
+     "id": "26.16/ARENA/Champions/Warwick/Q - Jaws of the Beast",
+     "text": "Patch 26.16 › ARENA › Champions › Warwick › Q - Jaws of the Beast\nCooldown: 8s-6s ⇒ 7s-5s",
+     "relevant": false
+    }
+   ],
+   "texto": "In Patch 26.21, Darius's Q (Decimate) cooldown changed from 9 / 8 / 7 / 6 / 5s to 9 / 8 / 7 / 6 / 4s [1]. Only the fifth rank changed, from 5s to 4s. The first four ranks stayed the same.\n\nThe patch's developer note says Darius was given \"a slight boost so he can swing that axe more often in sustained fights\" [2].",
+   "texto_sin_citas": "In Patch 26.21, Darius's Q (Decimate) cooldown changed from 9 / 8 / 7 / 6 / 5s to 9 / 8 / 7 / 6 / 4s. Only the fifth rank changed, from 5s to 4s. The first four ranks stayed the same.\n\nThe patch's developer note says Darius was given \"a slight boost so he can swing that axe more often in sustained fights\".",
+   "es_negativa": false,
+   "stop_reason": "end_turn",
+   "tokens_entrada": 1290,
+   "tokens_salida": 290,
+   "segundos": 1.94,
+   "citas": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "q02",
+   "trap": false,
+   "query": "What changes did Locke's Q get in patch 26.22?",
+   "ideal_answer": "In patch 26.22, Locke's Q (Ritual Nails) was nerfed: Stack Bonus Damage went from 18 / 26 / 34 / 42 / 50 to 15 / 22 / 29 / 36 / 43, and Maximum Stack Damage from 75.6 / 109.2 / 142.8 / 176.4 / 210 to 63 / 92.4 / 121.8 / 151.2 / 180.6.",
+   "contexts": [
+    {
+     "n": 1,
+     "id": "26.16/BUGFIXES & QOL CHANGES/QoL CHANGES",
+     "text": "Patch 26.16 › BUGFIXES & QOL CHANGES › QoL CHANGES\nReduced the volume of base Locke (Q) missile cast sound effects to better sit in the overall game mix.",
+     "relevant": false
+    },
+    {
+     "n": 2,
+     "id": "26.22/CHAMPIONS/Locke/Q - Ritual Nails",
+     "text": "Patch 26.22 › CHAMPIONS › Locke › Q - Ritual Nails\nStack Bonus Damage: 18 / 26 / 34 / 42 / 50 ⇒ 15 / 22 / 29 / 36 / 43\nMaximum Stack Damage: 75.6 / 109.2 / 142.8 / 176.4 / 210 ⇒ 63 / 92.4 / 121.8 / 151.2 / 180.6",
+     "relevant": true
+    },
+    {
+     "n": 3,
+     "id": "26.22/CHAMPIONS/Locke/Developer note",
+     "text": "Patch 26.22 › CHAMPIONS › Locke › Developer note\n\" While Locke's performance in general is within reason, he's proven to be a much deeper champion than we initially expected and players who have reached that level of Locke play have shown him to still be clearly too strong, especially early game. \"",
+     "relevant": false
+    },
+    {
+     "n": 4,
+     "id": "26.20/ARAM/Champions/Locke",
+     "text": "Patch 26.20 › ARAM › Champions › Locke\nDamage Dealt: 105% ⇒ 115%",
+     "relevant": false
+    },
+    {
+     "n": 5,
+     "id": "26.21/CHAMPIONS/Locke/Q - Ritual Nails",
+     "text": "Patch 26.21 › CHAMPIONS › Locke › Q - Ritual Nails\nUnused Charge Refund: 20 - 35% mana and cooldown refund ⇒ 10 - 40% mana and cooldown refund",
+     "relevant": false
+    },
+    {
+     "n": 6,
+     "id": "26.15/CHAMPIONS/Locke/Base Stats",
+     "text": "Patch 26.15 › CHAMPIONS › Locke › Base Stats\nHealth: 655 ⇒ 620",
+     "relevant": false
+    },
+    {
+     "n": 7,
+     "id": "26.22/OVERVIEW",
+     "text": "Patch 26.22 › OVERVIEW\nPatch 26.22 is at the top of the charts. K/DA is starting fires, Mel got a midscope, and plenty of changes are in for SR, Mayhem, and Classic.\nGame Updates | Riot wroadie, Riot Cashmiir, sternest | 11/3/2026",
+     "relevant": false
+    },
+    {
+     "n": 8,
+     "id": "26.22/CHAMPIONS/Locke/W - Soul Ignition",
+     "text": "Patch 26.22 › CHAMPIONS › Locke › W - Soul Ignition\nDuration: 6s ⇒ 5s",
+     "relevant": false
+    },
+    {
+     "n": 9,
+     "id": "26.21/CHAMPIONS/Locke/Base Stats",
+     "text": "Patch 26.21 › CHAMPIONS › Locke › Base Stats\nMana Growth: 70 ⇒ 60",
+     "relevant": false
+    },
+    {
+     "n": 10,
+     "id": "26.19/ARENA/Champions/Locke/R - Purgatory",
+     "text": "Patch 26.19 › ARENA › Champions › Locke › R - Purgatory\nPercentage per Stack: 0.5 ⇒ 1",
+     "relevant": false
+    }
+   ],
+   "texto": "In patch 26.22, Locke's Q (Ritual Nails) had two changes, both listed under \"Patch 26.22 › CHAMPIONS › Locke › Q - Ritual Nails\" [2]:\n\n- **Stack Bonus Damage:** 18 / 26 / 34 / 42 / 50 ⇒ 15 / 22 / 29 / 36 / 43\n- **Maximum Stack Damage:** 75.6 / 109.2 / 142.8 / 176.4 / 210 ⇒ 63 / 92.4 / 121.8 / 151.2 / 180.6\n\nThe excerpts do not show any other Q changes in patch 26.22. The patch 26.22 overview [7] and developer note [3] mention Locke but do not describe Q changes.",
+   "texto_sin_citas": "In patch 26.22, Locke's Q (Ritual Nails) had two changes, both listed under \"Patch 26.22 › CHAMPIONS › Locke › Q - Ritual Nails\":\n\n- **Stack Bonus Damage:** 18 / 26 / 34 / 42 / 50 ⇒ 15 / 22 / 29 / 36 / 43\n- **Maximum Stack Damage:** 75.6 / 109.2 / 142.8 / 176.4 / 210 ⇒ 63 / 92.4 / 121.8 / 151.2 / 180.6\n\nThe excerpts do not show any other Q changes in patch 26.22. The patch 26.22 overview and developer note mention Locke but do not describe Q changes.",
+   "es_negativa": false,
+   "stop_reason": "end_turn",
+   "tokens_entrada": 1077,
+   "tokens_salida": 477,
+   "segundos": 2.43,
+   "citas": [
+    2,
+    3,
+    7
+   ]
+  },
+  {
+   "id": "q03",
+   "trap": false,
+   "query": "Why did Riot nerf Thresh in patch 26.22, and what was changed?",
+   "ideal_answer": "Despite a previous nerf, Thresh remained at the very top of the support pecking order for top-tier players, so Riot nerfed him again in 26.22: base Attack Damage went from 56 to 54, and R (The Box) damage from 250 / 400 / 550 (+100% AP) to 200 / 350 / 500 (+100% AP).",
+   "contexts": [
+    {
+     "n": 1,
+     "id": "26.22/CHAMPIONS/Thresh/Developer note",
+     "text": "Patch 26.22 › CHAMPIONS › Thresh › Developer note\n\" Despite our prior nerf, Thresh has remained at the very top of the support pecking order for top tier players, so it's time for another. \"",
+     "relevant": true
+    },
+    {
+     "n": 2,
+     "id": "26.22/OVERVIEW",
+     "text": "Patch 26.22 › OVERVIEW\nPatch 26.22 is at the top of the charts. K/DA is starting fires, Mel got a midscope, and plenty of changes are in for SR, Mayhem, and Classic.\nGame Updates | Riot wroadie, Riot Cashmiir, sternest | 11/3/2026",
+     "relevant": false
+    },
+    {
+     "n": 3,
+     "id": "26.22/CHAMPIONS/Thresh/Base Stats",
+     "text": "Patch 26.22 › CHAMPIONS › Thresh › Base Stats\nAttack Damage: 56 ⇒ 54",
+     "relevant": true
+    },
+    {
+     "n": 4,
+     "id": "26.22/CHAMPIONS/Thresh/R - The Box",
+     "text": "Patch 26.22 › CHAMPIONS › Thresh › R - The Box\nDamage: 250 / 400 / 550 (+100% AP) ⇒ 200 / 350 / 500 (+100% AP)",
+     "relevant": true
+    },
+    {
+     "n": 5,
+     "id": "26.17/CHAMPIONS/Thresh/Developer note",
+     "text": "Patch 26.17 › CHAMPIONS › Thresh › Developer note\n\" Thresh has been quietly sitting at a high winrate and picking up playrate over the year. \"",
+     "relevant": false
+    },
+    {
+     "n": 6,
+     "id": "26.16/OVERVIEW",
+     "text": "Patch 26.16 › OVERVIEW\nChampion and system updates, the ninjas have come to Classic, and more!\nGame Updates | Riot wroadie, Riot Cashmiir, sternest, Riot Yina | 8/11/2026",
+     "relevant": false
+    },
+    {
+     "n": 7,
+     "id": "26.17/OVERVIEW",
+     "text": "Patch 26.17 › OVERVIEW\nArenas, Bridges, Summoner's Rifts new and old… change comes for us all.\nGame Updates | Riot wroadie, Riot Cashmiir, sternest | 8/25/2026",
+     "relevant": false
+    },
+    {
+     "n": 8,
+     "id": "26.15/ARAM: MAYHEM/Champions/Thresh/R - The Box",
+     "text": "Patch 26.15 › ARAM: MAYHEM › Champions › Thresh › R - The Box\nCooldown: 120 / 100 / 80 ⇒ 90 / 60 / 30\nBase Damage: 250 / 400 / 550 ⇒ 350 / 500 / 650",
+     "relevant": false
+    },
+    {
+     "n": 9,
+     "id": "26.21/OVERVIEW",
+     "text": "Patch 26.21 › OVERVIEW\nTrue Damage has arrived with style! Plus tons to look forward to across SR, Mayhem, Classic, and Arena.\nGame Updates | Riot wroadie, Riot Cashmiir, sternest | 10/20/2026",
+     "relevant": false
+    },
+    {
+     "n": 10,
+     "id": "26.15/ARAM: MAYHEM/Champions/Thresh/E - Flay",
+     "text": "Patch 26.15 › ARAM: MAYHEM › Champions › Thresh › E - Flay\nDamage Ramp-Up Time Between Attacks: 10 seconds ⇒ 5 seconds",
+     "relevant": false
+    }
+   ],
+   "texto": "Patch 26.22 reduced Thresh's base attack damage and the damage of his R, The Box. The developer note gives the reason: \"Despite our prior nerf, Thresh has remained at the very top of the support pecking order for top tier players, so it's time for another.\" [1]\n\n**Changes in Patch 26.22:**\n- **Base Stats, Attack Damage:** 56 ⇒ 54 [3]\n- **R - The Box, Damage:** 250 / 400 / 550 (+100% AP) ⇒ 200 / 350 / 500 (+100% AP) [4]\n\nThe excerpts do not describe the earlier nerf that the developer note mentions, and they do not give the win rate or pick rate figures behind the decision.",
+   "texto_sin_citas": "Patch 26.22 reduced Thresh's base attack damage and the damage of his R, The Box. The developer note gives the reason: \"Despite our prior nerf, Thresh has remained at the very top of the support pecking order for top tier players, so it's time for another.\"\n\n**Changes in Patch 26.22:**\n- **Base Stats, Attack Damage:** 56 ⇒ 54\n- **R - The Box, Damage:** 250 / 400 / 550 (+100% AP) ⇒ 200 / 350 / 500 (+100% AP)\n\nThe excerpts do not describe the earlier nerf that the developer note mentions, and they do not give the win rate or pick rate figures behind the decision.",
+   "es_negativa": false,
+   "stop_reason": "end_turn",
+   "tokens_entrada": 1141,
+   "tokens_salida": 570,
+   "segundos": 2.74,
+   "citas": [
+    1,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "q04",
+   "trap": false,
+   "query": "In which patch did Draven's base Attack Damage change, and why?",
+   "ideal_answer": "Draven's base Attack Damage went from 62 to 64 in patch 26.19. Since all bot laners received significantly more gold income from role quests, Draven's gold advantage from Adoration stacks had lost impact, so Riot buffed his early-game damage.",
+   "contexts": [
+    {
+     "n": 1,
+     "id": "26.19/CHAMPIONS/Draven/Base Stats",
+     "text": "Patch 26.19 › CHAMPIONS › Draven › Base Stats\nAttack Damage: 62 ⇒ 64",
+     "relevant": true
+    },
+    {
+     "n": 2,
+     "id": "26.19/CHAMPIONS/Draven/Developer note",
+     "text": "Patch 26.19 › CHAMPIONS › Draven › Developer note\n\" Since all bot laners received significantly increased gold income thanks to role quests, Draven's potential to gain a gold advantage through his Adoration stacks has lost some of its impact. We're giving him a helping hand (axe?) by tapping up his early game damage. \"",
+     "relevant": true
+    },
+    {
+     "n": 3,
+     "id": "26.16/ARENA/Items/Sterak's Gage",
+     "text": "Patch 26.16 › ARENA › Items › Sterak's Gage\nBonus Attack Damage: 45% of Base Attack Damage ⇒ 50% of Base Attack Damage",
+     "relevant": false
+    },
+    {
+     "n": 4,
+     "id": "26.16/ITEMS/Sterak's Gage",
+     "text": "Patch 26.16 › ITEMS › Sterak's Gage\nBonus Attack Damage: 45% of Base Attack Damage ⇒ 50% of Base Attack Damage",
+     "relevant": false
+    },
+    {
+     "n": 5,
+     "id": "26.16/CLASSIC/Champions/Twitch/Base Stats",
+     "text": "Patch 26.16 › CLASSIC › Champions › Twitch › Base Stats\nAttack Damage: 52 ⇒ 50",
+     "relevant": false
+    },
+    {
+     "n": 6,
+     "id": "26.22/CHAMPIONS/Thresh/Base Stats",
+     "text": "Patch 26.22 › CHAMPIONS › Thresh › Base Stats\nAttack Damage: 56 ⇒ 54",
+     "relevant": false
+    },
+    {
+     "n": 7,
+     "id": "26.20/CLASSIC/Champions/Graves/Base Stats",
+     "text": "Patch 26.20 › CLASSIC › Champions › Graves › Base Stats\nBasic Attack and Critical Attack Animations: Sped up\nBase Attack Damage: 54.1 ⇒ 50\nAttack Damage per Level: 3.1 ⇒ 2.5\nAttack Speed per Level: 2.9% ⇒ 2.5%",
+     "relevant": false
+    },
+    {
+     "n": 8,
+     "id": "26.17/CLASSIC/Champions/Garen/Base Stats",
+     "text": "Patch 26.17 › CLASSIC › Champions › Garen › Base Stats\nAttack Damage: 55.5 ⇒ 60\nArmor Growth: 2.7 ⇒ 3",
+     "relevant": false
+    },
+    {
+     "n": 9,
+     "id": "26.18/CHAMPIONS/Viego/Base Stats",
+     "text": "Patch 26.18 › CHAMPIONS › Viego › Base Stats\nAttack Damage Growth: 3.5 ⇒ 4",
+     "relevant": false
+    },
+    {
+     "n": 10,
+     "id": "26.16/ARENA/Items/Sundered Sky",
+     "text": "Patch 26.16 › ARENA › Items › Sundered Sky\nHealing: [100% Melee || 50% Ranged] Base Attack Damage + 6% Missing Health ⇒ [90% Melee || 45% Ranged] Base Attack Damage + 4% Missing Health\nHealth: 350 ⇒ 400",
+     "relevant": false
+    }
+   ],
+   "texto": "Draven's base Attack Damage changed in **Patch 26.19**, from **62 ⇒ 64** [1].\n\nThe patch notes give this reason in the developer note: \"Since all bot laners received significantly increased gold income thanks to role quests, Draven's potential to gain a gold advantage through his Adoration stacks has lost some of its impact. We're giving him a helping hand (axe?) by tapping up his early game damage.\" [2]",
+   "texto_sin_citas": "Draven's base Attack Damage changed in **Patch 26.19**, from **62 ⇒ 64**.\n\nThe patch notes give this reason in the developer note: \"Since all bot laners received significantly increased gold income thanks to role quests, Draven's potential to gain a gold advantage through his Adoration stacks has lost some of its impact. We're giving him a helping hand (axe?) by tapping up his early game damage.\"",
+   "es_negativa": false,
+   "stop_reason": "end_turn",
+   "tokens_entrada": 1076,
+   "tokens_salida": 272,
+   "segundos": 1.52,
+   "citas": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "q05",
+   "trap": false,
+   "query": "What changed for Mel in patch 26.22?",
+   "ideal_answer": "Mel received a midscope update in 26.22 that moves power from early game to scaling. Base stats changed (e.g. Health 640 + 99/level → 590 + 107/level). Her passive's bonus damage per bolt at low levels was lowered (8 → 4 minimum). Q (Radiant Volley) first-hit damage was cut to 60 (+25% AP) while multi-hit damage rose, and it now refunds cooldown when it hits a champion. W (Rebuttal) was reworked into a nova that destroys enemy projectiles and shields, grants move speed and retaliates against destroyed missiles. E (Solar Snare) root duration now scales with distance. R (Golden Eclipse) cooldown went from 120 / 100 / 80 to 120 / 90 / 60 seconds.",
+   "contexts": [
+    {
+     "n": 1,
+     "id": "26.22/OVERVIEW",
+     "text": "Patch 26.22 › OVERVIEW\nPatch 26.22 is at the top of the charts. K/DA is starting fires, Mel got a midscope, and plenty of changes are in for SR, Mayhem, and Classic.\nGame Updates | Riot wroadie, Riot Cashmiir, sternest | 11/3/2026",
+     "relevant": false
+    },
+    {
+     "n": 2,
+     "id": "26.22/CHAMPIONS/Mel/R - Golden Eclipse",
+     "text": "Patch 26.22 › CHAMPIONS › Mel › R - Golden Eclipse\nCooldown: 120 / 100 / 80 seconds ⇒ 120 / 90 / 60 seconds",
+     "relevant": true
+    },
+    {
+     "n": 3,
+     "id": "26.22/CHAMPIONS/Mel/Developer note",
+     "text": "Patch 26.22 › CHAMPIONS › Mel › Developer note\n\" This patch, Mel is getting a midscope adjustment. You can read more about it here. For the spark notes version, she is having some power moved from early game to scaling, her W is being reworked into an Area-ofEffect missile destruction that retaliates rather than reflects effects, and her Q and R are getting adjustments to lower their cooldowns later on in the game so she can stack her passive to ever higher amounts. \"",
+     "relevant": true
+    },
+    {
+     "n": 4,
+     "id": "26.22/CHAMPIONS/Mel/Base Stats",
+     "text": "Patch 26.22 › CHAMPIONS › Mel › Base Stats\nHealth: 640 + 99/Level ⇒ 590 + 107/Level\nMana: 480 + 28/Level ⇒ 455 + 38/Level\nAR: +5.2/Level ⇒ +5.4/Level\nAD: 54 + 3.3/Level ⇒ 52 + 3.3/Level\nAS: 2.5%/Level ⇒ 2.75%/Level",
+     "relevant": true
+    },
+    {
+     "n": 5,
+     "id": "26.22/CHAMPIONS/Mel/E - Solar Snare",
+     "text": "Patch 26.22 › CHAMPIONS › Mel › E - Solar Snare\nRoot Duration: 1.5 seconds ⇒ [0.8 - 1.6] / [0.85 - 1.75] / [0.9 - 1.9] / [0.95 - 2.05] / [1.0 - 2.2] seconds, increasing with distance\nSlow Amount: 30% ⇒ 20 / 25 / 30 / 35 / 40%\nMana Cost: 50 / 60 / 70 / 80 / 90 ⇒ 40 / 50 / 60 / 70 / 80",
+     "relevant": true
+    },
+    {
+     "n": 6,
+     "id": "26.22/CHAMPIONS/Mel/Passive - Searing Brilliance",
+     "text": "Patch 26.22 › CHAMPIONS › Mel › Passive - Searing Brilliance\nBonus Damage Per Bolt: 8 - 30 (+4% AP) ⇒ 4 - 30 (+4% AP)\nFirst Stack Damage Against Minions: 50% Less ⇒ 45% Less",
+     "relevant": true
+    },
+    {
+     "n": 7,
+     "id": "26.19/UPCOMING SKINS & CHROMAS",
+     "text": "Patch 26.19 › UPCOMING SKINS & CHROMAS\nThe following skins will be released in this patch:\nCoven Janna\nCoven Mel\nOld God Anivia\nOld God Urgot\nCoven Ahri\nCoven Ashe\nCoven Janna\nCoven Mel\nCoven Morgana\nOld God Anivia\nOld God Urgot",
+     "relevant": false
+    },
+    {
+     "n": 8,
+     "id": "26.22/CHAMPIONS/Rumble/Developer note",
+     "text": "Patch 26.22 › CHAMPIONS › Rumble › Developer note\n\" Similar to Corki, Rumble was tuned for pro play. This change should help out the average rumble a bit more than pros when they catch back up to the patch cycle. \"",
+     "relevant": false
+    },
+    {
+     "n": 9,
+     "id": "26.17/ARAM: MAYHEM",
+     "text": "Patch 26.17 › ARAM: MAYHEM\nplaystyles. Let us know how these changes feel, and see you on the Bridge! \"",
+     "relevant": false
+    },
+    {
+     "n": 10,
+     "id": "26.19/PATCH HIGHLIGHTS/Developer note",
+     "text": "Patch 26.19 › PATCH HIGHLIGHTS › Developer note\n\" Coven Janna, Coven Mel, Old God Anivia, Old God Urgot will be available September 23, 2026. \"",
+     "relevant": false
+    }
+   ],
+   "texto": "In Patch 26.22, Mel received changes to her base stats, E, passive, and R. [2][3][4][5][6]\n\n**Base Stats** [4]\n- Health: 640 + 99/Level ⇒ 590 + 107/Level\n- Mana: 480 + 28/Level ⇒ 455 + 38/Level\n- AR: +5.2/Level ⇒ +5.4/Level\n- AD: 54 + 3.3/Level ⇒ 52 + 3.3/Level\n- AS: 2.5%/Level ⇒ 2.75%/Level\n\n**E - Solar Snare** [5]\n- Root Duration: 1.5 seconds ⇒ [0.8 - 1.6] / [0.85 - 1.75] / [0.9 - 1.9] / [0.95 - 2.05] / [1.0 - 2.2] seconds, increasing with distance\n- Slow Amount: 30% ⇒ 20 / 25 / 30 / 35 / 40%\n- Mana Cost: 50 / 60 / 70 / 80 / 90 ⇒ 40 / 50 / 60 / 70 / 80\n\n**Passive - Searing Brilliance** [6]\n- Bonus Damage Per Bolt: 8 - 30 (+4% AP) ⇒ 4 - 30 (+4% AP)\n- First Stack Damage Against Minions: 50% Less ⇒ 45% Less\n\n**R - Golden Eclipse** [2]\n- Cooldown: 120 / 100 / 80 seconds ⇒ 120 / 90 / 60 seconds\n\n**Developer note** [3]\nThe developer note says that for this patch, Mel's power is being moved from early game to scaling, her W is being reworked into an area-of-effect missile that retaliates rather than reflects effects, and her Q and R are getting adjustments to lower their cooldowns later in the game so she can stack her passive to higher amounts.\n\nThe provided patch notes do not include the specific Q changes or the new W numbers and details. The developer note describes the W rework and the Q adjustments only in general terms, and no Q excerpt is included.",
+   "texto_sin_citas": "In Patch 26.22, Mel received changes to her base stats, E, passive, and R.\n\n**Base Stats**\n- Health: 640 + 99/Level ⇒ 590 + 107/Level\n- Mana: 480 + 28/Level ⇒ 455 + 38/Level\n- AR: +5.2/Level ⇒ +5.4/Level\n- AD: 54 + 3.3/Level ⇒ 52 + 3.3/Level\n- AS: 2.5%/Level ⇒ 2.75%/Level\n\n**E - Solar Snare**\n- Root Duration: 1.5 seconds ⇒ [0.8 - 1.6] / [0.85 - 1.75] / [0.9 - 1.9] / [0.95 - 2.05] / [1.0 - 2.2] seconds, increasing with distance\n- Slow Amount: 30% ⇒ 20 / 25 / 30 / 35 / 40%\n- Mana Cost: 50 / 60 / 70 / 80 / 90 ⇒ 40 / 50 / 60 / 70 / 80\n\n**Passive - Searing Brilliance**\n- Bonus Damage Per Bolt: 8 - 30 (+4% AP) ⇒ 4 - 30 (+4% AP)\n- First Stack Damage Against Minions: 50% Less ⇒ 45% Less\n\n**R - Golden Eclipse**\n- Cooldown: 120 / 100 / 80 seconds ⇒ 120 / 90 / 60 seconds\n\n**Developer note**\nThe developer note says that for this patch, Mel's power is being moved from early game to scaling, her W is being reworked into an area-of-effect missile that retaliates rather than reflects effects, and her Q and R are getting adjustments to lower their cooldowns later in the game so she can stack her passive to higher amounts.\n\nThe provided patch notes do not include the specific Q changes or the new W numbers and details. The developer note describes the W rework and the Q adjustments only in general terms, and no Q excerpt is included.",
+   "es_negativa": false,
+   "stop_reason": "end_turn",
+   "tokens_entrada": 1478,
+   "tokens_salida": 961,
+   "segundos": 4.04,
+   "citas": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "q06",
+   "trap": false,
+   "query": "How did Locke's W change in patches 26.21 and 26.22?",
+   "ideal_answer": "In 26.21, Soul Ignition's mana cost rose from 50 / 55 / 60 / 65 / 70 to 60 / 65 / 70 / 75 / 80, the grey health stored based on current health went from 40 - 200 to 20 - 200, and the current health store went from 150 - 450 to 100 - 500 (+60% AP). In 26.22, its duration was reduced from 6s to 5s.",
+   "contexts": [
+    {
+     "n": 1,
+     "id": "26.22/CHAMPIONS/Locke/W - Soul Ignition",
+     "text": "Patch 26.22 › CHAMPIONS › Locke › W - Soul Ignition\nDuration: 6s ⇒ 5s",
+     "relevant": true
+    },
+    {
+     "n": 2,
+     "id": "26.21/CHAMPIONS/Locke/Base Stats",
+     "text": "Patch 26.21 › CHAMPIONS › Locke › Base Stats\nMana Growth: 70 ⇒ 60",
+     "relevant": false
+    },
+    {
+     "n": 3,
+     "id": "26.15/CHAMPIONS/Locke/Base Stats",
+     "text": "Patch 26.15 › CHAMPIONS › Locke › Base Stats\nHealth: 655 ⇒ 620",
+     "relevant": false
+    },
+    {
+     "n": 4,
+     "id": "26.21/CHAMPIONS/Locke/E - Ashen Pursuit",
+     "text": "Patch 26.21 › CHAMPIONS › Locke › E - Ashen Pursuit\nBlink Damage: 40 / 50 / 60 / 70 / 80 (+40% AP) ⇒ 40 / 55 / 70 / 85 / 100 (+50% AP)",
+     "relevant": false
+    },
+    {
+     "n": 5,
+     "id": "26.21/CHAMPIONS/Locke/Q - Ritual Nails",
+     "text": "Patch 26.21 › CHAMPIONS › Locke › Q - Ritual Nails\nUnused Charge Refund: 20 - 35% mana and cooldown refund ⇒ 10 - 40% mana and cooldown refund",
+     "relevant": false
+    },
+    {
+     "n": 6,
+     "id": "26.20/ARAM/Champions/Locke",
+     "text": "Patch 26.20 › ARAM › Champions › Locke\nDamage Dealt: 105% ⇒ 115%",
+     "relevant": false
+    },
+    {
+     "n": 7,
+     "id": "26.22/CHAMPIONS/Locke/Developer note",
+     "text": "Patch 26.22 › CHAMPIONS › Locke › Developer note\n\" While Locke's performance in general is within reason, he's proven to be a much deeper champion than we initially expected and players who have reached that level of Locke play have shown him to still be clearly too strong, especially early game. \"",
+     "relevant": false
+    },
+    {
+     "n": 8,
+     "id": "26.16/BUGFIXES & QOL CHANGES/QoL CHANGES",
+     "text": "Patch 26.16 › BUGFIXES & QOL CHANGES › QoL CHANGES\nReduced the volume of base Locke (Q) missile cast sound effects to better sit in the overall game mix.",
+     "relevant": false
+    },
+    {
+     "n": 9,
+     "id": "26.19/ARENA/Champions/Locke/R - Purgatory",
+     "text": "Patch 26.19 › ARENA › Champions › Locke › R - Purgatory\nPercentage per Stack: 0.5 ⇒ 1",
+     "relevant": false
+    },
+    {
+     "n": 10,
+     "id": "26.22/CHAMPIONS/Locke/Q - Ritual Nails",
+     "text": "Patch 26.22 › CHAMPIONS › Locke › Q - Ritual Nails\nStack Bonus Damage: 18 / 26 / 34 / 42 / 50 ⇒ 15 / 22 / 29 / 36 / 43\nMaximum Stack Damage: 75.6 / 109.2 / 142.8 / 176.4 / 210 ⇒ 63 / 92.4 / 121.8 / 151.2 / 180.6",
+     "relevant": false
+    }
+   ],
+   "texto": "In Patch 26.22, Locke's W - Soul Ignition had its Duration changed from 6s ⇒ 5s [1].\n\nThe provided patch notes do not contain any change to Locke's W in Patch 26.21. The 26.21 excerpts cover Base Stats (Mana Growth), E - Ashen Pursuit, and Q - Ritual Nails [2][4][5], so the information for that patch is missing.",
+   "texto_sin_citas": "In Patch 26.22, Locke's W - Soul Ignition had its Duration changed from 6s ⇒ 5s.\n\nThe provided patch notes do not contain any change to Locke's W in Patch 26.21. The 26.21 excerpts cover Base Stats (Mana Growth), E - Ashen Pursuit, and Q - Ritual Nails, so the information for that patch is missing.",
+   "es_negativa": false,
+   "stop_reason": "end_turn",
+   "tokens_entrada": 1065,
+   "tokens_salida": 308,
+   "segundos": 1.52,
+   "citas": [
+    1,
+    2,
+    4,
+    5
+   ]
+  },
+  {
+   "id": "q07",
+   "trap": false,
+   "query": "What did patch 26.22 change about Doran's Bow, and why?",
+   "ideal_answer": "Doran's Bow's Attack Damage was reduced from 8 to 7 in patch 26.22. Riot considered it slightly but clearly too strong: marksmen expected to lean towards Doran's Blade were almost exclusively buying Doran's Bow.",
+   "contexts": [
+    {
+     "n": 1,
+     "id": "26.22/ITEMS/Doran's Bow/Developer note",
+     "text": "Patch 26.22 › ITEMS › Doran's Bow › Developer note\n\" We're nerfing Doran's Bow by a minor amount, as it's settled into a spot that is slightly but clearly too strong, resulting in marksmen that we expect to be leaning towards Doran's Blade instead being almost purely Doran's Bow users. \"",
+     "relevant": true
+    },
+    {
+     "n": 2,
+     "id": "26.22/ITEMS/Doran's Bow",
+     "text": "Patch 26.22 › ITEMS › Doran's Bow\nAttack Damage: 8 ⇒ 7",
+     "relevant": true
+    },
+    {
+     "n": 3,
+     "id": "26.22/CHAMPIONS/Smolder/Developer note",
+     "text": "Patch 26.22 › CHAMPIONS › Smolder › Developer note\n\" Our buffs a few patches ago landed a bit softer than we expected, but he's ended up with a good balance between his Crit and Caster builds, so we're giving him a more generic buff this time. We also expect the Doran's Bow nerf in this patch to help him out a bit. \"",
+     "relevant": false
+    },
+    {
+     "n": 4,
+     "id": "26.22/OVERVIEW",
+     "text": "Patch 26.22 › OVERVIEW\nPatch 26.22 is at the top of the charts. K/DA is starting fires, Mel got a midscope, and plenty of changes are in for SR, Mayhem, and Classic.\nGame Updates | Riot wroadie, Riot Cashmiir, sternest | 11/3/2026",
+     "relevant": false
+    },
+    {
+     "n": 5,
+     "id": "26.22/CHAMPIONS/Rumble/Developer note",
+     "text": "Patch 26.22 › CHAMPIONS › Rumble › Developer note\n\" Similar to Corki, Rumble was tuned for pro play. This change should help out the average rumble a bit more than pros when they catch back up to the patch cycle. \"",
+     "relevant": false
+    },
+    {
+     "n": 6,
+     "id": "26.19/CLASSIC/Champions/Nautilus/Developer note",
+     "text": "Patch 26.19 › CLASSIC › Champions › Nautilus › Developer note\n\" Nautilus came out back in 2012 and as with Nami, his kit has stood the test of time. Remember that you can buy multiple Doran's Rings if you want your laning phase to work out, and he used to be quite the jungler back in the day. The biggest difference you'll find is that his ultimate is much less disruptive to targets hit by the traveling portion. \"",
+     "relevant": false
+    },
+    {
+     "n": 7,
+     "id": "26.22/CHAMPIONS/Naafiri/W - The Call of the Pack",
+     "text": "Patch 26.22 › CHAMPIONS › Naafiri › W - The Call of the Pack\nBonus Attack Damage: 20% ⇒ 22%",
+     "relevant": false
+    },
+    {
+     "n": 8,
+     "id": "26.22/CHAMPIONS/Corki/Developer note",
+     "text": "Patch 26.22 › CHAMPIONS › Corki › Developer note\n\" We were cautious about Corki's power level going into Worlds, but now (like Azir and Orianna), he has some more space to be better for everyone. \"",
+     "relevant": false
+    },
+    {
+     "n": 9,
+     "id": "26.17/OVERVIEW",
+     "text": "Patch 26.17 › OVERVIEW\nArenas, Bridges, Summoner's Rifts new and old… change comes for us all.\nGame Updates | Riot wroadie, Riot Cashmiir, sternest | 8/25/2026",
+     "relevant": false
+    },
+    {
+     "n": 10,
+     "id": "26.17/CLASSIC",
+     "text": "Patch 26.17 › CLASSIC\nWe've also got about 20 balance changes, several dozen bugfixes, and have added Champion and Role swapping to Champion Select to improve your day-to-day Classic experience. \"",
+     "relevant": false
+    }
+   ],
+   "texto": "Patch 26.22 reduced Doran's Bow's Attack Damage from **8 ⇒ 7** [2].\n\nAccording to the developer note in the same patch, the nerf was a \"minor amount\" because Doran's Bow had \"settled into a spot that is slightly but clearly too strong.\" The developers expected that marksmen would otherwise lean toward Doran's Blade, but were instead \"almost purely Doran's Bow users\" [1].",
+   "texto_sin_citas": "Patch 26.22 reduced Doran's Bow's Attack Damage from **8 ⇒ 7**.\n\nAccording to the developer note in the same patch, the nerf was a \"minor amount\" because Doran's Bow had \"settled into a spot that is slightly but clearly too strong.\" The developers expected that marksmen would otherwise lean toward Doran's Blade, but were instead \"almost purely Doran's Bow users\".",
+   "es_negativa": false,
+   "stop_reason": "end_turn",
+   "tokens_entrada": 1242,
+   "tokens_salida": 278,
+   "segundos": 1.85,
+   "citas": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "q08",
+   "trap": false,
+   "query": "Which champions were added to League Classic in patch 26.21?",
+   "ideal_answer": "Patch 26.21 brought four classic-era champions to League Classic: Mordekaiser (with his 2010-2015 kit), Yorick, Hecarim and Lucian.",
+   "contexts": [
+    {
+     "n": 1,
+     "id": "26.16/CLASSIC/Developer note",
+     "text": "Patch 26.16 › CLASSIC › Developer note\n\" Welcome to our first patch update for League Classic! We're delivering brand new old champions, brand new old runes, and a suite of balance changes aimed at the game's biggest outliers. Are you excited to be a flippin' Ninja? \"",
+     "relevant": false
+    },
+    {
+     "n": 2,
+     "id": "26.17/CLASSIC",
+     "text": "Patch 26.17 › CLASSIC\nWe've also got about 20 balance changes, several dozen bugfixes, and have added Champion and Role swapping to Champion Select to improve your day-to-day Classic experience. \"",
+     "relevant": false
+    },
+    {
+     "n": 3,
+     "id": "26.18/CLASSIC/Developer note",
+     "text": "Patch 26.18 › CLASSIC › Developer note\n\" Our third League Classic patch has our biggest content drop to date: Five brand new old champions! Do you want to remove as much gameplay as possible with Poppy's Diplomatic Immunity? Untargetably Blade Waltz the entire enemy team as Fiora? Deliver taunt explosions as",
+     "relevant": false
+    },
+    {
+     "n": 4,
+     "id": "26.16/CLASSIC/Systems/Classic Gold Generation/Developer note",
+     "text": "Patch 26.16 › CLASSIC › Systems › Classic Gold Generation › Developer note\n\" League Classic has higher stakes and is generally more snowbally than Season 2026 and that's intentional. We also want players to have a fighting chance at comebacks without adding systems like Objective Bounties that players have to identify and play around. We also don't want to inflate total gold in the game too heavily.",
+     "relevant": false
+    },
+    {
+     "n": 5,
+     "id": "26.21/CLASSIC/Champions/Lucian/Developer note",
+     "text": "Patch 26.21 › CLASSIC › Champions › Lucian › Developer note\n\" Lucian is the newest champion to grace League Classic, as he was released in the back half of 2013, but we couldn't release a bunch of Shadow Isles champions without having our old pal back to keep them in check. There are a few small differences to Lucian here compared to the one you may have played recently. Most notably, he has 550 attack range, which makes him an extremely potent laner. \"",
+     "relevant": true
+    },
+    {
+     "n": 6,
+     "id": "26.19/CLASSIC/Systems/Council Vote/Developer note",
+     "text": "Patch 26.19 › CLASSIC › Systems › Council Vote › Developer note\n\" Welcome to our second League Classic community poll! This time around, we want your feedback on six specific areas, including which champion's kit we prioritize restoring next. Head over to \"The Council\" tab in the League client to cast your votes! Voting will be open for seven days and you're free to update your answers while the poll is active. And keep an eye out, as poll results will be published in the next Patch Notes.",
+     "relevant": false
+    },
+    {
+     "n": 7,
+     "id": "26.19/OVERVIEW",
+     "text": "Patch 26.19 › OVERVIEW\nWorlds is right around the corner, more \"new\" champs join Classic, and Arena's got fresh Augments!\nGame Updates | Riot wroadie, Riot Cashmiir, sternest | 9/22/2026\nLooking for more information on all things League of Legends? Check out our community-run wiki here!\nWrong patch notes? You can find the TFT patch notes here! \"",
+     "relevant": false
+    },
+    {
+     "n": 8,
+     "id": "26.18/CLASSIC/Champions/Warwick/R - Infinite Duress",
+     "text": "Patch 26.18 › CLASSIC › Champions › Warwick › R - Infinite Duress\nDamage: 250 / 335 / 420 + 200% bonus AD ⇒ 180 / 300 / 420 + 200% bonus AD\nCast Indicator: Updated the cast indicator to better reflect its cast range",
+     "relevant": false
+    },
+    {
+     "n": 9,
+     "id": "26.16/CLASSIC/Runes/New Runes/Developer note",
+     "text": "Patch 26.16 › CLASSIC › Runes › New Runes › Developer note\n\" We've added the following runes to the Classic Store: \"",
+     "relevant": false
+    },
+    {
+     "n": 10,
+     "id": "26.21/CLASSIC/Champions/Mordekaiser",
+     "text": "Patch 26.21 › CLASSIC › Champions › Mordekaiser\nAnd when it's time to win a fight, your ultimate can turn it into a 6v4. Beat them with their own AD Carry! \"",
+     "relevant": false
+    }
+   ],
+   "texto": "Patch 26.21 excerpts name only one champion as newly added to League Classic: **Lucian**. The Patch 26.21 developer note calls him \"the newest champion to grace League Classic\" [5].\n\nThe excerpt also says that releasing \"a bunch of Shadow Isles champions\" was the reason for bringing Lucian back, which implies other Shadow Isles champions were added alongside him. It does not name them or give their number, so that part of the answer is missing.\n\nMordekaiser appears in a Patch 26.21 excerpt [10], but that excerpt does not say he was added in this patch, so I can't list him as an addition.",
+   "texto_sin_citas": "Patch 26.21 excerpts name only one champion as newly added to League Classic: **Lucian**. The Patch 26.21 developer note calls him \"the newest champion to grace League Classic\".\n\nThe excerpt also says that releasing \"a bunch of Shadow Isles champions\" was the reason for bringing Lucian back, which implies other Shadow Isles champions were added alongside him. It does not name them or give their number, so that part of the answer is missing.\n\nMordekaiser appears in a Patch 26.21 excerpt, but that excerpt does not say he was added in this patch, so I can't list him as an addition.",
+   "es_negativa": false,
+   "stop_reason": "end_turn",
+   "tokens_entrada": 1429,
+   "tokens_salida": 481,
+   "segundos": 2.37,
+   "citas": [
+    5,
+    10
+   ]
+  },
+  {
+   "id": "q09",
+   "trap": false,
+   "query": "How was Bel'Veth changed in Arena in patch 26.21?",
+   "ideal_answer": "In Arena in patch 26.21, Bel'Veth was nerfed: her Q (Void Surge) Attack Damage ratio went from 105% to 95%, and her R (Endless Banquet) bonus Attack Damage ratio per stack from 1% to 0.5%.",
+   "contexts": [
+    {
+     "n": 1,
+     "id": "26.16/ARENA/Champions/Bel'Veth/R - Endless Banquet",
+     "text": "Patch 26.16 › ARENA › Champions › Bel'Veth › R - Endless Banquet\nBonus Health: 250-450 ⇒ 100-400",
+     "relevant": false
+    },
+    {
+     "n": 2,
+     "id": "26.15/CHAMPIONS/Bel'Veth/Developer note",
+     "text": "Patch 26.15 › CHAMPIONS › Bel'Veth › Developer note\n\" This patch, we're launching a set of Bel'Veth changes that are aimed at making her gameplay pattern a bit less focused around her early game, in order to allow her to fulfill her fantasy as a late game scaling champion.",
+     "relevant": false
+    },
+    {
+     "n": 3,
+     "id": "26.21/ARENA/Champions/Bel'Veth/Q - Void Surge",
+     "text": "Patch 26.21 › ARENA › Champions › Bel'Veth › Q - Void Surge\nAttack Damage Ratio: 105% ⇒ 95%",
+     "relevant": true
+    },
+    {
+     "n": 4,
+     "id": "26.21/ARENA/Champions/Bel'Veth/R - Endless Banquet",
+     "text": "Patch 26.21 › ARENA › Champions › Bel'Veth › R - Endless Banquet\nBonus Attack Damage Ratio per Stack: 1% ⇒ 0.5%",
+     "relevant": true
+    },
+    {
+     "n": 5,
+     "id": "26.19/ARENA/Champions/Bel'Veth/E - Royal Maelstrom",
+     "text": "Patch 26.19 › ARENA › Champions › Bel'Veth › E - Royal Maelstrom\nOn-Hit/Attack Effectiveness: 12 - 24 ⇒ 8 - 16",
+     "relevant": false
+    },
+    {
+     "n": 6,
+     "id": "26.19/ARENA/Champions/Bel'Veth/R - Endless Banquet",
+     "text": "Patch 26.19 › ARENA › Champions › Bel'Veth › R - Endless Banquet\nPassive Bonus Attack Damage Ratio: 3 ⇒ 1",
+     "relevant": false
+    },
+    {
+     "n": 7,
+     "id": "26.20/ARAM/Champions/Bel'Veth",
+     "text": "Patch 26.20 › ARAM › Champions › Bel'Veth\nDamage Dealt: 105% ⇒ 100%\nDamage Taken: 95% ⇒ 100%\nTenacity: 20% ⇒ 0%",
+     "relevant": false
+    },
+    {
+     "n": 8,
+     "id": "26.16/CHAMPIONS/Bel'Veth/Base Stats",
+     "text": "Patch 26.16 › CHAMPIONS › Bel'Veth › Base Stats\nHealth Growth: 110 ⇒ 105",
+     "relevant": false
+    },
+    {
+     "n": 9,
+     "id": "26.16/ARENA/Champions/Bel'Veth/Passive - Death in Lavender",
+     "text": "Patch 26.16 › ARENA › Champions › Bel'Veth › Passive - Death in Lavender\nAttack Speed Per Stack: 0.2%-2% ⇒ 0.2%-1.5%",
+     "relevant": false
+    },
+    {
+     "n": 10,
+     "id": "26.21/ARENA",
+     "text": "Patch 26.21 › ARENA\nOverall, we've shifted power in ways that we hope will change up the meta a bit and provide some fresh new build options and experiences.",
+     "relevant": false
+    }
+   ],
+   "texto": "In patch 26.21, Bel'Veth had two Arena changes:\n\n- **Q - Void Surge:** Attack Damage Ratio changed from 105% ⇒ 95% (Patch 26.21 › ARENA › Champions › Bel'Veth › Q - Void Surge) [3].\n- **R - Endless Banquet:** Bonus Attack Damage Ratio per Stack changed from 1% ⇒ 0.5% (Patch 26.21 › ARENA › Champions › Bel'Veth › R - Endless Banquet) [4].\n\nPatch 26.21's general Arena section says power was shifted \"in ways that we hope will change up the meta,\" but it does not list specific Bel'Veth changes beyond those above [10].",
+   "texto_sin_citas": "In patch 26.21, Bel'Veth had two Arena changes:\n\n- **Q - Void Surge:** Attack Damage Ratio changed from 105% ⇒ 95% (Patch 26.21 › ARENA › Champions › Bel'Veth › Q - Void Surge).\n- **R - Endless Banquet:** Bonus Attack Damage Ratio per Stack changed from 1% ⇒ 0.5% (Patch 26.21 › ARENA › Champions › Bel'Veth › R - Endless Banquet).\n\nPatch 26.21's general Arena section says power was shifted \"in ways that we hope will change up the meta,\" but it does not list specific Bel'Veth changes beyond those above.",
+   "es_negativa": false,
+   "stop_reason": "end_turn",
+   "tokens_entrada": 1022,
+   "tokens_salida": 414,
+   "segundos": 1.94,
+   "citas": [
+    3,
+    4,
+    10
+   ]
+  },
+  {
+   "id": "q10",
+   "trap": false,
+   "query": "When does TFT move to its own standalone client, and what happens to TFT cosmetics in League?",
+   "ideal_answer": "TFT moves to its own standalone client starting November 4th, 2026. Existing TFT cosmetics remain usable in League; the first TFT-only Little Legends arrive on December 1st, and December 15th marks the full separation of TFT cosmetics, including emotes and icons.",
+   "contexts": [
+    {
+     "n": 1,
+     "id": "26.22/TFT STANDALONE CLIENT",
+     "text": "Patch 26.22 › TFT STANDALONE CLIENT\nDespite this upcoming separation, all existing Teamfight Tactics cosmetics will remain usable in League. The first batch of TFT-only Little Legends will arrive on December 1st, with December 15th marking the date of full separation for TFT cosmetics including emotes and icons.\nIn a future patch, we'll be adding the option to fully opt out of TFT downloads in League patches. To make this possible, 26.22 will be a larger download than usual. For more information, read more here and we'll see (some of) you on the Convergence! \"",
+     "relevant": true
+    },
+    {
+     "n": 2,
+     "id": "26.22/TFT STANDALONE CLIENT/Developer note",
+     "text": "Patch 26.22 › TFT STANDALONE CLIENT › Developer note\n\" Hooray! TFT is all grown up! They're officially moving to their own standalone client starting on November 4th, 2026. To accommodate their new home, you can expect this patch to be larger than usual. We are making sure that it's as easy as clicking a button to swap between League of Legends and Teamfight Tactics whenever you want.",
+     "relevant": true
+    },
+    {
+     "n": 3,
+     "id": "26.19/OVERVIEW",
+     "text": "Patch 26.19 › OVERVIEW\nWorlds is right around the corner, more \"new\" champs join Classic, and Arena's got fresh Augments!\nGame Updates | Riot wroadie, Riot Cashmiir, sternest | 9/22/2026\nLooking for more information on all things League of Legends? Check out our community-run wiki here!\nWrong patch notes? You can find the TFT patch notes here! \"",
+     "relevant": false
+    },
+    {
+     "n": 4,
+     "id": "26.15/OVERVIEW",
+     "text": "Patch 26.15 › OVERVIEW\nWe're kicking off Season 3…but of what year?!\nGame Updates | Riot Cashmiir, sternest, Riot Yina | 7/28/2026\nOn the ranked front with the new Season, you can only cash in Aegis of Valor in games you win to remove mixed incentives, and we're bringing back duoing to Master tier!\nContinue on for ARAM: Mayhem and Arena changes!\nLooking for more information on all things League of Legends? Check out our community-run wiki here!\nWrong patch notes? You can find the TFT patch notes here! \"",
+     "relevant": false
+    },
+    {
+     "n": 5,
+     "id": "26.18/OVERVIEW#2",
+     "text": "Patch 26.18 › OVERVIEW\nClassic will be having a big old Demacian reunion this week as Fiora, Galio, Poppy, Shyvana, and Xin Zhao join the fray in addition to a host of balance changes and the results of our first Council vote!\nFor all you Mayhem heads out there, we're making sure that the Augment choices you receive make more sense for the champion you're playing, as we continue to improve the Augment pools.\nLooking for more information on all things League of Legends? Check out our community-run wiki here!\nWrong patch notes? You can find the TFT patch notes here! \"",
+     "relevant": false
+    },
+    {
+     "n": 6,
+     "id": "26.19/CLASSIC/Systems/Council Vote/Developer note",
+     "text": "Patch 26.19 › CLASSIC › Systems › Council Vote › Developer note\n\" Welcome to our second League Classic community poll! This time around, we want your feedback on six specific areas, including which champion's kit we prioritize restoring next. Head over to \"The Council\" tab in the League client to cast your votes! Voting will be open for seven days and you're free to update your answers while the poll is active. And keep an eye out, as poll results will be published in the next Patch Notes.",
+     "relevant": false
+    },
+    {
+     "n": 7,
+     "id": "26.17/CLASSIC/Items/Wriggle's Lantern and Feral Flare/Developer note",
+     "text": "Patch 26.17 › CLASSIC › Items › Wriggle's Lantern and Feral Flare › Developer note\n\" When we built out the items in League Classic, we knew there'd be some conflicts. We had items coexisting who never coexisted before, or were placed into a game that didn't quite fit. One of these conflicts was with jungle items: We have monster tuning from 2013 (plus the Wight), but have the 2014 item Feral Flare. When we launched, we simply took the 2013 version of Madred's Razors and Wriggle's Lantern, and simply updated Feral Flare to fit the same stat profile.",
+     "relevant": false
+    },
+    {
+     "n": 8,
+     "id": "26.18/CLASSIC/Developer note",
+     "text": "Patch 26.18 › CLASSIC › Developer note\n\" Our third League Classic patch has our biggest content drop to date: Five brand new old champions! Do you want to remove as much gameplay as possible with Poppy's Diplomatic Immunity? Untargetably Blade Waltz the entire enemy team as Fiora? Deliver taunt explosions as",
+     "relevant": false
+    },
+    {
+     "n": 9,
+     "id": "26.19/CLASSIC/Champions/Twisted Fate/Developer note",
+     "text": "Patch 26.19 › CLASSIC › Champions › Twisted Fate › Developer note\n\" Twisted Fate is too good in both mid and support, so it's nerf time. As support is the better-performing role, we're lowering his map-wide omnipresence and frontloading the nerfs. These nerfs come in the form of patch 3.7's Destiny cooldown and 1.0.0.75's Gate cooldown, the last time it was ever its own spell. We're also matching his passive's behavior with other global passives: It's disabled while he's dead. \"",
+     "relevant": false
+    },
+    {
+     "n": 10,
+     "id": "26.16/CLASSIC SKINS AND COSMETICS/Developer note",
+     "text": "Patch 26.16 › CLASSIC SKINS AND COSMETICS › Developer note\n\" Miss Fortune and all three of our new old ninja champions have updated base classic skins, as well as new looks for Akali and Shen that can be selected as chromas for players who own the skins: \"",
+     "relevant": false
+    }
+   ],
+   "texto": "**When TFT moves to its own client:** Per Patch 26.22 › TFT STANDALONE CLIENT › Developer note, TFT is \"officially moving to their own standalone client starting on November 4th, 2026\" [2].\n\n**What happens to TFT cosmetics in League:** Per Patch 26.22 › TFT STANDALONE CLIENT, \"all existing Teamfight Tactics cosmetics will remain usable in League\" [1]. The same excerpt gives these dates:\n- The first batch of TFT-only Little Legends arrives on December 1st [1].\n- December 15th is the date of full separation for TFT cosmetics, including emotes and icons [1].\n\nThe excerpts do not state the year for the December 1st and December 15th dates. They also do not say what happens to TFT cosmetics after the December 15th separation beyond the statement that existing cosmetics remain usable in League.",
+   "texto_sin_citas": "**When TFT moves to its own client:** Per Patch 26.22 › TFT STANDALONE CLIENT › Developer note, TFT is \"officially moving to their own standalone client starting on November 4th, 2026\".\n\n**What happens to TFT cosmetics in League:** Per Patch 26.22 › TFT STANDALONE CLIENT, \"all existing Teamfight Tactics cosmetics will remain usable in League\". The same excerpt gives these dates:\n- The first batch of TFT-only Little Legends arrives on December 1st.\n- December 15th is the date of full separation for TFT cosmetics, including emotes and icons.\n\nThe excerpts do not state the year for the December 1st and December 15th dates. They also do not say what happens to TFT cosmetics after the December 15th separation beyond the statement that existing cosmetics remain usable in League.",
+   "es_negativa": false,
+   "stop_reason": "end_turn",
+   "tokens_entrada": 1969,
+   "tokens_salida": 540,
+   "segundos": 2.44,
+   "citas": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "q11",
+   "trap": true,
+   "query": "What are the champion balance changes in patch 26.23?",
+   "ideal_answer": "The available patch notes only cover patches 26.15 to 26.22, so there is no information about the balance changes in patch 26.23.",
+   "contexts": [
+    {
+     "n": 1,
+     "id": "26.17/CLASSIC",
+     "text": "Patch 26.17 › CLASSIC\nWe've also got about 20 balance changes, several dozen bugfixes, and have added Champion and Role swapping to Champion Select to improve your day-to-day Classic experience. \"",
+     "relevant": false
+    },
+    {
+     "n": 2,
+     "id": "26.16/ARENA/Developer note",
+     "text": "Patch 26.16 › ARENA › Developer note\n\" Hey Arenaheads! This Arena patch comes with many champion balance changes, primarily bringing up those that have been struggling for a while so that they get their chance in the spotlight, along with tapping down a few of the most dominant champions.",
+     "relevant": false
+    },
+    {
+     "n": 3,
+     "id": "26.16/CLASSIC/Developer note",
+     "text": "Patch 26.16 › CLASSIC › Developer note\n\" Welcome to our first patch update for League Classic! We're delivering brand new old champions, brand new old runes, and a suite of balance changes aimed at the game's biggest outliers. Are you excited to be a flippin' Ninja? \"",
+     "relevant": false
+    },
+    {
+     "n": 4,
+     "id": "26.22/CLASSIC",
+     "text": "Patch 26.22 › CLASSIC\nWe've also got a bigger balance patch than usual, taking aim at some of the game's largest outliers on both the top and bottom end. Yes, Janna, your time has come. \"",
+     "relevant": false
+    },
+    {
+     "n": 5,
+     "id": "26.17/ARENA",
+     "text": "Patch 26.17 › ARENA\nGoing forward Arena will also be shifting back to an alternating patch schedule, with the plan being to aim for balance patches on odd numbered League of Legends patches. We feel that the mode is generally in a healthy place and we don't want to be making adjustments so frequently that players feel that their builds and discovery will be balanced out too quickly. \"",
+     "relevant": false
+    },
+    {
+     "n": 6,
+     "id": "26.19/CLASSIC",
+     "text": "Patch 26.19 › CLASSIC\nprevious Council poll. Welcome back, Cloak and Dagger, Moonflair Spellblade, and Zz'Rot Portal.\nOur fourth patch for Classic also contains more bugfixing, balance changes, and client quality. Check out those sweet new rune effects when you socket them in! \"",
+     "relevant": false
+    },
+    {
+     "n": 7,
+     "id": "26.15/ARAM: MAYHEM/\" Hello Mayhemers!",
+     "text": "Patch 26.15 › ARAM: MAYHEM › \" Hello Mayhemers!\nIn this patch, we're making a systematic update to champion balance modifiers. For a long time, champion damage modifiers only affected spells and attack damage by champions. This led to some extreme cases where champions could overperform because their item and Augment damage wasn't affected.\nWith this update, damage dealt modifiers now apply to spell, attack, item, and Augment damage. Our goal is for these modifiers to better reflect a champion's overall performance while allowing underperforming champions to benefit more consistently from the rest of the game's systems. As a result, we're able to remove many existing champion specific modifiers.\nOver time, we hope to continue reducing the number of individual champion mods and make future balance changes more targeted and easier to maintain. For Augments, we're continuing to buff underperforming options to make their payoffs more satisfying in combat. On the other hand, Critical Missile has proven to be a bit too reliable on critical strike ADCs, so we're tuning it down to make it less frustrating to play against. Thanks for playing, and we'll see you on the Bridge! \"",
+     "relevant": false
+    },
+    {
+     "n": 8,
+     "id": "26.17/CLASSIC/Champions/Jax/Developer note",
+     "text": "Patch 26.17 › CLASSIC › Champions › Jax › Developer note\n\" Jax is receiving a few bug fixes this patch, and while he's pretty balanced, they're important enough changes to warrant being called out on their own. \"",
+     "relevant": false
+    },
+    {
+     "n": 9,
+     "id": "26.18/CLASSIC",
+     "text": "Patch 26.18 › CLASSIC\nGalio? Experience the fabled early Xin Zhao kit (he's been nerfed, don't worry)? Shyvana's also here.\nWe've got a smaller balance patch than before, as we're in a much better state balance-wise. Some of our bugfixes had substantial winrate impact, so we're returning some power we took away in a few cases. Otherwise, we're just addressing the game's biggest outliers. \"",
+     "relevant": false
+    },
+    {
+     "n": 10,
+     "id": "26.19/ARENA",
+     "text": "Patch 26.19 › ARENA\nFor balance, we're tapping down the power level of some of the strongest and most consistent champions while buffing up some who were struggling. We've also targeted some of the strongest and weakest Augments to bring them closer into line so there's a little bit more freedom of choice. \"",
+     "relevant": false
+    }
+   ],
+   "texto": "The provided patch notes do not contain this information.",
+   "texto_sin_citas": "The provided patch notes do not contain this information.",
+   "es_negativa": true,
+   "stop_reason": "end_turn",
+   "tokens_entrada": 1606,
+   "tokens_salida": 252,
+   "segundos": 1.64,
+   "citas": []
+  },
+  {
+   "id": "q12",
+   "trap": true,
+   "query": "What is Locke's win rate in patch 26.22?",
+   "ideal_answer": "The patch notes do not report win rates. They only state that Riot considers Locke still clearly too strong for players who have mastered him, especially in the early game, which is why his Q and W were nerfed in 26.22.",
+   "contexts": [
+    {
+     "n": 1,
+     "id": "26.20/ARAM/Champions/Locke",
+     "text": "Patch 26.20 › ARAM › Champions › Locke\nDamage Dealt: 105% ⇒ 115%",
+     "relevant": false
+    },
+    {
+     "n": 2,
+     "id": "26.15/CHAMPIONS/Locke/Base Stats",
+     "text": "Patch 26.15 › CHAMPIONS › Locke › Base Stats\nHealth: 655 ⇒ 620",
+     "relevant": false
+    },
+    {
+     "n": 3,
+     "id": "26.22/CHAMPIONS/Locke/Developer note",
+     "text": "Patch 26.22 › CHAMPIONS › Locke › Developer note\n\" While Locke's performance in general is within reason, he's proven to be a much deeper champion than we initially expected and players who have reached that level of Locke play have shown him to still be clearly too strong, especially early game. \"",
+     "relevant": false
+    },
+    {
+     "n": 4,
+     "id": "26.22/CHAMPIONS/Locke/W - Soul Ignition",
+     "text": "Patch 26.22 › CHAMPIONS › Locke › W - Soul Ignition\nDuration: 6s ⇒ 5s",
+     "relevant": false
+    },
+    {
+     "n": 5,
+     "id": "26.19/ARENA/Champions/Locke/R - Purgatory",
+     "text": "Patch 26.19 › ARENA › Champions › Locke › R - Purgatory\nPercentage per Stack: 0.5 ⇒ 1",
+     "relevant": false
+    },
+    {
+     "n": 6,
+     "id": "26.21/CHAMPIONS/Locke/Base Stats",
+     "text": "Patch 26.21 › CHAMPIONS › Locke › Base Stats\nMana Growth: 70 ⇒ 60",
+     "relevant": false
+    },
+    {
+     "n": 7,
+     "id": "26.22/CHAMPIONS/Locke/Q - Ritual Nails",
+     "text": "Patch 26.22 › CHAMPIONS › Locke › Q - Ritual Nails\nStack Bonus Damage: 18 / 26 / 34 / 42 / 50 ⇒ 15 / 22 / 29 / 36 / 43\nMaximum Stack Damage: 75.6 / 109.2 / 142.8 / 176.4 / 210 ⇒ 63 / 92.4 / 121.8 / 151.2 / 180.6",
+     "relevant": false
+    },
+    {
+     "n": 8,
+     "id": "26.15/ARAM: MAYHEM/Champions/Locke/R - Purgatory",
+     "text": "Patch 26.15 › ARAM: MAYHEM › Champions › Locke › R - Purgatory\nCooldown Refund: 20% ⇒ 50%",
+     "relevant": false
+    },
+    {
+     "n": 9,
+     "id": "26.21/CHAMPIONS/Locke/E - Ashen Pursuit",
+     "text": "Patch 26.21 › CHAMPIONS › Locke › E - Ashen Pursuit\nBlink Damage: 40 / 50 / 60 / 70 / 80 (+40% AP) ⇒ 40 / 55 / 70 / 85 / 100 (+50% AP)",
+     "relevant": false
+    },
+    {
+     "n": 10,
+     "id": "26.16/ARAM: MAYHEM/Champions/Locke",
+     "text": "Patch 26.16 › ARAM: MAYHEM › Champions › Locke\nDamage Dealt: 100% ⇒ 105%\nDamage Taken: 100% ⇒ 95%\nTenacity: 0 ⇒ 20",
+     "relevant": false
+    }
+   ],
+   "texto": "The provided patch notes do not contain this information.",
+   "texto_sin_citas": "The provided patch notes do not contain this information.",
+   "es_negativa": true,
+   "stop_reason": "end_turn",
+   "tokens_entrada": 1050,
+   "tokens_salida": 88,
+   "segundos": 0.96,
+   "citas": []
+  }
+ ]
+}
