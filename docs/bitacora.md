@@ -621,3 +621,12 @@ Juez: Claude Sonnet 5.5, 190 llamadas, USD 1.14.
 - **Decisión:** público tal cual. Los PDF y HTML originales de Riot siguen fuera del repo (D-05). Se verificó antes que `.env` (con la API key) nunca se subió y que ningún commit lleva atribución.
 - **Por qué:** es texto de notas públicas usado con fines académicos, y así cualquiera puede revisar y correr la evaluación sin regenerar el pipeline.
 - **Quién decidió:** Santiago.
+
+### D-46 · Demo: app local con Streamlit
+- **Opciones:** app local, app hospedada (Hugging Face Spaces o Streamlit Cloud) o página estática con resultados precalculados.
+- **Decisión:** solo la app local (`app.py`), en la Mac de Santiago el día de la presentación.
+  - **Qué hace:** acepta una pregunta libre o una del ground truth. Muestra la respuesta de Haiku 5.5 (con el retriever por habilidad · Hybrid sin cifras) con sus citas, tiempo y tokens, y los chunks de Dense y de Hybrid lado a lado.
+- **La API key:** queda en `.env` local, ignorado por git. El repo trae `.env.example` con la variable vacía. Sin clave, la app muestra el retrieval y avisa que no puede generar la respuesta.
+- **Por qué:** es la opción más simple y la clave nunca sale de la máquina. Una app hospedada expondría la clave al gasto de cualquiera con el enlace.
+- **Verificación:** prueba automática con el probador de Streamlit (pregunta de Locke Q) y captura de la app real con la pregunta de Thresh; las dos sin errores.
+- **Quién decidió:** Santiago.

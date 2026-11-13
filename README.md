@@ -22,3 +22,16 @@ docs/             # enunciado, bitácora de decisiones, diagramas y presentació
 2. Parsing de documentos y estrategia de chunking
 3. Evaluación: Precision@k, Recall@k de 2 retrievers + RAGAS para la generación; análisis de errores
 4. Visión de producción (deployment, elección de LLM, cuello de botella a 500 documentos)
+
+## Demo local
+
+Una app de Streamlit para hacer preguntas en vivo. Muestra la respuesta de Claude Haiku 5.5 con sus citas y los chunks que recuperan Dense e Hybrid, lado a lado.
+
+```bash
+cp .env.example .env              # y escribe tu ANTHROPIC_API_KEY en .env
+.venv/bin/streamlit run app.py    # abre http://localhost:8501
+```
+
+- **La clave:** `.env` está en `.gitignore`, así que la clave nunca se sube al repositorio.
+- **Sin clave:** la app muestra el retrieval, pero no genera la respuesta.
+- **Requisitos:** los índices tienen que existir. Si no existen, corre antes `scripts/indexar.py`.
