@@ -1,0 +1,27 @@
+<section id="corpus">
+<p class="eyebrow">1 · Arquitectura</p>
+<h2>Un corpus que el LLM no pudo haber visto</h2>
+<div class="row">
+<div class="col" style="flex:1.1;">
+<p class="lede" style="width:auto;">Notas oficiales de Riot de los parches <b>26.15 a 26.22</b> de League of Legends: 8 documentos en inglés, publicados entre julio y noviembre de 2026.</p>
+<p>Son posteriores a la fecha de corte de los modelos actuales. Si el sistema responde bien, el dato tiene que venir del retrieval y no de la memoria del modelo.</p>
+<p>Cada nota sigue la misma estructura: cambios por campeón, item, runa y modo de juego, en formato <b>antes ⇒ después</b>.</p>
+</div>
+<div class="col" style="flex:0.9;">
+<table class="data">
+<tr><th style="width:30%">Parche</th><th style="width:70%">Publicación</th></tr>
+<tr><td>26.15</td><td>29 jul 2026</td></tr>
+<tr><td>26.16</td><td>12 ago 2026</td></tr>
+<tr><td>26.17</td><td>26 ago 2026</td></tr>
+<tr><td>26.18</td><td>10 sep 2026</td></tr>
+<tr><td>26.19</td><td>23 sep 2026</td></tr>
+<tr><td>26.20</td><td>7 oct 2026</td></tr>
+<tr><td>26.21</td><td>21 oct 2026</td></tr>
+<tr><td>26.22</td><td>4 nov 2026</td></tr>
+</table>
+<p class="small">Fuente: leagueoflegends.com, notas de parche oficiales.</p>
+</div>
+</div>
+<div class="footer"><p>Mini-proyecto RAG · PLN</p><p class="pg"></p></div>
+<aside>Elegimos notas de parche y no la wiki porque el riesgo principal con un tema como League of Legends es que el modelo ya lo conoce. Usando parches de la segunda mitad de 2026, los valores exactos no pueden estar en su entrenamiento. Esto vuelve válida la evaluación, incluidas las preguntas trampa. El reto del corpus: el mismo campeón aparece en varios parches con texto casi idéntico, por ejemplo Locke en seis.</aside>
+</section>

@@ -585,3 +585,18 @@ Juez: Claude Sonnet 5.5, 190 llamadas, USD 1.14.
 ### D-44 · Estilo de la presentación
 - **Decisión:** estilo académico, pulcro y limpio, sin tono de venta, con el logo de la Universidad de Sonora.
 - **Quién decidió:** Santiago.
+
+### Presentación (`docs/presentacion/`, publicada como deck)
+- **Estructura:** 22 diapositivas que siguen los 4 aspectos del enunciado:
+  - **Arquitectura:** corpus, pipeline, herramientas y dos diapositivas de código clave (la fusión RRF y las reglas del prompt).
+  - **Documentos y procesamiento:** retos de parsing, validación y chunking.
+  - **Evaluación:** ground truth, métricas, tabla de retrievers, Recall@10 por pregunta, análisis de errores, RAGAS y el hallazgo principal.
+  - **Producción:** deployment, elección del LLM y escalamiento.
+  - Cierran conclusiones y una diapositiva final.
+- **Estilo (D-44):**
+  - Académico, con fondo marfil y el azul del escudo.
+  - El dorado solo como filete, nunca como color de texto.
+  - Source Serif 4 para títulos, IBM Plex Sans para texto y JetBrains Mono para código.
+- **Logo:** el escudo azul oficial, tomado de identidadbuho.unison.mx (la página de identidad institucional de la Unison). Va a la **izquierda**, como pide el manual de identidad institucional; en la primera versión estaba a la derecha y se corrigió.
+- **Pendientes de Santiago (marcados entre corchetes en la portada):** nombre del programa de maestría, profesor y fecha de presentación.
+- Todas las cifras salen de `eval/resultados/` y de la bitácora. Cada diapositiva tiene notas del orador.

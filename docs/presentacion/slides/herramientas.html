@@ -1,0 +1,17 @@
+<section id="herramientas" class="alt">
+<p class="eyebrow">1 · Arquitectura</p>
+<h2>Herramientas elegidas y por qué</h2>
+<table>
+<tr><th style="width:17%">Componente</th><th style="width:30%">Elección</th><th style="width:53%">Razón principal</th></tr>
+<tr><td>Parsing</td><td>Docling (sin OCR)</td><td>Entiende la estructura del PDF; el texto ya viene en la capa del documento</td></tr>
+<tr><td>Chunking</td><td>Uno por habilidad, con encabezado</td><td>Granularidad de las preguntas; el encabezado lleva el número de parche</td></tr>
+<tr><td>Embeddings</td><td>Qwen3-Embedding-0.6B, local</td><td>Modelo abierto de referencia; 32 k de contexto; gratuito y reproducible</td></tr>
+<tr><td>Base vectorial</td><td>Chroma</td><td>API simple; con ~1,150 vectores la búsqueda es exacta</td></tr>
+<tr><td>Léxico</td><td>BM25 con tokenizador propio</td><td>Nombres propios y números de parche pesan mucho en este corpus</td></tr>
+<tr><td>Fusión</td><td>RRF, k = 60, top-10</td><td>Solo usa posiciones: no hay que normalizar puntajes distintos</td></tr>
+<tr><td>Generación</td><td>Claude Haiku 5.5</td><td>Rápido y barato; responde a partir de un contexto dado</td></tr>
+<tr><td>Juez de RAGAS</td><td>Claude Sonnet 5.5</td><td>Un modelo más capaz que el que genera</td></tr>
+</table>
+<div class="footer"><p>Mini-proyecto RAG · PLN</p><p class="pg"></p></div>
+<aside>Cada fila tiene su entrada en la bitácora con las alternativas que se consideraron. Dos detalles: Chroma guarda los vectores, pero la búsqueda densa se hace de forma exacta, porque el índice aproximado de Chroma omitía resultados. Y el tokenizador de BM25 conserva el número de parche como un solo token, protege los nombres de campeón del stemming e ignora las cifras de los cambios.</aside>
+</section>

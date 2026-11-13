@@ -1,0 +1,13 @@
+<section id="parsing-validacion" class="alt">
+<p class="eyebrow">2 · Documentos y procesamiento</p>
+<h2>Validación del parsing contra el HTML original</h2>
+<p class="lede">El HTML de cada página sirve como referencia independiente: sus encabezados dicen qué campeones e items debe encontrar el parser.</p>
+<div class="row">
+<div class="card"><p class="num" style="font-size:72px;">140 / 140</p><p class="label">campeones e items de la Grieta detectados como entidad</p></div>
+<div class="card"><p class="num" style="font-size:72px;">933 / 933</p><p class="label">cambios "antes ⇒ después" conservados; 2 de ellos recuperados de la capa de texto del PDF</p></div>
+<div class="card"><p class="num" style="font-size:72px;">~10 s</p><p class="label">por documento con Docling sin OCR, en una MacBook Air M4</p></div>
+</div>
+<p class="note">Error conocido que se acepta: en 26.20, "Scoreboard Cleanup" queda dentro de la sección de items. Solo afecta la etiqueta, no el contenido.</p>
+<div class="footer"><p>Mini-proyecto RAG · PLN</p><p class="pg"></p></div>
+<aside>La validación convierte "se ve bien" en una cifra. La primera versión del parser detectaba 139 de 140 entidades y conservaba 931 de 933 cambios; cada caso fallido llevó a una regla nueva o a la recuperación desde la capa de texto.</aside>
+</section>

@@ -1,0 +1,24 @@
+<section id="errores">
+<p class="eyebrow">3 · Evaluación y resultados</p>
+<h2>Análisis de errores del retrieval</h2>
+<div class="row">
+<div class="card">
+<h3>q06 · Locke W en 26.21 y 26.22</h3>
+<p class="label">Recall@10 = 0.50 en todas</p>
+<p>Ninguna configuración trae la W de 26.21. El número de parche pesa poco en el embedding, y la pregunta ya no tiene el nombre de la habilidad: el único vínculo léxico es la "W" del encabezado.</p>
+</div>
+<div class="card">
+<h3>q08 · Nuevos en Classic</h3>
+<p class="label">Recall@10 ≤ 0.20 en todas</p>
+<p>La pregunta dice "added"; las notas dicen "is back" y "four more ghosts from the past". Además, Classic tiene notas de diseñador muy parecidas en 26.16, 26.17 y 26.18.</p>
+</div>
+<div class="card">
+<h3>q02 · Locke Q en 26.22</h3>
+<p class="label">Correcta en el lugar 4 (Hybrid)</p>
+<p>El ruido sí habla de Locke, pero de otro parche o modo: el sonido de su Q en 26.16 y su daño en ARAM en 26.20. Solo el parche los descarta.</p>
+</div>
+</div>
+<p class="note">Causa común: <b>documentos muy parecidos que solo se distinguen por el número de parche</b>. No se ajustó el sistema para arreglarlas: hacerlo después de ver el ground truth inflaría los resultados.</p>
+<div class="footer"><p>Mini-proyecto RAG · PLN</p><p class="pg"></p></div>
+<aside>Las tres fallas tienen la misma raíz. En una proyección 2D de los embeddings, los 19 chunks de Locke de seis parches quedan amontonados casi en el mismo punto. Una mejora natural sería filtrar por el parche que menciona la pregunta, usando el metadato del chunk. Lo dejamos como trabajo futuro para no ajustar el sistema a las respuestas que ya conocemos.</aside>
+</section>

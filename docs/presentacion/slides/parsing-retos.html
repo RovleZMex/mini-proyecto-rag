@@ -1,0 +1,17 @@
+<section id="parsing-retos">
+<p class="eyebrow">2 · Documentos y procesamiento</p>
+<h2>Retos de parsing que aparecieron con Docling</h2>
+<table style="font-size:24px;">
+<tr><th style="width:40%">Problema</th><th style="width:60%">Solución</th></tr>
+<tr><td>Barra fija de la web tapando texto</td><td>Ocultar elementos fijos y no partir tarjetas al imprimir</td></tr>
+<tr><td>OCR leyendo íconos como texto</td><td>Sin OCR: el PDF ya trae texto (150 s → 10 s por documento)</td></tr>
+<tr><td>Títulos de habilidad dentro de imágenes</td><td>Recorrer la estructura de Docling, incluido el texto de imágenes</td></tr>
+<tr><td>Jerarquía inconsistente</td><td>Reglas propias: enlaces, patrón "Q - Nombre", cita del diseñador</td></tr>
+<tr><td>Líneas unidas: "Q - Decimate Jinx"</td><td>Separar con la lista oficial de campeones (Data Dragon)</td></tr>
+<tr><td>Cambios omitidos (Draven, Darius)</td><td>Recuperarlos de la capa de texto del PDF</td></tr>
+<tr><td>Listas fusionadas en un párrafo</td><td>Partir por oraciones al hacer chunking</td></tr>
+</table>
+<p class="note">Cada problema tiene su entrada en la bitácora del repositorio: contexto, opciones, solución y por qué.</p>
+<div class="footer"><p>Mini-proyecto RAG · PLN</p><p class="pg"></p></div>
+<aside>La lección principal: Docling extrae bien el texto, pero su jerarquía no es confiable, y en algunos casos omite líneas completas. Por eso el parsing tiene dos pasos: Docling convierte y guarda su estructura, y nuestras reglas la limpian. El caso más serio fue el de los cambios omitidos: en Draven y Darius se perdía el único cambio del campeón. Parecía un error menor por ser 2 de 933 líneas, pero no lo era: importa qué información se pierde, no cuántas líneas.</aside>
+</section>

@@ -1,0 +1,23 @@
+<section id="codigo-retrieval">
+<p class="eyebrow">1 · Arquitectura · Código clave</p>
+<h2>La fusión de rankings: Reciprocal Rank Fusion</h2>
+<div class="row" style="align-items:flex-start;">
+<div class="code" style="flex:1.35;">
+<p><span class="c"># src/retrievers.py · HybridRetriever.buscar</span></p>
+<p>rankings = [self.dense.buscar(query, self.total),</p>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;self.bm25.buscar(query, self.total)]</p>
+<p>fusion = {}</p>
+<p><span class="k">for</span> ranking <span class="k">in</span> rankings:</p>
+<p>&#160;&#160;&#160;&#160;<span class="k">for</span> rank, r <span class="k">in</span> enumerate(ranking, start=1):</p>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;fusion[r.id] = fusion.get(r.id, 0) + 1 / (RRF_K + rank)</p>
+<p>mejores = sorted(fusion, key=<span class="k">lambda</span> i: -fusion[i])[:k]</p>
+</div>
+<div class="col" style="flex:0.65;">
+<h3>Cómo se lee</h3>
+<p style="font-size:26px;">Cada chunk suma <b>1 / (60 + lugar)</b> por cada ranking en el que aparece. Un chunk que sale bien en los dos queda arriba.</p>
+<p style="font-size:26px;">Solo usa posiciones, así que no importa que BM25 puntúe de 0 a 30 y el coseno de 0 a 1.</p>
+</div>
+</div>
+<div class="footer"><p>Mini-proyecto RAG · PLN</p><p class="pg"></p></div>
+<aside>Estas son las líneas que definen la estrategia Hybrid. La constante 60 es el valor estándar del artículo original de RRF. Fusionamos los rankings completos de ambos retrievers en vez de solo sus primeros N, porque con 1,149 chunks cuesta lo mismo y evita otro parámetro. Con 500 documentos sí habría que limitarlo.</aside>
+</section>

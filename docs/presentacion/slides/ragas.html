@@ -1,0 +1,18 @@
+<section id="ragas" class="alt">
+<p class="eyebrow">3 · Evaluación y resultados</p>
+<h2>Evaluación de la respuesta con RAGAS</h2>
+<p class="lede">Generador: Claude Haiku 5.5 con el retriever por habilidad · Hybrid sin cifras. Juez: Claude Sonnet 5.5. Promedio sobre las 10 preguntas normales.</p>
+<div class="row" style="gap:20px;">
+<div class="card"><p class="num" style="font-size:72px;">0.97</p><p class="label">faithfulness: lo afirmado está en los chunks</p></div>
+<div class="card"><p class="num" style="font-size:72px;">0.92</p><p class="label">answer relevancy: contesta lo que se preguntó</p></div>
+<div class="card"><p class="num" style="font-size:72px;">0.82</p><p class="label">context recall: los chunks traían lo necesario</p></div>
+<div class="card"><p class="num" style="font-size:72px;">0.76</p><p class="label">context precision: lo útil salió arriba</p></div>
+<div class="card"><p class="num" style="font-size:72px;">0.68</p><p class="label">answer correctness: coincide con la respuesta ideal</p></div>
+</div>
+<div class="row">
+<div class="card"><h3>Trampas: 2 de 2 rechazadas</h3><p>Con la frase fija. Ninguna pregunta normal se rechazó por error.</p></div>
+<div class="card"><h3>Costo</h3><p>Generar las 12 respuestas: USD 0.004, de 1 a 4 s cada una. Evaluar con el juez: USD 1.14.</p></div>
+</div>
+<div class="footer"><p>Mini-proyecto RAG · PLN</p><p class="pg"></p></div>
+<aside>RAGAS 0.4.3 no funcionó tal cual con las versiones actuales: su conexión con Anthropic enviaba un parámetro que el SDK ya no acepta y forzaba un modo que Sonnet 5.5 rechaza. Escribimos un adaptador de unas 40 líneas que usa las salidas estructuradas nativas de la API. Revisamos a mano las dos preguntas con faithfulness menor a 1: en una, Haiku describió mal qué decía un fragmento, sin inventar datos del juego; en la otra, el juez descontó frases sobre lo que falta, que no puede verificar contra el contexto.</aside>
+</section>

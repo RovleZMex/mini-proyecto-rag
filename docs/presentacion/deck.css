@@ -1,0 +1,160 @@
+/* Académico y sobrio: fondo marfil, azul institucional de la Unison, dorado solo como filete. */
+:root {
+  --ink: #142A55;        /* azul del escudo, títulos */
+  --text: #2E3A4F;       /* cuerpo */
+  --muted: #5A6578;      /* notas y fuentes */
+  --paper: #F8F7F3;      /* fondo principal */
+  --paper-2: #EEF1F6;    /* fondo alterno */
+  --line: #D6DBE4;       /* filetes y bordes */
+  --gold: #C99A0E;       /* filete dorado (no se usa en texto) */
+  --good: #2F6B4A;
+  --bad: #9E3B2C;
+}
+
+section {
+  background: var(--paper);
+  color: var(--text);
+  font-family: 'IBM Plex Sans', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1.45;
+  padding: 112px 128px 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  counter-increment: page;
+}
+section.alt { background: var(--paper-2); }
+
+.eyebrow {
+  font-family: 'IBM Plex Sans', Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ink);
+  padding-left: 20px;
+  border-left: 5px solid var(--gold);
+}
+h2 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.12;
+  color: var(--ink);
+}
+h3 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--ink);
+}
+p { font-size: 30px; }
+.lede { font-size: 32px; color: var(--text); width: 1500px; }
+.small { font-size: 24px; color: var(--muted); }
+ul, ol { font-size: 30px; color: var(--text); }
+
+.row { display: flex; gap: 32px; }
+.col { display: flex; flex-direction: column; gap: 16px; flex: 1; min-width: 0; }
+.card {
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+section.alt .card { background: var(--paper); }
+.card p { font-size: 26px; }
+.card .num {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 88px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--ink);
+}
+.card .label { font-size: 24px; color: var(--muted); }
+
+table { font-size: 26px; color: var(--text); width: 100%; }
+table.data { font-variant-numeric: tabular-nums; }
+
+.code {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #1F2A3D;
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--ink);
+  border-radius: 4px;
+  padding: 24px 32px;
+}
+.code .c { color: var(--muted); }
+.code .k { color: var(--ink); font-weight: 600; }
+
+.note { font-size: 26px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; }
+
+.footer {
+  position: absolute;
+  left: 128px;
+  bottom: 64px;
+  width: 1664px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  color: var(--muted);
+}
+
+.footer .pg::after { content: counter(page); }
+
+/* Diagrama del pipeline */
+.flow { display: flex; align-items: center; gap: 16px; }
+.step {
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--ink);
+  border-radius: 4px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+.step h3 { font-size: 26px; }
+.step p { font-size: 24px; color: var(--muted); }
+.arrow { width: 36px; height: 20px; background: var(--muted); flex: none; }
+
+/* Mapa de calor del Recall@10 */
+.hm { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 4px; }
+.hm p { font-size: 24px; padding: 8px 16px; }
+.hm .hh { font-weight: 600; color: var(--ink); text-align: center; }
+.hm .ql { color: var(--text); }
+.hm .v { text-align: center; font-variant-numeric: tabular-nums; font-weight: 600; color: var(--ink); border-radius: 3px; }
+.hm .hi { background: #D9EADF; }
+.hm .md { background: #F2E6C2; }
+.hm .lo { background: #EFD3CC; }
+
+/* Portada */
+section.cover { background: var(--paper); padding: 128px; justify-content: center; }
+.cover h1 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 1.08;
+  color: var(--ink);
+  width: 1150px;
+}
+.cover .sub { font-size: 34px; color: var(--text); width: 1100px; }
+.cover .meta { font-size: 26px; color: var(--muted); }
+
+/* Diapositiva de énfasis */
+section.statement { background: var(--ink); color: #E8ECF3; justify-content: center; }
+.statement h2 { color: #F8F7F3; font-size: 64px; width: 1500px; }
+.statement p { color: #C9D2E1; }
+.statement .eyebrow { color: #E8ECF3; }
+.statement .footer { color: #AEB9CC; }
+
+section.enter .stage { animation: rise 500ms ease-out both; }
+@keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }

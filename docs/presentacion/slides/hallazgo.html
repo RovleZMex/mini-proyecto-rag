@@ -1,0 +1,11 @@
+<section id="hallazgo" class="statement">
+<p class="eyebrow">3 · Evaluación y resultados</p>
+<h2>El modelo usa bien lo que recibe; el límite está en lo que no recibe.</h2>
+<div class="row" style="width:1500px;">
+<div class="col"><p><b style="color:#F8F7F3;">Faithfulness 0.97.</b> Haiku no inventó datos del juego, ni siquiera en las trampas.</p></div>
+<div class="col"><p><b style="color:#F8F7F3;">Answer correctness 0.68.</b> Las respuestas incompletas coinciden con las fallas del retriever: q06 (0.29), q08 (0.36), q05 (0.51).</p></div>
+</div>
+<p style="font-size:26px; width:1500px;">En q06, por ejemplo: "In Patch 26.22, Locke's W had its Duration changed from 6s ⇒ 5s. The provided patch notes do not contain any change to Locke's W in Patch 26.21."</p>
+<div class="footer"><p>Mini-proyecto RAG · PLN</p><p class="pg"></p></div>
+<aside>Esta es la conclusión principal de la evaluación. Cuando el retriever no trae una parte de la respuesta, el modelo lo dice en lugar de rellenar con lo que sabe del juego. Eso es lo que buscaban las reglas del prompt. Por lo tanto, mejorar la búsqueda tendría más impacto que cambiar el modelo de lenguaje. Un detalle de la métrica: answer correctness también castiga lo que sobra; una respuesta con los números exactos sacó 0.64 porque agregó aclaraciones que la respuesta ideal no tenía.</aside>
+</section>

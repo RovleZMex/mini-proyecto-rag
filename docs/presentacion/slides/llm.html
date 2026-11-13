@@ -1,0 +1,14 @@
+<section id="llm" class="alt">
+<p class="eyebrow">4 · Visión de producción</p>
+<h2>El LLM: costo, latencia y privacidad</h2>
+<table style="font-size:26px;">
+<tr><th style="width:18%">Criterio</th><th style="width:42%">Medición en este proyecto</th><th style="width:40%">Implicación</th></tr>
+<tr><td>Costo</td><td>USD 0.004 por 12 respuestas con Haiku 5.5</td><td>Despreciable; no justifica un modelo local</td></tr>
+<tr><td>Latencia</td><td>1 a 4 s por respuesta</td><td>Adecuada para una consulta interactiva</td></tr>
+<tr><td>Calidad</td><td>Faithfulness 0.97; el error principal es del retrieval</td><td>Un modelo más grande no resuelve lo que falta</td></tr>
+<tr><td>Privacidad</td><td>El corpus son notas públicas de Riot</td><td>Una API externa no expone nada sensible</td></tr>
+</table>
+<p class="lede" style="width:1600px;"><b>Elección: una API de un modelo pequeño (Claude Haiku 5.5).</b> Con documentos privados, la conclusión cambiaría hacia un modelo local o un proveedor con garantías de retención de datos, a costa de más latencia y mantenimiento.</p>
+<div class="footer"><p>Mini-proyecto RAG · PLN</p><p class="pg"></p></div>
+<aside>La decisión se apoya en lo que medimos, no en supuestos. El costo por consulta es una fracción de centavo y la latencia es de pocos segundos. La privacidad es la variable que más cambiaría la decisión en otro dominio: con contratos o expedientes médicos, el texto recuperado no debería salir de la organización.</aside>
+</section>

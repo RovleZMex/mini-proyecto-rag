@@ -1,0 +1,25 @@
+<section id="codigo-generacion">
+<p class="eyebrow">1 · Arquitectura · Código clave</p>
+<h2>La generación: solo con el contexto recuperado</h2>
+<div class="row" style="align-items:flex-start;">
+<div class="code" style="flex:1.2;">
+<p><span class="c"># src/generacion.py · reglas del prompt (extracto)</span></p>
+<p>1. Use only facts stated in the excerpts.</p>
+<p>&#160;&#160;&#160;Do not use outside knowledge about the game.</p>
+<p>2. Always state which patch each fact comes from.</p>
+<p>4. If the excerpts do not contain the answer, reply:</p>
+<p>&#160;&#160;&#160;"The provided patch notes do not contain</p>
+<p>&#160;&#160;&#160;&#160;this information."</p>
+<p>5. If they contain only part, say what is missing.</p>
+<p>6. Cite the excerpts you used, like [2].</p>
+</div>
+<div class="col" style="flex:0.8;">
+<h3>Por qué estas reglas</h3>
+<p style="font-size:26px;"><b>Regla 1.</b> Haiku conoce el juego hasta su fecha de corte; sin la regla podría rellenar huecos con valores viejos.</p>
+<p style="font-size:26px;"><b>Regla 4.</b> Una frase fija permite medir automáticamente el rechazo de las preguntas trampa.</p>
+<p style="font-size:26px;"><b>Regla 5.</b> Cuando el retriever trae solo una parte, el modelo lo dice.</p>
+</div>
+</div>
+<div class="footer"><p>Mini-proyecto RAG · PLN</p><p class="pg"></p></div>
+<aside>El prompt va en inglés porque las preguntas, el corpus y las respuestas ideales están en inglés. Las citas con número de chunk permiten ver de dónde sale cada dato; se quitan antes de pasar la respuesta a RAGAS. La llamada usa Claude Haiku 5.5 con effort medium, su valor por defecto.</aside>
+</section>

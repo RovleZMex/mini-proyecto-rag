@@ -1,0 +1,20 @@
+<section id="escala">
+<p class="eyebrow">4 · Visión de producción</p>
+<h2>Escalar a 500 documentos: dos cuellos de botella</h2>
+<div class="row">
+<div class="card">
+<h3>1 · Parsing</h3>
+<p>En 8 documentos hicieron falta varias correcciones a mano: texto tapado, títulos dentro de imágenes, líneas unidas, listas fusionadas y cambios omitidos.</p>
+<p>Con 500 (~1.5 h de Docling) no se puede revisar cada salida, y un error silencioso llega directo al índice.</p>
+<p class="label">Mitigación: validación automática contra el HTML como compuerta, y revisión solo de los documentos que fallan.</p>
+</div>
+<div class="card">
+<h3>2 · Retrieval</h3>
+<p>El error principal fue distinguir documentos casi idénticos: Locke aparece en 6 de 8 parches. Con 500, el mismo campeón aparecería en decenas.</p>
+<p>Además, con ~70 mil chunks ya no conviene la búsqueda exacta, y la aproximada omitía resultados.</p>
+<p class="label">Mitigación: filtrar por el parche o la fecha que menciona la pregunta, y medir la búsqueda aproximada contra la exacta.</p>
+</div>
+</div>
+<div class="footer"><p>Mini-proyecto RAG · PLN</p><p class="pg"></p></div>
+<aside>Los dos cuellos de botella salen de lo que observamos, no de supuestos. El parsing escala en tiempo de cómputo sin problema; lo que no escala es la revisión manual que necesitó. El retrieval empeora con el número de documentos parecidos: el problema que ya medimos con 8 parches, el de distinguir el parche correcto, crece con cada parche nuevo. El costo del LLM, en cambio, no es un problema a esta escala.</aside>
+</section>

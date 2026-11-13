@@ -1,0 +1,22 @@
+{
+  "v": 5,
+  "createdOnFiles": {"v": 1, "at": "2026-11-13T03:30:00Z"},
+  "lists": "css",
+  "format": {"v": 1, "shared": ["project/deck.css"]},
+  "title": "RAG sobre notas de parche de LoL",
+  "order": ["cover", "agenda", "corpus", "pipeline", "herramientas", "codigo-retrieval", "codigo-generacion", "parsing-retos", "parsing-validacion", "chunking", "ground-truth", "metricas", "retrieval-tabla", "retrieval-preguntas", "errores", "ragas", "hallazgo", "deployment", "llm", "escala", "conclusiones", "cierre"],
+  "sections": {
+    "s0": {"description": "Portada y agenda.", "start": "cover"},
+    "s1": {"description": "Arquitectura RAG: corpus, pipeline, herramientas y código clave.", "start": "corpus"},
+    "s2": {"description": "Documentos y procesamiento: parsing con Docling y estrategia de chunking.", "start": "parsing-retos"},
+    "s3": {"description": "Evaluación y resultados: ground truth, retrieval, RAGAS y análisis de errores.", "start": "ground-truth"},
+    "s4": {"description": "Visión de producción: deployment, elección del LLM y escalamiento.", "start": "deployment"},
+    "s5": {"description": "Conclusiones.", "start": "conclusiones"}
+  },
+  "faces": {
+    "source-serif-4": {"family": "Source Serif 4", "href": "https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400..700&display=swap"},
+    "ibm-plex-sans": {"family": "IBM Plex Sans", "href": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap"},
+    "jetbrains-mono": {"family": "JetBrains Mono", "href": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap"}
+  },
+  "designSystems": []
+}

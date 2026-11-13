@@ -1,0 +1,13 @@
+<section id="conclusiones" class="alt">
+<p class="eyebrow">Conclusiones</p>
+<h2>Lo que deja el proyecto</h2>
+<ol style="font-size:30px; display:flex; flex-direction:column; gap:20px; width:1550px;">
+<li>En este corpus, la recuperación híbrida supera a la densa: Recall@5 de 0.83 contra 0.66. Los nombres propios y los números de parche favorecen la parte léxica.</li>
+<li>El chunking estructural importa más que la estrategia de retrieval: el tamaño fijo baja el Recall@10 a 0.61 y falla por completo en tres preguntas.</li>
+<li>Con un prompt restrictivo, el LLM reconoce lo que falta en vez de inventarlo: faithfulness de 0.97 y 2 de 2 trampas rechazadas.</li>
+<li>El límite del sistema está en distinguir documentos casi idénticos. Es también lo que más pesa al escalar.</li>
+</ol>
+<p class="note">Limitación: 10 preguntas normales. Una sola pregunta mueve cualquier promedio en 0.10, por eso el análisis por pregunta acompaña a cada tabla.</p>
+<div class="footer"><p>Mini-proyecto RAG · PLN</p><p class="pg"></p></div>
+<aside>Cuatro conclusiones, cada una con su evidencia en las diapositivas anteriores. La limitación del tamaño de la muestra conviene decirla de frente: con 10 preguntas, las diferencias pequeñas entre configuraciones no son concluyentes por sí solas.</aside>
+</section>
