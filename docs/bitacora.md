@@ -479,3 +479,19 @@ Hay 3 trampas, todas de tipos distintos:
 - **Por qué:** empata o gana en todas las métricas promedio. Mejora el Recall@3 (0.59 → 0.69) y sube la q02 (Locke Q) del lugar 4 al 2, el caso que motivó el ajuste (los valores alargaban el chunk correcto y BM25 lo penalizaba por longitud).
 - **Riesgo conocido:** una pregunta que busque por un valor ("which ability went from 6s to 5s?") pierde el apoyo léxico. Ninguna pregunta del ground truth es de ese tipo.
 - **Quién decidió:** Santiago, sobre la propuesta de Claude, después de pedir que se le explicara qué se quitaba y dónde.
+
+### D-37 · Las preguntas con errores de retrieval se quedan como errores documentados
+- **Contexto:** tres preguntas fallan o salen débiles en todas las configuraciones: q06 (la W de Locke en dos parches), q08 (campeones nuevos en Classic) y q02 (Locke Q, con ruido de otros parches).
+- **Decisión:** no ajustar el sistema para arreglarlas. Quedan explicadas en el análisis de errores.
+- **Por qué:** ajustar el sistema después de ver el ground truth (por ejemplo, filtrando por el parche que menciona la pregunta) inflaría los resultados. Los errores bien explicados son justo lo que pide el enunciado.
+- **Quién decidió:** Santiago, sobre la propuesta de Claude.
+
+---
+
+## Fase 8 · Generación (12 nov 2026)
+
+### D-38 · LLM de generación: Claude Haiku 5.5 vía la API de Anthropic
+- **Decisión:** `claude-haiku-5-5`, con la API key de Santiago. La key se guarda en `.env`, que está en `.gitignore` y nunca se sube.
+- **Datos (noviembre 2026):** USD 0.10 por millón de tokens de entrada y 0.50 de salida. 12 preguntas con ~10 chunks de contexto cuestan menos de un centavo.
+- **Por qué:** modelo rápido y barato, suficiente para responder a partir de un contexto dado.
+- **Quién decidió:** Santiago.
