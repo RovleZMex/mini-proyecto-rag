@@ -14,3 +14,6 @@ data/raw/*
 
 # Salida intermedia de Docling (se regenera con scripts/convertir_docling.py)
 data/interim/
+
+# Índices de Chroma (se regeneran con scripts/indexar.py)
+data/index/

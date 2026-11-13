@@ -241,3 +241,49 @@ Tipos de chunk en D:
 | Nota del diseñador | 304 |
 | Entidad sin habilidad | 184 |
 | Sección | 97 |
+
+---
+
+## Fase 4 · Indexado (12 nov 2026)
+
+Las opciones se discutieron en un documento aparte: 4 modelos de embeddings y 6 bases vectoriales, con precios y benchmarks verificados en noviembre de 2026.
+
+### D-20 · Modelo de embeddings: Qwen3-Embedding-0.6B, local
+- **Opciones:** Qwen3-Embedding-0.6B (local), OpenAI text-embedding-3-small (API), Voyage 4 (API), BGE-M3 (local).
+- **Decisión:** Qwen3-Embedding-0.6B en la Mac (MPS), con 1,024 dimensiones y vectores normalizados.
+- **Por qué:**
+  - Es el modelo abierto de referencia en 2026 (MTEB English v2: 70.7 para el tamaño 0.6B).
+  - Es gratuito, privado y reproducible.
+  - Su contexto de 32 k tokens evita truncar los chunks de 512 de la línea base A, que con modelos de 256 o 512 tokens quedaría en desventaja.
+  - El costo no fue factor: embeddear todo con una API costaría menos de 1 centavo.
+- **Quién decidió:** Santiago, sobre la propuesta de Claude.
+
+### D-21 · Base vectorial: Chroma
+- **Opciones:** NumPy/FAISS, Chroma, Qdrant, LanceDB, pgvector, Pinecone.
+- **Decisión:** Chroma persistente en disco (`data/index/chroma/`), con dos colecciones (`chunks_D` y `chunks_A`) y distancia coseno.
+- **Por qué:** con unos 1,300 vectores cualquier opción es instantánea, y Chroma tiene la API más simple. Claude había propuesto Qdrant por su camino a producción; la diferencia a esta escala es chica.
+- **Quién decidió:** Santiago.
+
+### D-22 · BM25 en Python y fusión RRF propia
+- **Decisión:** BM25 con `rank_bm25`, y la fusión de rankings (Reciprocal Rank Fusion) escrita en el proyecto. Se implementa en la fase de retrievers.
+- **Por qué:** la lógica clave del retriever híbrido queda visible en unas pocas líneas para la presentación, en lugar de quedar escondida dentro de la base de datos.
+- **Quién decidió:** Santiago, sobre la propuesta de Claude.
+
+### D-23 · Instrucción de query: la que trae el modelo por defecto
+- **Contexto:** Qwen3-Embedding es asimétrico: las queries llevan una instrucción antepuesta y los documentos no. El prompt por defecto es genérico ("Given a web search query, retrieve relevant passages that answer the query"). Qwen recomienda instrucciones específicas de la tarea.
+- **Decisión:** usar la instrucción por defecto. Las funciones `embeddear_queries` y `embeddear_documentos` viven en `src/embeddings.py`, para que nunca se embeddee una query sin instrucción por error, que bajaría la calidad sin dar ningún error.
+- **Por qué:** ajustar la instrucción sin ground truth sería afinar a ciegas. Queda como experimento posible una vez que tengamos las métricas.
+- **Quién decidió:** Claude.
+
+### P-15 · Chroma no acepta `None` ni listas como metadatos
+- **Solución:** `None` se guarda como cadena vacía, y `unit_ids` como texto JSON. Se decodifican al leer.
+
+### Observación · Prueba rápida del retriever denso (no es la evaluación formal)
+Se probaron 3 preguntas a mano:
+- **Darius 26.21:** D acierta con buen margen (0.77 contra 0.69).
+- **"¿Por qué nerfearon a Thresh?":** D recupera primero la nota del diseñador, como se esperaba con D-15.
+- **Locke en 26.22:** D acierta por un margen mínimo (0.68 contra 0.67 del 26.21 y 0.66 del 26.15). A pone primero un chunk de otro parche.
+
+Es la primera evidencia del problema anticipado en D-14: el retriever denso casi no distingue parches, ni siquiera con el número en el encabezado. Es la motivación concreta del retriever híbrido.
+
+**Rendimiento:** embeddear D tardó 67 s y A 46 s en la Mac M4. La primera descarga del modelo (~1.2 GB) tardó unos 3 minutos.

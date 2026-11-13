@@ -2,3 +2,6 @@ playwright==1.65.1
 pypdf
 docling==2.150.0
 tiktoken
+sentence-transformers
+chromadb
+rank-bm25
