@@ -7,3 +7,5 @@ chromadb
 rank-bm25
 umap-learn
 nltk
+anthropic
+python-dotenv
