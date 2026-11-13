@@ -14,6 +14,7 @@ from functools import lru_cache
 from pathlib import Path
 
 import chromadb
+import numpy as np
 from rank_bm25 import BM25Okapi
 
 from src.embeddings import embeddear_queries
@@ -39,23 +40,33 @@ def cargar_chunks(conjunto: str) -> list[dict]:
 
 
 class DenseRetriever:
-    """Similitud coseno entre el embedding de la query y los de los chunks (Chroma)."""
+    """Similitud coseno entre el embedding de la query y los de los chunks.
+
+    Los vectores, textos y metadatos se leen de Chroma, pero la búsqueda es
+    EXACTA (producto punto contra todos los vectores, ya normalizados) y no la
+    aproximada de Chroma (HNSW). Con la configuración de Chroma, HNSW omitía
+    en algunas preguntas un chunk que la búsqueda exacta sí encuentra, aun
+    con ef_search = 200 (P-16). Con ~1,150 vectores, la búsqueda exacta tarda
+    menos de un milisegundo.
+    """
 
     nombre = "dense"
 
     def __init__(self, conjunto: str):
         cliente = chromadb.PersistentClient(path=str(RAIZ / "data" / "index" / "chroma"))
-        self.coleccion = cliente.get_collection(f"chunks_{conjunto}")
+        datos = cliente.get_collection(f"chunks_{conjunto}").get(
+            include=["embeddings", "metadatas", "documents"])
+        self.ids = datos["ids"]
+        self.vectores = np.asarray(datos["embeddings"], dtype=np.float32)
+        self.unit_ids = [json.loads(m["unit_ids"]) for m in datos["metadatas"]]
+        self.textos = datos["documents"]
 
     def buscar(self, query: str, k: int = TOP_K) -> list[Resultado]:
-        vector = embeddear_queries([query])[0].tolist()
-        r = self.coleccion.query(query_embeddings=[vector], n_results=k,
-                                 include=["distances", "metadatas", "documents"])
-        return [
-            Resultado(i, 1 - d, json.loads(m["unit_ids"]), doc)
-            for i, d, m, doc in zip(r["ids"][0], r["distances"][0], r["metadatas"][0],
-                                    r["documents"][0])
-        ]
+        vector = embeddear_queries([query])[0].astype(np.float32)
+        similitud = self.vectores @ vector
+        orden = np.argsort(-similitud, kind="stable")[:k]
+        return [Resultado(self.ids[i], float(similitud[i]), self.unit_ids[i], self.textos[i])
+                for i in orden]
 
 
 class BM25Retriever:

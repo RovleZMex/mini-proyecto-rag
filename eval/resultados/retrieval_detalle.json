@@ -1,0 +1,3999 @@
+{
+ "q01": {
+  "query": "How did Darius's Q cooldown change in patch 26.21?",
+  "relevant_units": [
+   "26.21/CHAMPIONS/Darius/Q - Decimate"
+  ],
+  "configs": {
+   "Por habilidad · Dense": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 1.0,
+     "P@3": 0.3333333333333333,
+     "R@3": 1.0,
+     "P@5": 0.2,
+     "R@5": 1.0,
+     "P@10": 0.1,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.21/CHAMPIONS/Darius/Q - Decimate",
+      "score": 0.7732,
+      "relevant": true
+     },
+     {
+      "id": "26.21/CHAMPIONS/Darius/Developer note",
+      "score": 0.6927,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Taric/Q - Starlight's Touch",
+      "score": 0.6058,
+      "relevant": false
+     },
+     {
+      "id": "26.18/CHAMPIONS/Zaahen/Q - The Darkin Glaive",
+      "score": 0.6053,
+      "relevant": false
+     },
+     {
+      "id": "26.21/MID-PATCH UPDATES/Varus/Developer note",
+      "score": 0.5967,
+      "relevant": false
+     },
+     {
+      "id": "26.19/CHAMPIONS/Master Yi/Developer note",
+      "score": 0.5817,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Qiyana/Developer note",
+      "score": 0.5773,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Varus/Q - Piercing Arrow",
+      "score": 0.5731,
+      "relevant": false
+     },
+     {
+      "id": "26.19/CHAMPIONS/Ryze/Q - Overload",
+      "score": 0.5685,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CLASSIC/Champions/Kassadin/Q - Null Sphere",
+      "score": 0.5668,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · Hybrid": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 1.0,
+     "P@3": 0.3333333333333333,
+     "R@3": 1.0,
+     "P@5": 0.2,
+     "R@5": 1.0,
+     "P@10": 0.1,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.21/CHAMPIONS/Darius/Q - Decimate",
+      "score": 0.0328,
+      "relevant": true
+     },
+     {
+      "id": "26.21/CHAMPIONS/Darius/Developer note",
+      "score": 0.0323,
+      "relevant": false
+     },
+     {
+      "id": "26.21/MID-PATCH UPDATES/Varus/Developer note",
+      "score": 0.0299,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Taric/Q - Starlight's Touch",
+      "score": 0.0298,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/Q - Ritual Nails",
+      "score": 0.0275,
+      "relevant": false
+     },
+     {
+      "id": "26.21/ARENA/Champions/Morgana/Q - Dark Binding",
+      "score": 0.0259,
+      "relevant": false
+     },
+     {
+      "id": "26.16/ARENA/Champions/Warwick/Q - Jaws of the Beast",
+      "score": 0.0247,
+      "relevant": false
+     },
+     {
+      "id": "26.18/CHAMPIONS/Zaahen/Q - The Darkin Glaive",
+      "score": 0.0246,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Zaahen/Q - The Darkin Glaive",
+      "score": 0.0245,
+      "relevant": false
+     },
+     {
+      "id": "26.21/ARENA/Champions/Briar/Q - Head Rush",
+      "score": 0.0244,
+      "relevant": false
+     }
+    ]
+   },
+   "Tamaño fijo · Dense": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.0,
+     "R@3": 0.0,
+     "P@5": 0.0,
+     "R@5": 0.0,
+     "P@10": 0.1,
+     "R@10": 1.0,
+     "MRR": 0.16666666666666666
+    },
+    "retrieved": [
+     {
+      "id": "26.21/fixed-001",
+      "score": 0.6446,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-007",
+      "score": 0.5453,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-008",
+      "score": 0.5167,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-022",
+      "score": 0.5162,
+      "relevant": false
+     },
+     {
+      "id": "26.18/fixed-006",
+      "score": 0.5114,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-002",
+      "score": 0.5079,
+      "relevant": true
+     },
+     {
+      "id": "26.16/fixed-024",
+      "score": 0.5055,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-005",
+      "score": 0.4907,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-023",
+      "score": 0.4901,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-001",
+      "score": 0.4863,
+      "relevant": false
+     }
+    ]
+   },
+   "Tamaño fijo · Hybrid": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.3333333333333333,
+     "R@3": 1.0,
+     "P@5": 0.2,
+     "R@5": 1.0,
+     "P@10": 0.1,
+     "R@10": 1.0,
+     "MRR": 0.5
+    },
+    "retrieved": [
+     {
+      "id": "26.21/fixed-001",
+      "score": 0.0325,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-002",
+      "score": 0.0315,
+      "relevant": true
+     },
+     {
+      "id": "26.21/fixed-023",
+      "score": 0.0304,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-001",
+      "score": 0.0288,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-010",
+      "score": 0.0284,
+      "relevant": false
+     },
+     {
+      "id": "26.16/fixed-024",
+      "score": 0.0277,
+      "relevant": false
+     },
+     {
+      "id": "26.15/fixed-016",
+      "score": 0.0275,
+      "relevant": false
+     },
+     {
+      "id": "26.18/fixed-006",
+      "score": 0.0274,
+      "relevant": false
+     },
+     {
+      "id": "26.18/fixed-012",
+      "score": 0.0269,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-016",
+      "score": 0.026,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · BM25 solo": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 1.0,
+     "P@3": 0.3333333333333333,
+     "R@3": 1.0,
+     "P@5": 0.2,
+     "R@5": 1.0,
+     "P@10": 0.1,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.21/CHAMPIONS/Darius/Q - Decimate",
+      "score": 15.7767,
+      "relevant": true
+     },
+     {
+      "id": "26.21/CHAMPIONS/Darius/Developer note",
+      "score": 10.4662,
+      "relevant": false
+     },
+     {
+      "id": "26.21/ARENA/Champions/Morgana/Q - Dark Binding",
+      "score": 9.4071,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/Q - Ritual Nails",
+      "score": 8.731,
+      "relevant": false
+     },
+     {
+      "id": "26.21/ARENA/Champions/Milio/Q - Ultra Mega Fire Kick",
+      "score": 8.2637,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CLASSIC/Champions/Hecarim/Q - Rampage",
+      "score": 8.1226,
+      "relevant": false
+     },
+     {
+      "id": "26.16/BUGFIXES & QOL CHANGES/QoL CHANGES",
+      "score": 7.7989,
+      "relevant": false
+     },
+     {
+      "id": "26.15/UPCOMING SKINS & CHROMAS",
+      "score": 7.5726,
+      "relevant": false
+     },
+     {
+      "id": "26.21/MID-PATCH UPDATES/Varus/Developer note",
+      "score": 7.4275,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Lee Sin/W - Safeguard",
+      "score": 7.0187,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · Hybrid sin cifras": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 1.0,
+     "P@3": 0.3333333333333333,
+     "R@3": 1.0,
+     "P@5": 0.2,
+     "R@5": 1.0,
+     "P@10": 0.1,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.21/CHAMPIONS/Darius/Q - Decimate",
+      "score": 0.0328,
+      "relevant": true
+     },
+     {
+      "id": "26.21/CHAMPIONS/Darius/Developer note",
+      "score": 0.0323,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Zaahen/Q - The Darkin Glaive",
+      "score": 0.0278,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/Q - Ritual Nails",
+      "score": 0.0275,
+      "relevant": false
+     },
+     {
+      "id": "26.21/MID-PATCH UPDATES/Varus/Developer note",
+      "score": 0.0273,
+      "relevant": false
+     },
+     {
+      "id": "26.19/ARENA/Champions/Rammus/Q - Powerball",
+      "score": 0.027,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Taric/Q - Starlight's Touch",
+      "score": 0.0265,
+      "relevant": false
+     },
+     {
+      "id": "26.18/CHAMPIONS/Zaahen/Q - The Darkin Glaive",
+      "score": 0.026,
+      "relevant": false
+     },
+     {
+      "id": "26.21/ARENA/Champions/Morgana/Q - Dark Binding",
+      "score": 0.0259,
+      "relevant": false
+     },
+     {
+      "id": "26.16/ARENA/Champions/Warwick/Q - Jaws of the Beast",
+      "score": 0.0251,
+      "relevant": false
+     }
+    ]
+   }
+  }
+ },
+ "q02": {
+  "query": "What changes did Locke's Q get in patch 26.22?",
+  "relevant_units": [
+   "26.22/CHAMPIONS/Locke/Q - Ritual Nails"
+  ],
+  "configs": {
+   "Por habilidad · Dense": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.0,
+     "R@3": 0.0,
+     "P@5": 0.0,
+     "R@5": 0.0,
+     "P@10": 0.1,
+     "R@10": 1.0,
+     "MRR": 0.125
+    },
+    "retrieved": [
+     {
+      "id": "26.16/BUGFIXES & QOL CHANGES/QoL CHANGES",
+      "score": 0.6111,
+      "relevant": false
+     },
+     {
+      "id": "26.20/ARAM/Champions/Locke",
+      "score": 0.5885,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/Developer note",
+      "score": 0.5775,
+      "relevant": false
+     },
+     {
+      "id": "26.15/CHAMPIONS/Locke/Base Stats",
+      "score": 0.5767,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/Base Stats",
+      "score": 0.5399,
+      "relevant": false
+     },
+     {
+      "id": "26.15/CHAMPIONS/Locke/Developer note",
+      "score": 0.5391,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Locke/Developer note",
+      "score": 0.5365,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Locke/Q - Ritual Nails",
+      "score": 0.5348,
+      "relevant": true
+     },
+     {
+      "id": "26.19/ARENA/Champions/Locke/R - Purgatory",
+      "score": 0.5329,
+      "relevant": false
+     },
+     {
+      "id": "26.18/CHAMPIONS/Zaahen/Developer note",
+      "score": 0.5303,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · Hybrid": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.0,
+     "R@3": 0.0,
+     "P@5": 0.2,
+     "R@5": 1.0,
+     "P@10": 0.1,
+     "R@10": 1.0,
+     "MRR": 0.25
+    },
+    "retrieved": [
+     {
+      "id": "26.16/BUGFIXES & QOL CHANGES/QoL CHANGES",
+      "score": 0.0328,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Locke/Developer note",
+      "score": 0.0308,
+      "relevant": false
+     },
+     {
+      "id": "26.20/ARAM/Champions/Locke",
+      "score": 0.0304,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Locke/Q - Ritual Nails",
+      "score": 0.0303,
+      "relevant": true
+     },
+     {
+      "id": "26.15/CHAMPIONS/Locke/Base Stats",
+      "score": 0.0301,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/Q - Ritual Nails",
+      "score": 0.0292,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/Base Stats",
+      "score": 0.0291,
+      "relevant": false
+     },
+     {
+      "id": "26.22/OVERVIEW",
+      "score": 0.0288,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Locke/W - Soul Ignition",
+      "score": 0.0288,
+      "relevant": false
+     },
+     {
+      "id": "26.19/ARENA/Champions/Locke/R - Purgatory",
+      "score": 0.0277,
+      "relevant": false
+     }
+    ]
+   },
+   "Tamaño fijo · Dense": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.0,
+     "R@3": 0.0,
+     "P@5": 0.0,
+     "R@5": 0.0,
+     "P@10": 0.0,
+     "R@10": 0.0,
+     "MRR": 0.0
+    },
+    "retrieved": [
+     {
+      "id": "26.16/fixed-024",
+      "score": 0.5726,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-001",
+      "score": 0.5258,
+      "relevant": false
+     },
+     {
+      "id": "26.15/fixed-012",
+      "score": 0.521,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-001",
+      "score": 0.5142,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-023",
+      "score": 0.5107,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-001",
+      "score": 0.5022,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-022",
+      "score": 0.4951,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-003",
+      "score": 0.4894,
+      "relevant": false
+     },
+     {
+      "id": "26.15/fixed-016",
+      "score": 0.4695,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-001",
+      "score": 0.4655,
+      "relevant": false
+     }
+    ]
+   },
+   "Tamaño fijo · Hybrid": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.0,
+     "R@3": 0.0,
+     "P@5": 0.0,
+     "R@5": 0.0,
+     "P@10": 0.0,
+     "R@10": 0.0,
+     "MRR": 0.0
+    },
+    "retrieved": [
+     {
+      "id": "26.16/fixed-024",
+      "score": 0.032,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-001",
+      "score": 0.0315,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-023",
+      "score": 0.0315,
+      "relevant": false
+     },
+     {
+      "id": "26.15/fixed-012",
+      "score": 0.031,
+      "relevant": false
+     },
+     {
+      "id": "26.15/fixed-016",
+      "score": 0.0304,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-003",
+      "score": 0.0286,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-001",
+      "score": 0.0285,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-001",
+      "score": 0.0284,
+      "relevant": false
+     },
+     {
+      "id": "26.15/fixed-001",
+      "score": 0.0276,
+      "relevant": false
+     },
+     {
+      "id": "26.16/fixed-019",
+      "score": 0.0272,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · BM25 solo": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.0,
+     "R@3": 0.0,
+     "P@5": 0.2,
+     "R@5": 1.0,
+     "P@10": 0.1,
+     "R@10": 1.0,
+     "MRR": 0.25
+    },
+    "retrieved": [
+     {
+      "id": "26.16/BUGFIXES & QOL CHANGES/QoL CHANGES",
+      "score": 12.2505,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Locke/W - Soul Ignition",
+      "score": 10.8984,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Locke/Developer note",
+      "score": 9.8475,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Locke/Q - Ritual Nails",
+      "score": 9.2065,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Mel/Developer note",
+      "score": 8.5529,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/Q - Ritual Nails",
+      "score": 8.4073,
+      "relevant": false
+     },
+     {
+      "id": "26.22/OVERVIEW",
+      "score": 8.1547,
+      "relevant": false
+     },
+     {
+      "id": "26.16/ARENA/Developer note",
+      "score": 7.9522,
+      "relevant": false
+     },
+     {
+      "id": "26.15/CHAMPIONS/Locke/Base Stats",
+      "score": 7.6795,
+      "relevant": false
+     },
+     {
+      "id": "26.20/ARAM/Champions/Locke",
+      "score": 7.6795,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · Hybrid sin cifras": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.3333333333333333,
+     "R@3": 1.0,
+     "P@5": 0.2,
+     "R@5": 1.0,
+     "P@10": 0.1,
+     "R@10": 1.0,
+     "MRR": 0.5
+    },
+    "retrieved": [
+     {
+      "id": "26.16/BUGFIXES & QOL CHANGES/QoL CHANGES",
+      "score": 0.0325,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Locke/Q - Ritual Nails",
+      "score": 0.0311,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Locke/Developer note",
+      "score": 0.0306,
+      "relevant": false
+     },
+     {
+      "id": "26.20/ARAM/Champions/Locke",
+      "score": 0.0296,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/Q - Ritual Nails",
+      "score": 0.0295,
+      "relevant": false
+     },
+     {
+      "id": "26.15/CHAMPIONS/Locke/Base Stats",
+      "score": 0.0293,
+      "relevant": false
+     },
+     {
+      "id": "26.22/OVERVIEW",
+      "score": 0.0286,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Locke/W - Soul Ignition",
+      "score": 0.0285,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/Base Stats",
+      "score": 0.0284,
+      "relevant": false
+     },
+     {
+      "id": "26.19/ARENA/Champions/Locke/R - Purgatory",
+      "score": 0.0265,
+      "relevant": false
+     }
+    ]
+   }
+  }
+ },
+ "q03": {
+  "query": "Why did Riot nerf Thresh in patch 26.22, and what was changed?",
+  "relevant_units": [
+   "26.22/CHAMPIONS/Thresh/Developer note",
+   "26.22/CHAMPIONS/Thresh/Base Stats",
+   "26.22/CHAMPIONS/Thresh/R - The Box"
+  ],
+  "configs": {
+   "Por habilidad · Dense": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.3333333333333333,
+     "P@3": 1.0,
+     "R@3": 1.0,
+     "P@5": 0.6,
+     "R@5": 1.0,
+     "P@10": 0.3,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.22/CHAMPIONS/Thresh/Developer note",
+      "score": 0.734,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Thresh/Base Stats",
+      "score": 0.6636,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Thresh/R - The Box",
+      "score": 0.6538,
+      "relevant": true
+     },
+     {
+      "id": "26.22/OVERVIEW",
+      "score": 0.6115,
+      "relevant": false
+     },
+     {
+      "id": "26.17/CHAMPIONS/Thresh/Developer note",
+      "score": 0.6056,
+      "relevant": false
+     },
+     {
+      "id": "26.19/ARENA/Systems/Thresh#1",
+      "score": 0.6023,
+      "relevant": false
+     },
+     {
+      "id": "26.15/ARAM: MAYHEM/Champions/Thresh/E - Flay",
+      "score": 0.5892,
+      "relevant": false
+     },
+     {
+      "id": "26.15/ARAM: MAYHEM/Champions/Thresh/R - The Box",
+      "score": 0.5757,
+      "relevant": false
+     },
+     {
+      "id": "26.16/OVERVIEW",
+      "score": 0.5662,
+      "relevant": false
+     },
+     {
+      "id": "26.20/CHAMPIONS/Neeko/Developer note",
+      "score": 0.5662,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · Hybrid": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.3333333333333333,
+     "P@3": 0.6666666666666666,
+     "R@3": 0.6666666666666666,
+     "P@5": 0.6,
+     "R@5": 1.0,
+     "P@10": 0.3,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.22/CHAMPIONS/Thresh/Developer note",
+      "score": 0.0325,
+      "relevant": true
+     },
+     {
+      "id": "26.22/OVERVIEW",
+      "score": 0.032,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Thresh/Base Stats",
+      "score": 0.0318,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Thresh/R - The Box",
+      "score": 0.031,
+      "relevant": true
+     },
+     {
+      "id": "26.17/CHAMPIONS/Thresh/Developer note",
+      "score": 0.0303,
+      "relevant": false
+     },
+     {
+      "id": "26.16/OVERVIEW",
+      "score": 0.0299,
+      "relevant": false
+     },
+     {
+      "id": "26.17/OVERVIEW",
+      "score": 0.0296,
+      "relevant": false
+     },
+     {
+      "id": "26.15/ARAM: MAYHEM/Champions/Thresh/E - Flay",
+      "score": 0.0286,
+      "relevant": false
+     },
+     {
+      "id": "26.21/OVERVIEW",
+      "score": 0.0282,
+      "relevant": false
+     },
+     {
+      "id": "26.15/ARAM: MAYHEM/Champions/Thresh/R - The Box",
+      "score": 0.0271,
+      "relevant": false
+     }
+    ]
+   },
+   "Tamaño fijo · Dense": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.6666666666666666,
+     "R@3": 1.0,
+     "P@5": 0.4,
+     "R@5": 1.0,
+     "P@10": 0.2,
+     "R@10": 1.0,
+     "MRR": 0.5
+    },
+    "retrieved": [
+     {
+      "id": "26.21/fixed-023",
+      "score": 0.567,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-006",
+      "score": 0.5472,
+      "relevant": true
+     },
+     {
+      "id": "26.22/fixed-005",
+      "score": 0.5406,
+      "relevant": true
+     },
+     {
+      "id": "26.19/fixed-001",
+      "score": 0.5351,
+      "relevant": false
+     },
+     {
+      "id": "26.16/fixed-001",
+      "score": 0.5335,
+      "relevant": false
+     },
+     {
+      "id": "26.18/fixed-012",
+      "score": 0.5324,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-012",
+      "score": 0.523,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-001",
+      "score": 0.5226,
+      "relevant": false
+     },
+     {
+      "id": "26.15/fixed-001",
+      "score": 0.5206,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-001",
+      "score": 0.5139,
+      "relevant": false
+     }
+    ]
+   },
+   "Tamaño fijo · Hybrid": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.6666666666666666,
+     "P@3": 0.3333333333333333,
+     "R@3": 0.6666666666666666,
+     "P@5": 0.2,
+     "R@5": 0.6666666666666666,
+     "P@10": 0.2,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.22/fixed-005",
+      "score": 0.032,
+      "relevant": true
+     },
+     {
+      "id": "26.21/fixed-023",
+      "score": 0.0309,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-001",
+      "score": 0.0307,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-001",
+      "score": 0.0306,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-001",
+      "score": 0.0306,
+      "relevant": false
+     },
+     {
+      "id": "26.16/fixed-001",
+      "score": 0.0305,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-006",
+      "score": 0.0304,
+      "relevant": true
+     },
+     {
+      "id": "26.15/fixed-001",
+      "score": 0.0299,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-001",
+      "score": 0.0286,
+      "relevant": false
+     },
+     {
+      "id": "26.18/fixed-001",
+      "score": 0.0277,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · BM25 solo": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.3333333333333333,
+     "R@3": 0.3333333333333333,
+     "P@5": 0.4,
+     "R@5": 0.6666666666666666,
+     "P@10": 0.3,
+     "R@10": 1.0,
+     "MRR": 0.5
+    },
+    "retrieved": [
+     {
+      "id": "26.22/OVERVIEW",
+      "score": 15.5849,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Thresh/Developer note",
+      "score": 14.4843,
+      "relevant": true
+     },
+     {
+      "id": "26.17/OVERVIEW",
+      "score": 12.4137,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Thresh/Base Stats",
+      "score": 12.0071,
+      "relevant": true
+     },
+     {
+      "id": "26.16/OVERVIEW",
+      "score": 10.7865,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Thresh/R - The Box",
+      "score": 10.5219,
+      "relevant": true
+     },
+     {
+      "id": "26.17/CHAMPIONS/Thresh/Developer note",
+      "score": 9.5564,
+      "relevant": false
+     },
+     {
+      "id": "26.21/OVERVIEW",
+      "score": 9.2432,
+      "relevant": false
+     },
+     {
+      "id": "26.15/OVERVIEW",
+      "score": 8.9041,
+      "relevant": false
+     },
+     {
+      "id": "26.19/OVERVIEW",
+      "score": 8.2868,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · Hybrid sin cifras": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.3333333333333333,
+     "P@3": 0.6666666666666666,
+     "R@3": 0.6666666666666666,
+     "P@5": 0.6,
+     "R@5": 1.0,
+     "P@10": 0.3,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.22/CHAMPIONS/Thresh/Developer note",
+      "score": 0.0325,
+      "relevant": true
+     },
+     {
+      "id": "26.22/OVERVIEW",
+      "score": 0.032,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Thresh/Base Stats",
+      "score": 0.0318,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Thresh/R - The Box",
+      "score": 0.0313,
+      "relevant": true
+     },
+     {
+      "id": "26.17/CHAMPIONS/Thresh/Developer note",
+      "score": 0.0303,
+      "relevant": false
+     },
+     {
+      "id": "26.16/OVERVIEW",
+      "score": 0.0296,
+      "relevant": false
+     },
+     {
+      "id": "26.17/OVERVIEW",
+      "score": 0.0296,
+      "relevant": false
+     },
+     {
+      "id": "26.15/ARAM: MAYHEM/Champions/Thresh/R - The Box",
+      "score": 0.0284,
+      "relevant": false
+     },
+     {
+      "id": "26.21/OVERVIEW",
+      "score": 0.0282,
+      "relevant": false
+     },
+     {
+      "id": "26.15/ARAM: MAYHEM/Champions/Thresh/E - Flay",
+      "score": 0.0281,
+      "relevant": false
+     }
+    ]
+   }
+  }
+ },
+ "q04": {
+  "query": "In which patch did Draven's base Attack Damage change, and why?",
+  "relevant_units": [
+   "26.19/CHAMPIONS/Draven/Developer note",
+   "26.19/CHAMPIONS/Draven/Base Stats"
+  ],
+  "configs": {
+   "Por habilidad · Dense": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.5,
+     "P@3": 0.6666666666666666,
+     "R@3": 1.0,
+     "P@5": 0.4,
+     "R@5": 1.0,
+     "P@10": 0.2,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.19/CHAMPIONS/Draven/Base Stats",
+      "score": 0.8012,
+      "relevant": true
+     },
+     {
+      "id": "26.19/CHAMPIONS/Draven/Developer note",
+      "score": 0.661,
+      "relevant": true
+     },
+     {
+      "id": "26.16/CLASSIC/Champions/Twitch/Base Stats",
+      "score": 0.5957,
+      "relevant": false
+     },
+     {
+      "id": "26.18/CLASSIC/Champions/Warwick/R - Infinite Duress",
+      "score": 0.5949,
+      "relevant": false
+     },
+     {
+      "id": "26.15/CHAMPIONS/Riven/R - Blade of the Exile",
+      "score": 0.5814,
+      "relevant": false
+     },
+     {
+      "id": "26.17/CLASSIC/Champions/Garen/Base Stats",
+      "score": 0.5757,
+      "relevant": false
+     },
+     {
+      "id": "26.16/ARENA/Items/Sterak's Gage",
+      "score": 0.5725,
+      "relevant": false
+     },
+     {
+      "id": "26.21/ARENA/Champions/Skarner/Q - Shattered Earth",
+      "score": 0.5721,
+      "relevant": false
+     },
+     {
+      "id": "26.16/ITEMS/Sterak's Gage",
+      "score": 0.5641,
+      "relevant": false
+     },
+     {
+      "id": "26.17/CLASSIC/Champions/Twitch/Developer note",
+      "score": 0.5565,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · Hybrid": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.5,
+     "P@3": 0.6666666666666666,
+     "R@3": 1.0,
+     "P@5": 0.4,
+     "R@5": 1.0,
+     "P@10": 0.2,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.19/CHAMPIONS/Draven/Base Stats",
+      "score": 0.0328,
+      "relevant": true
+     },
+     {
+      "id": "26.19/CHAMPIONS/Draven/Developer note",
+      "score": 0.032,
+      "relevant": true
+     },
+     {
+      "id": "26.16/ITEMS/Sterak's Gage",
+      "score": 0.0306,
+      "relevant": false
+     },
+     {
+      "id": "26.16/CLASSIC/Champions/Twitch/Base Stats",
+      "score": 0.0306,
+      "relevant": false
+     },
+     {
+      "id": "26.16/ARENA/Items/Sterak's Gage",
+      "score": 0.0306,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Thresh/Base Stats",
+      "score": 0.029,
+      "relevant": false
+     },
+     {
+      "id": "26.20/CLASSIC/Champions/Graves/Base Stats",
+      "score": 0.0284,
+      "relevant": false
+     },
+     {
+      "id": "26.17/CLASSIC/Champions/Garen/Base Stats",
+      "score": 0.0281,
+      "relevant": false
+     },
+     {
+      "id": "26.18/CHAMPIONS/Viego/Base Stats",
+      "score": 0.0278,
+      "relevant": false
+     },
+     {
+      "id": "26.16/ARENA/Items/Sundered Sky",
+      "score": 0.0274,
+      "relevant": false
+     }
+    ]
+   },
+   "Tamaño fijo · Dense": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 1.0,
+     "P@3": 0.3333333333333333,
+     "R@3": 1.0,
+     "P@5": 0.2,
+     "R@5": 1.0,
+     "P@10": 0.1,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.19/fixed-003",
+      "score": 0.5791,
+      "relevant": true
+     },
+     {
+      "id": "26.22/fixed-006",
+      "score": 0.5612,
+      "relevant": false
+     },
+     {
+      "id": "26.16/fixed-005",
+      "score": 0.5586,
+      "relevant": false
+     },
+     {
+      "id": "26.20/fixed-002",
+      "score": 0.5396,
+      "relevant": false
+     },
+     {
+      "id": "26.20/fixed-004",
+      "score": 0.536,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-004",
+      "score": 0.5319,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-009",
+      "score": 0.5297,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-013",
+      "score": 0.5277,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-007",
+      "score": 0.5269,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-013",
+      "score": 0.5254,
+      "relevant": false
+     }
+    ]
+   },
+   "Tamaño fijo · Hybrid": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 1.0,
+     "P@3": 0.3333333333333333,
+     "R@3": 1.0,
+     "P@5": 0.2,
+     "R@5": 1.0,
+     "P@10": 0.1,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.19/fixed-003",
+      "score": 0.0328,
+      "relevant": true
+     },
+     {
+      "id": "26.16/fixed-005",
+      "score": 0.0317,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-006",
+      "score": 0.0295,
+      "relevant": false
+     },
+     {
+      "id": "26.20/fixed-002",
+      "score": 0.0288,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-001",
+      "score": 0.0286,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-005",
+      "score": 0.0277,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-009",
+      "score": 0.0273,
+      "relevant": false
+     },
+     {
+      "id": "26.20/fixed-001",
+      "score": 0.0271,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-004",
+      "score": 0.0265,
+      "relevant": false
+     },
+     {
+      "id": "26.18/fixed-010",
+      "score": 0.0263,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · BM25 solo": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.5,
+     "P@3": 0.6666666666666666,
+     "R@3": 1.0,
+     "P@5": 0.4,
+     "R@5": 1.0,
+     "P@10": 0.2,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.19/CHAMPIONS/Draven/Base Stats",
+      "score": 15.9416,
+      "relevant": true
+     },
+     {
+      "id": "26.16/ITEMS/Sterak's Gage",
+      "score": 9.1298,
+      "relevant": false
+     },
+     {
+      "id": "26.19/CHAMPIONS/Draven/Developer note",
+      "score": 9.0897,
+      "relevant": true
+     },
+     {
+      "id": "26.16/ARENA/Items/Sterak's Gage",
+      "score": 9.0239,
+      "relevant": false
+     },
+     {
+      "id": "26.20/CLASSIC/Champions/Graves/Base Stats",
+      "score": 8.0377,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Thresh/Base Stats",
+      "score": 7.9008,
+      "relevant": false
+     },
+     {
+      "id": "26.16/BUGFIXES & QOL CHANGES/QoL CHANGES",
+      "score": 7.8934,
+      "relevant": false
+     },
+     {
+      "id": "26.16/CLASSIC/Champions/Twitch/Base Stats",
+      "score": 7.7446,
+      "relevant": false
+     },
+     {
+      "id": "26.18/CHAMPIONS/Viego/Base Stats",
+      "score": 7.7446,
+      "relevant": false
+     },
+     {
+      "id": "26.20/CHAMPIONS/Ashe/Base Stats",
+      "score": 7.5945,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · Hybrid sin cifras": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.5,
+     "P@3": 0.6666666666666666,
+     "R@3": 1.0,
+     "P@5": 0.4,
+     "R@5": 1.0,
+     "P@10": 0.2,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.19/CHAMPIONS/Draven/Base Stats",
+      "score": 0.0328,
+      "relevant": true
+     },
+     {
+      "id": "26.19/CHAMPIONS/Draven/Developer note",
+      "score": 0.0318,
+      "relevant": true
+     },
+     {
+      "id": "26.16/ARENA/Items/Sterak's Gage",
+      "score": 0.0308,
+      "relevant": false
+     },
+     {
+      "id": "26.16/ITEMS/Sterak's Gage",
+      "score": 0.0306,
+      "relevant": false
+     },
+     {
+      "id": "26.16/CLASSIC/Champions/Twitch/Base Stats",
+      "score": 0.0306,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Thresh/Base Stats",
+      "score": 0.029,
+      "relevant": false
+     },
+     {
+      "id": "26.20/CLASSIC/Champions/Graves/Base Stats",
+      "score": 0.0284,
+      "relevant": false
+     },
+     {
+      "id": "26.17/CLASSIC/Champions/Garen/Base Stats",
+      "score": 0.028,
+      "relevant": false
+     },
+     {
+      "id": "26.18/CHAMPIONS/Viego/Base Stats",
+      "score": 0.0278,
+      "relevant": false
+     },
+     {
+      "id": "26.16/ARENA/Items/Sundered Sky",
+      "score": 0.0278,
+      "relevant": false
+     }
+    ]
+   }
+  }
+ },
+ "q05": {
+  "query": "What changed for Mel in patch 26.22?",
+  "relevant_units": [
+   "26.22/CHAMPIONS/Mel/Developer note",
+   "26.22/CHAMPIONS/Mel/Base Stats",
+   "26.22/CHAMPIONS/Mel/Passive - Searing Brilliance",
+   "26.22/CHAMPIONS/Mel/Q - Radiant Volley",
+   "26.22/CHAMPIONS/Mel/W - Rebuttal - Reworked",
+   "26.22/CHAMPIONS/Mel/E - Solar Snare",
+   "26.22/CHAMPIONS/Mel/R - Golden Eclipse"
+  ],
+  "configs": {
+   "Por habilidad · Dense": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.14285714285714285,
+     "P@3": 0.6666666666666666,
+     "R@3": 0.2857142857142857,
+     "P@5": 0.6,
+     "R@5": 0.42857142857142855,
+     "P@10": 0.3,
+     "R@10": 0.42857142857142855,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.22/CHAMPIONS/Mel/Developer note",
+      "score": 0.696,
+      "relevant": true
+     },
+     {
+      "id": "26.22/OVERVIEW",
+      "score": 0.6468,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Mel/Base Stats",
+      "score": 0.5591,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Mel/R - Golden Eclipse",
+      "score": 0.5569,
+      "relevant": true
+     },
+     {
+      "id": "26.20/OVERVIEW",
+      "score": 0.5401,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CLASSIC",
+      "score": 0.5275,
+      "relevant": false
+     },
+     {
+      "id": "26.17/ARAM: MAYHEM",
+      "score": 0.5155,
+      "relevant": false
+     },
+     {
+      "id": "26.17/CLASSIC/Champions/Annie/E - Molten Shield",
+      "score": 0.5153,
+      "relevant": false
+     },
+     {
+      "id": "26.21/ARENA",
+      "score": 0.5076,
+      "relevant": false
+     },
+     {
+      "id": "26.22/TFT STANDALONE CLIENT/Developer note",
+      "score": 0.4983,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · Hybrid": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.6666666666666666,
+     "R@3": 0.2857142857142857,
+     "P@5": 0.8,
+     "R@5": 0.5714285714285714,
+     "P@10": 0.5,
+     "R@10": 0.7142857142857143,
+     "MRR": 0.5
+    },
+    "retrieved": [
+     {
+      "id": "26.22/OVERVIEW",
+      "score": 0.0325,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Mel/Developer note",
+      "score": 0.032,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Mel/R - Golden Eclipse",
+      "score": 0.0318,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Mel/Base Stats",
+      "score": 0.031,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Mel/Passive - Searing Brilliance",
+      "score": 0.0282,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Mel/E - Solar Snare",
+      "score": 0.028,
+      "relevant": true
+     },
+     {
+      "id": "26.19/UPCOMING SKINS & CHROMAS",
+      "score": 0.0273,
+      "relevant": false
+     },
+     {
+      "id": "26.17/ARAM: MAYHEM",
+      "score": 0.0271,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Rumble/Developer note",
+      "score": 0.0268,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CLASSIC",
+      "score": 0.0256,
+      "relevant": false
+     }
+    ]
+   },
+   "Tamaño fijo · Dense": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.0,
+     "R@3": 0.0,
+     "P@5": 0.2,
+     "R@5": 0.5714285714285714,
+     "P@10": 0.1,
+     "R@10": 0.5714285714285714,
+     "MRR": 0.25
+    },
+    "retrieved": [
+     {
+      "id": "26.22/fixed-001",
+      "score": 0.5508,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-001",
+      "score": 0.5065,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-023",
+      "score": 0.5015,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-003",
+      "score": 0.5001,
+      "relevant": true
+     },
+     {
+      "id": "26.21/fixed-001",
+      "score": 0.4812,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-022",
+      "score": 0.4728,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-016",
+      "score": 0.4638,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-009",
+      "score": 0.4616,
+      "relevant": false
+     },
+     {
+      "id": "26.16/fixed-024",
+      "score": 0.455,
+      "relevant": false
+     },
+     {
+      "id": "26.15/fixed-016",
+      "score": 0.453,
+      "relevant": false
+     }
+    ]
+   },
+   "Tamaño fijo · Hybrid": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.0,
+     "R@3": 0.0,
+     "P@5": 0.2,
+     "R@5": 0.5714285714285714,
+     "P@10": 0.1,
+     "R@10": 0.5714285714285714,
+     "MRR": 0.2
+    },
+    "retrieved": [
+     {
+      "id": "26.22/fixed-001",
+      "score": 0.0328,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-023",
+      "score": 0.0317,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-001",
+      "score": 0.0315,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-022",
+      "score": 0.0313,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-003",
+      "score": 0.0312,
+      "relevant": true
+     },
+     {
+      "id": "26.21/fixed-001",
+      "score": 0.0297,
+      "relevant": false
+     },
+     {
+      "id": "26.15/fixed-016",
+      "score": 0.0294,
+      "relevant": false
+     },
+     {
+      "id": "26.18/fixed-001",
+      "score": 0.0282,
+      "relevant": false
+     },
+     {
+      "id": "26.15/fixed-001",
+      "score": 0.0277,
+      "relevant": false
+     },
+     {
+      "id": "26.20/fixed-001",
+      "score": 0.0276,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · BM25 solo": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.6666666666666666,
+     "R@3": 0.2857142857142857,
+     "P@5": 0.6,
+     "R@5": 0.42857142857142855,
+     "P@10": 0.5,
+     "R@10": 0.7142857142857143,
+     "MRR": 0.5
+    },
+    "retrieved": [
+     {
+      "id": "26.22/OVERVIEW",
+      "score": 12.977,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Mel/R - Golden Eclipse",
+      "score": 10.8202,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Mel/Passive - Searing Brilliance",
+      "score": 8.8992,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Mel/Developer note",
+      "score": 8.7318,
+      "relevant": true
+     },
+     {
+      "id": "26.19/UPCOMING SKINS & CHROMAS",
+      "score": 8.3997,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Mel/Base Stats",
+      "score": 7.9574,
+      "relevant": true
+     },
+     {
+      "id": "26.19/PATCH HIGHLIGHTS/Developer note",
+      "score": 7.8911,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Rumble/Developer note",
+      "score": 7.3536,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Mel/E - Solar Snare",
+      "score": 7.1958,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CLASSIC/Champions/Olaf/Developer note",
+      "score": 7.0723,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · Hybrid sin cifras": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.6666666666666666,
+     "R@3": 0.2857142857142857,
+     "P@5": 0.8,
+     "R@5": 0.5714285714285714,
+     "P@10": 0.5,
+     "R@10": 0.7142857142857143,
+     "MRR": 0.5
+    },
+    "retrieved": [
+     {
+      "id": "26.22/OVERVIEW",
+      "score": 0.0325,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Mel/R - Golden Eclipse",
+      "score": 0.0318,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Mel/Developer note",
+      "score": 0.0315,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Mel/Base Stats",
+      "score": 0.0315,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Mel/E - Solar Snare",
+      "score": 0.0294,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Mel/Passive - Searing Brilliance",
+      "score": 0.0277,
+      "relevant": true
+     },
+     {
+      "id": "26.19/UPCOMING SKINS & CHROMAS",
+      "score": 0.0268,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Rumble/Developer note",
+      "score": 0.0263,
+      "relevant": false
+     },
+     {
+      "id": "26.17/ARAM: MAYHEM",
+      "score": 0.0248,
+      "relevant": false
+     },
+     {
+      "id": "26.19/PATCH HIGHLIGHTS/Developer note",
+      "score": 0.0239,
+      "relevant": false
+     }
+    ]
+   }
+  }
+ },
+ "q06": {
+  "query": "How did Locke's W change in patches 26.21 and 26.22?",
+  "relevant_units": [
+   "26.21/CHAMPIONS/Locke/W - Soul Ignition",
+   "26.22/CHAMPIONS/Locke/W - Soul Ignition"
+  ],
+  "configs": {
+   "Por habilidad · Dense": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.3333333333333333,
+     "R@3": 0.5,
+     "P@5": 0.2,
+     "R@5": 0.5,
+     "P@10": 0.1,
+     "R@10": 0.5,
+     "MRR": 0.3333333333333333
+    },
+    "retrieved": [
+     {
+      "id": "26.15/CHAMPIONS/Locke/Base Stats",
+      "score": 0.5836,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/Developer note",
+      "score": 0.5722,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Locke/W - Soul Ignition",
+      "score": 0.5704,
+      "relevant": true
+     },
+     {
+      "id": "26.20/ARAM/Champions/Locke",
+      "score": 0.5617,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/Base Stats",
+      "score": 0.5604,
+      "relevant": false
+     },
+     {
+      "id": "26.19/ARENA/Champions/Locke/R - Purgatory",
+      "score": 0.5427,
+      "relevant": false
+     },
+     {
+      "id": "26.15/CHAMPIONS/Locke/Developer note",
+      "score": 0.5406,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/Q - Ritual Nails",
+      "score": 0.5294,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/E - Ashen Pursuit",
+      "score": 0.5203,
+      "relevant": false
+     },
+     {
+      "id": "26.15/CHAMPIONS/Locke/W - Soul Ignition",
+      "score": 0.513,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · Hybrid": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.5,
+     "P@3": 0.3333333333333333,
+     "R@3": 0.5,
+     "P@5": 0.2,
+     "R@5": 0.5,
+     "P@10": 0.1,
+     "R@10": 0.5,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.22/CHAMPIONS/Locke/W - Soul Ignition",
+      "score": 0.0323,
+      "relevant": true
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/Base Stats",
+      "score": 0.0313,
+      "relevant": false
+     },
+     {
+      "id": "26.15/CHAMPIONS/Locke/Base Stats",
+      "score": 0.0307,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/Q - Ritual Nails",
+      "score": 0.0299,
+      "relevant": false
+     },
+     {
+      "id": "26.20/ARAM/Champions/Locke",
+      "score": 0.0297,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Locke/Developer note",
+      "score": 0.0293,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/E - Ashen Pursuit",
+      "score": 0.0292,
+      "relevant": false
+     },
+     {
+      "id": "26.15/CHAMPIONS/Locke/Developer note",
+      "score": 0.0288,
+      "relevant": false
+     },
+     {
+      "id": "26.16/BUGFIXES & QOL CHANGES/QoL CHANGES",
+      "score": 0.0285,
+      "relevant": false
+     },
+     {
+      "id": "26.19/ARENA/Champions/Locke/R - Purgatory",
+      "score": 0.028,
+      "relevant": false
+     }
+    ]
+   },
+   "Tamaño fijo · Dense": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.0,
+     "R@3": 0.0,
+     "P@5": 0.2,
+     "R@5": 0.5,
+     "P@10": 0.1,
+     "R@10": 0.5,
+     "MRR": 0.2
+    },
+    "retrieved": [
+     {
+      "id": "26.17/fixed-001",
+      "score": 0.5013,
+      "relevant": false
+     },
+     {
+      "id": "26.16/fixed-024",
+      "score": 0.4906,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-001",
+      "score": 0.487,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-001",
+      "score": 0.4798,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-003",
+      "score": 0.4644,
+      "relevant": true
+     },
+     {
+      "id": "26.21/fixed-001",
+      "score": 0.4631,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-023",
+      "score": 0.4303,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-009",
+      "score": 0.4268,
+      "relevant": false
+     },
+     {
+      "id": "26.15/fixed-012",
+      "score": 0.4243,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-022",
+      "score": 0.4235,
+      "relevant": false
+     }
+    ]
+   },
+   "Tamaño fijo · Hybrid": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.0,
+     "R@3": 0.0,
+     "P@5": 0.2,
+     "R@5": 0.5,
+     "P@10": 0.1,
+     "R@10": 0.5,
+     "MRR": 0.2
+    },
+    "retrieved": [
+     {
+      "id": "26.22/fixed-001",
+      "score": 0.032,
+      "relevant": false
+     },
+     {
+      "id": "26.16/fixed-024",
+      "score": 0.0313,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-023",
+      "score": 0.0311,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-001",
+      "score": 0.031,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-003",
+      "score": 0.0299,
+      "relevant": true
+     },
+     {
+      "id": "26.15/fixed-016",
+      "score": 0.0297,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-001",
+      "score": 0.0292,
+      "relevant": false
+     },
+     {
+      "id": "26.15/fixed-012",
+      "score": 0.0286,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-001",
+      "score": 0.0278,
+      "relevant": false
+     },
+     {
+      "id": "26.16/fixed-019",
+      "score": 0.0274,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · BM25 solo": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.5,
+     "P@3": 0.3333333333333333,
+     "R@3": 0.5,
+     "P@5": 0.2,
+     "R@5": 0.5,
+     "P@10": 0.1,
+     "R@10": 0.5,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.22/CHAMPIONS/Locke/W - Soul Ignition",
+      "score": 13.5811,
+      "relevant": true
+     },
+     {
+      "id": "26.16/BUGFIXES & QOL CHANGES/QoL CHANGES",
+      "score": 10.1404,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/Base Stats",
+      "score": 9.8897,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Locke/Developer note",
+      "score": 9.8475,
+      "relevant": false
+     },
+     {
+      "id": "26.15/BUGFIXES & QOL CHANGES#2",
+      "score": 8.8836,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/Q - Ritual Nails",
+      "score": 8.2301,
+      "relevant": false
+     },
+     {
+      "id": "26.22/OVERVIEW",
+      "score": 8.1547,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/E - Ashen Pursuit",
+      "score": 7.8356,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Naafiri/W - The Call of the Pack",
+      "score": 7.8265,
+      "relevant": false
+     },
+     {
+      "id": "26.15/CHAMPIONS/Locke/Base Stats",
+      "score": 7.6795,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · Hybrid sin cifras": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.5,
+     "P@3": 0.3333333333333333,
+     "R@3": 0.5,
+     "P@5": 0.2,
+     "R@5": 0.5,
+     "P@10": 0.1,
+     "R@10": 0.5,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.22/CHAMPIONS/Locke/W - Soul Ignition",
+      "score": 0.0323,
+      "relevant": true
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/Base Stats",
+      "score": 0.0315,
+      "relevant": false
+     },
+     {
+      "id": "26.15/CHAMPIONS/Locke/Base Stats",
+      "score": 0.0301,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/E - Ashen Pursuit",
+      "score": 0.0299,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Locke/Q - Ritual Nails",
+      "score": 0.0294,
+      "relevant": false
+     },
+     {
+      "id": "26.20/ARAM/Champions/Locke",
+      "score": 0.0291,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Locke/Developer note",
+      "score": 0.0289,
+      "relevant": false
+     },
+     {
+      "id": "26.16/BUGFIXES & QOL CHANGES/QoL CHANGES",
+      "score": 0.028,
+      "relevant": false
+     },
+     {
+      "id": "26.19/ARENA/Champions/Locke/R - Purgatory",
+      "score": 0.0278,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Locke/Q - Ritual Nails",
+      "score": 0.0276,
+      "relevant": false
+     }
+    ]
+   }
+  }
+ },
+ "q07": {
+  "query": "What did patch 26.22 change about Doran's Bow, and why?",
+  "relevant_units": [
+   "26.22/ITEMS/Doran's Bow/Developer note",
+   "26.22/ITEMS/Doran's Bow"
+  ],
+  "configs": {
+   "Por habilidad · Dense": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.5,
+     "P@3": 0.6666666666666666,
+     "R@3": 1.0,
+     "P@5": 0.4,
+     "R@5": 1.0,
+     "P@10": 0.2,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.22/ITEMS/Doran's Bow/Developer note",
+      "score": 0.7109,
+      "relevant": true
+     },
+     {
+      "id": "26.22/ITEMS/Doran's Bow",
+      "score": 0.71,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Smolder/Developer note",
+      "score": 0.5888,
+      "relevant": false
+     },
+     {
+      "id": "26.20/ITEMS/Runaan's Hurricane/Developer note",
+      "score": 0.5455,
+      "relevant": false
+     },
+     {
+      "id": "26.22/OVERVIEW",
+      "score": 0.5262,
+      "relevant": false
+     },
+     {
+      "id": "26.18/BUGFIXES & QOL CHANGES",
+      "score": 0.5053,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Rumble/Developer note",
+      "score": 0.5012,
+      "relevant": false
+     },
+     {
+      "id": "26.19/CLASSIC/Champions/Nautilus/Developer note",
+      "score": 0.4973,
+      "relevant": false
+     },
+     {
+      "id": "26.18/CLASSIC/Champions/Warwick/R - Infinite Duress",
+      "score": 0.4884,
+      "relevant": false
+     },
+     {
+      "id": "26.15/ARAM: MAYHEM/Augments/Ok Boomerang",
+      "score": 0.4865,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · Hybrid": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.5,
+     "P@3": 0.6666666666666666,
+     "R@3": 1.0,
+     "P@5": 0.4,
+     "R@5": 1.0,
+     "P@10": 0.2,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.22/ITEMS/Doran's Bow/Developer note",
+      "score": 0.0328,
+      "relevant": true
+     },
+     {
+      "id": "26.22/ITEMS/Doran's Bow",
+      "score": 0.0323,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Smolder/Developer note",
+      "score": 0.0317,
+      "relevant": false
+     },
+     {
+      "id": "26.22/OVERVIEW",
+      "score": 0.0299,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Rumble/Developer note",
+      "score": 0.0292,
+      "relevant": false
+     },
+     {
+      "id": "26.19/CLASSIC/Champions/Nautilus/Developer note",
+      "score": 0.0269,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Naafiri/W - The Call of the Pack",
+      "score": 0.0227,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Corki/Developer note",
+      "score": 0.0216,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CLASSIC",
+      "score": 0.0216,
+      "relevant": false
+     },
+     {
+      "id": "26.17/OVERVIEW",
+      "score": 0.0215,
+      "relevant": false
+     }
+    ]
+   },
+   "Tamaño fijo · Dense": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 1.0,
+     "P@3": 0.3333333333333333,
+     "R@3": 1.0,
+     "P@5": 0.2,
+     "R@5": 1.0,
+     "P@10": 0.1,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.22/fixed-006",
+      "score": 0.4833,
+      "relevant": true
+     },
+     {
+      "id": "26.20/fixed-001",
+      "score": 0.4747,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-001",
+      "score": 0.4685,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-009",
+      "score": 0.4679,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-001",
+      "score": 0.4506,
+      "relevant": false
+     },
+     {
+      "id": "26.16/fixed-024",
+      "score": 0.4492,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-001",
+      "score": 0.4478,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-016",
+      "score": 0.432,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-014",
+      "score": 0.4285,
+      "relevant": false
+     },
+     {
+      "id": "26.18/fixed-016",
+      "score": 0.423,
+      "relevant": false
+     }
+    ]
+   },
+   "Tamaño fijo · Hybrid": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 1.0,
+     "P@3": 0.3333333333333333,
+     "R@3": 1.0,
+     "P@5": 0.2,
+     "R@5": 1.0,
+     "P@10": 0.1,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.22/fixed-006",
+      "score": 0.0328,
+      "relevant": true
+     },
+     {
+      "id": "26.20/fixed-001",
+      "score": 0.0308,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-014",
+      "score": 0.0301,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-023",
+      "score": 0.0295,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-001",
+      "score": 0.0295,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-005",
+      "score": 0.0278,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-001",
+      "score": 0.0276,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-001",
+      "score": 0.0273,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-001",
+      "score": 0.0271,
+      "relevant": false
+     },
+     {
+      "id": "26.18/fixed-012",
+      "score": 0.0269,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · BM25 solo": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.5,
+     "P@3": 0.6666666666666666,
+     "R@3": 1.0,
+     "P@5": 0.4,
+     "R@5": 1.0,
+     "P@10": 0.2,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.22/ITEMS/Doran's Bow/Developer note",
+      "score": 22.7688,
+      "relevant": true
+     },
+     {
+      "id": "26.22/ITEMS/Doran's Bow",
+      "score": 21.9844,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Smolder/Developer note",
+      "score": 13.7398,
+      "relevant": false
+     },
+     {
+      "id": "26.20/CHAMPIONS/Kennen/Developer note",
+      "score": 9.0207,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CLASSIC/Champions/Mordekaiser/Base Stats",
+      "score": 8.9947,
+      "relevant": false
+     },
+     {
+      "id": "26.17/CLASSIC",
+      "score": 8.8811,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Viktor/Developer note",
+      "score": 8.8241,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Corki/Developer note",
+      "score": 8.7162,
+      "relevant": false
+     },
+     {
+      "id": "26.22/OVERVIEW",
+      "score": 8.1547,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Rumble/Developer note",
+      "score": 7.3536,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · Hybrid sin cifras": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.5,
+     "P@3": 0.6666666666666666,
+     "R@3": 1.0,
+     "P@5": 0.4,
+     "R@5": 1.0,
+     "P@10": 0.2,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.22/ITEMS/Doran's Bow/Developer note",
+      "score": 0.0325,
+      "relevant": true
+     },
+     {
+      "id": "26.22/ITEMS/Doran's Bow",
+      "score": 0.0325,
+      "relevant": true
+     },
+     {
+      "id": "26.22/CHAMPIONS/Smolder/Developer note",
+      "score": 0.0317,
+      "relevant": false
+     },
+     {
+      "id": "26.22/OVERVIEW",
+      "score": 0.0299,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Rumble/Developer note",
+      "score": 0.0292,
+      "relevant": false
+     },
+     {
+      "id": "26.19/CLASSIC/Champions/Nautilus/Developer note",
+      "score": 0.0241,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Naafiri/W - The Call of the Pack",
+      "score": 0.0224,
+      "relevant": false
+     },
+     {
+      "id": "26.22/CHAMPIONS/Corki/Developer note",
+      "score": 0.0216,
+      "relevant": false
+     },
+     {
+      "id": "26.17/OVERVIEW",
+      "score": 0.0213,
+      "relevant": false
+     },
+     {
+      "id": "26.17/CLASSIC",
+      "score": 0.0211,
+      "relevant": false
+     }
+    ]
+   }
+  }
+ },
+ "q08": {
+  "query": "Which champions were added to League Classic in patch 26.21?",
+  "relevant_units": [
+   "26.21/CLASSIC/Developer note",
+   "26.21/CLASSIC/Champions/Mordekaiser/Developer note",
+   "26.21/CLASSIC/Champions/Yorick/Developer note",
+   "26.21/CLASSIC/Champions/Hecarim/Developer note",
+   "26.21/CLASSIC/Champions/Lucian/Developer note"
+  ],
+  "configs": {
+   "Por habilidad · Dense": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.3333333333333333,
+     "R@3": 0.2,
+     "P@5": 0.2,
+     "R@5": 0.2,
+     "P@10": 0.1,
+     "R@10": 0.2,
+     "MRR": 0.3333333333333333
+    },
+    "retrieved": [
+     {
+      "id": "26.16/CLASSIC/Developer note",
+      "score": 0.7303,
+      "relevant": false
+     },
+     {
+      "id": "26.19/OVERVIEW",
+      "score": 0.7045,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CLASSIC/Developer note",
+      "score": 0.6941,
+      "relevant": true
+     },
+     {
+      "id": "26.17/CLASSIC",
+      "score": 0.6938,
+      "relevant": false
+     },
+     {
+      "id": "26.18/CLASSIC/Developer note",
+      "score": 0.6758,
+      "relevant": false
+     },
+     {
+      "id": "26.17/CLASSIC/Developer note",
+      "score": 0.6574,
+      "relevant": false
+     },
+     {
+      "id": "26.16/OVERVIEW",
+      "score": 0.6507,
+      "relevant": false
+     },
+     {
+      "id": "26.19/CLASSIC",
+      "score": 0.6425,
+      "relevant": false
+     },
+     {
+      "id": "26.18/OVERVIEW#2",
+      "score": 0.6236,
+      "relevant": false
+     },
+     {
+      "id": "26.16/CLASSIC/Systems/Classic Gold Generation/Developer note",
+      "score": 0.6141,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · Hybrid": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.0,
+     "R@3": 0.0,
+     "P@5": 0.2,
+     "R@5": 0.2,
+     "P@10": 0.1,
+     "R@10": 0.2,
+     "MRR": 0.25
+    },
+    "retrieved": [
+     {
+      "id": "26.16/CLASSIC/Developer note",
+      "score": 0.0307,
+      "relevant": false
+     },
+     {
+      "id": "26.18/CLASSIC/Developer note",
+      "score": 0.0274,
+      "relevant": false
+     },
+     {
+      "id": "26.17/CLASSIC",
+      "score": 0.0273,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CLASSIC/Champions/Lucian/Developer note",
+      "score": 0.0258,
+      "relevant": true
+     },
+     {
+      "id": "26.16/CLASSIC/Systems/Classic Gold Generation/Developer note",
+      "score": 0.0258,
+      "relevant": false
+     },
+     {
+      "id": "26.19/CLASSIC/Systems/Council Vote/Developer note",
+      "score": 0.0236,
+      "relevant": false
+     },
+     {
+      "id": "26.19/OVERVIEW",
+      "score": 0.0219,
+      "relevant": false
+     },
+     {
+      "id": "26.16/CLASSIC/Runes/New Runes/Developer note",
+      "score": 0.0215,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CLASSIC/Champions/Mordekaiser",
+      "score": 0.021,
+      "relevant": false
+     },
+     {
+      "id": "26.18/OVERVIEW#2",
+      "score": 0.0199,
+      "relevant": false
+     }
+    ]
+   },
+   "Tamaño fijo · Dense": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.0,
+     "R@3": 0.0,
+     "P@5": 0.0,
+     "R@5": 0.0,
+     "P@10": 0.0,
+     "R@10": 0.0,
+     "MRR": 0.0
+    },
+    "retrieved": [
+     {
+      "id": "26.18/fixed-001",
+      "score": 0.6309,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-001",
+      "score": 0.6095,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-009",
+      "score": 0.5953,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-001",
+      "score": 0.5759,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-015",
+      "score": 0.5678,
+      "relevant": false
+     },
+     {
+      "id": "26.20/fixed-006",
+      "score": 0.5663,
+      "relevant": false
+     },
+     {
+      "id": "26.20/fixed-013",
+      "score": 0.5567,
+      "relevant": false
+     },
+     {
+      "id": "26.16/fixed-018",
+      "score": 0.5537,
+      "relevant": false
+     },
+     {
+      "id": "26.16/fixed-001",
+      "score": 0.5469,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-001",
+      "score": 0.5459,
+      "relevant": false
+     }
+    ]
+   },
+   "Tamaño fijo · Hybrid": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.0,
+     "R@3": 0.0,
+     "P@5": 0.0,
+     "R@5": 0.0,
+     "P@10": 0.0,
+     "R@10": 0.0,
+     "MRR": 0.0
+    },
+    "retrieved": [
+     {
+      "id": "26.18/fixed-001",
+      "score": 0.0315,
+      "relevant": false
+     },
+     {
+      "id": "26.20/fixed-006",
+      "score": 0.0315,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-001",
+      "score": 0.031,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-001",
+      "score": 0.0304,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-001",
+      "score": 0.0298,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-005",
+      "score": 0.029,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-023",
+      "score": 0.0281,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-014",
+      "score": 0.0281,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-015",
+      "score": 0.0279,
+      "relevant": false
+     },
+     {
+      "id": "26.20/fixed-013",
+      "score": 0.0276,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · BM25 solo": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.0,
+     "R@3": 0.0,
+     "P@5": 0.0,
+     "R@5": 0.0,
+     "P@10": 0.0,
+     "R@10": 0.0,
+     "MRR": 0.0
+    },
+    "retrieved": [
+     {
+      "id": "26.21/CLASSIC/Champions/Mordekaiser",
+      "score": 9.2673,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Yone/Q - Mortal Steel",
+      "score": 9.2397,
+      "relevant": false
+     },
+     {
+      "id": "26.21/ARENA/Champions/Fiora/Passive - Duelist's Dance",
+      "score": 9.2397,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Caitlyn/Passive - Headshot",
+      "score": 8.8241,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Lee Sin/R - Dragon's Rage",
+      "score": 8.7893,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Qiyana/Q - Elemental Wrath / Edge of Ixtal",
+      "score": 8.7502,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Nidalee/W - Pounce",
+      "score": 8.6361,
+      "relevant": false
+     },
+     {
+      "id": "26.18/CLASSIC/Champions/Kayle/Passive - Holy Fervor",
+      "score": 8.5562,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Xin Zhao/Q - Three Talon Strike",
+      "score": 8.5249,
+      "relevant": false
+     },
+     {
+      "id": "26.16/CLASSIC/Developer note",
+      "score": 8.1757,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · Hybrid sin cifras": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.0,
+     "R@3": 0.0,
+     "P@5": 0.2,
+     "R@5": 0.2,
+     "P@10": 0.1,
+     "R@10": 0.2,
+     "MRR": 0.2
+    },
+    "retrieved": [
+     {
+      "id": "26.16/CLASSIC/Developer note",
+      "score": 0.0275,
+      "relevant": false
+     },
+     {
+      "id": "26.17/CLASSIC",
+      "score": 0.0262,
+      "relevant": false
+     },
+     {
+      "id": "26.18/CLASSIC/Developer note",
+      "score": 0.0255,
+      "relevant": false
+     },
+     {
+      "id": "26.16/CLASSIC/Systems/Classic Gold Generation/Developer note",
+      "score": 0.0239,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CLASSIC/Champions/Lucian/Developer note",
+      "score": 0.0235,
+      "relevant": true
+     },
+     {
+      "id": "26.19/CLASSIC/Systems/Council Vote/Developer note",
+      "score": 0.0213,
+      "relevant": false
+     },
+     {
+      "id": "26.19/OVERVIEW",
+      "score": 0.021,
+      "relevant": false
+     },
+     {
+      "id": "26.18/CLASSIC/Champions/Warwick/R - Infinite Duress",
+      "score": 0.0199,
+      "relevant": false
+     },
+     {
+      "id": "26.16/CLASSIC/Runes/New Runes/Developer note",
+      "score": 0.0197,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CLASSIC/Champions/Mordekaiser",
+      "score": 0.0191,
+      "relevant": false
+     }
+    ]
+   }
+  }
+ },
+ "q09": {
+  "query": "How was Bel'Veth changed in Arena in patch 26.21?",
+  "relevant_units": [
+   "26.21/ARENA/Champions/Bel'Veth/Q - Void Surge",
+   "26.21/ARENA/Champions/Bel'Veth/R - Endless Banquet"
+  ],
+  "configs": {
+   "Por habilidad · Dense": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.0,
+     "R@3": 0.0,
+     "P@5": 0.2,
+     "R@5": 0.5,
+     "P@10": 0.1,
+     "R@10": 0.5,
+     "MRR": 0.2
+    },
+    "retrieved": [
+     {
+      "id": "26.15/CHAMPIONS/Bel'Veth/Developer note",
+      "score": 0.7099,
+      "relevant": false
+     },
+     {
+      "id": "26.16/ARENA/Champions/Bel'Veth/R - Endless Banquet",
+      "score": 0.6788,
+      "relevant": false
+     },
+     {
+      "id": "26.15/OVERVIEW/Developer note",
+      "score": 0.6609,
+      "relevant": false
+     },
+     {
+      "id": "26.16/CHAMPIONS/Bel'Veth/Developer note",
+      "score": 0.6584,
+      "relevant": false
+     },
+     {
+      "id": "26.21/ARENA/Champions/Bel'Veth/Q - Void Surge",
+      "score": 0.6549,
+      "relevant": true
+     },
+     {
+      "id": "26.20/ARAM/Champions/Bel'Veth",
+      "score": 0.6349,
+      "relevant": false
+     },
+     {
+      "id": "26.19/ARENA/Champions/Bel'Veth/R - Endless Banquet",
+      "score": 0.6286,
+      "relevant": false
+     },
+     {
+      "id": "26.16/CHAMPIONS/Bel'Veth/Base Stats",
+      "score": 0.6251,
+      "relevant": false
+     },
+     {
+      "id": "26.15/CHAMPIONS/Bel'Veth/Base Stats",
+      "score": 0.622,
+      "relevant": false
+     },
+     {
+      "id": "26.19/ARENA/Champions/Bel'Veth/E - Royal Maelstrom",
+      "score": 0.6176,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · Hybrid": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.3333333333333333,
+     "R@3": 0.5,
+     "P@5": 0.4,
+     "R@5": 1.0,
+     "P@10": 0.2,
+     "R@10": 1.0,
+     "MRR": 0.5
+    },
+    "retrieved": [
+     {
+      "id": "26.15/CHAMPIONS/Bel'Veth/Developer note",
+      "score": 0.0323,
+      "relevant": false
+     },
+     {
+      "id": "26.21/ARENA/Champions/Bel'Veth/Q - Void Surge",
+      "score": 0.0318,
+      "relevant": true
+     },
+     {
+      "id": "26.16/ARENA/Champions/Bel'Veth/R - Endless Banquet",
+      "score": 0.0318,
+      "relevant": false
+     },
+     {
+      "id": "26.19/ARENA/Champions/Bel'Veth/R - Endless Banquet",
+      "score": 0.0301,
+      "relevant": false
+     },
+     {
+      "id": "26.21/ARENA/Champions/Bel'Veth/R - Endless Banquet",
+      "score": 0.03,
+      "relevant": true
+     },
+     {
+      "id": "26.19/ARENA/Champions/Bel'Veth/E - Royal Maelstrom",
+      "score": 0.0297,
+      "relevant": false
+     },
+     {
+      "id": "26.16/CHAMPIONS/Bel'Veth/Base Stats",
+      "score": 0.029,
+      "relevant": false
+     },
+     {
+      "id": "26.21/ARENA",
+      "score": 0.0288,
+      "relevant": false
+     },
+     {
+      "id": "26.20/ARAM/Champions/Bel'Veth",
+      "score": 0.0287,
+      "relevant": false
+     },
+     {
+      "id": "26.16/ARENA/Champions/Bel'Veth/Passive - Death in Lavender",
+      "score": 0.0286,
+      "relevant": false
+     }
+    ]
+   },
+   "Tamaño fijo · Dense": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.0,
+     "R@3": 0.0,
+     "P@5": 0.0,
+     "R@5": 0.0,
+     "P@10": 0.0,
+     "R@10": 0.0,
+     "MRR": 0.0
+    },
+    "retrieved": [
+     {
+      "id": "26.19/fixed-016",
+      "score": 0.6117,
+      "relevant": false
+     },
+     {
+      "id": "26.16/fixed-001",
+      "score": 0.5899,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-001",
+      "score": 0.5584,
+      "relevant": false
+     },
+     {
+      "id": "26.22/fixed-009",
+      "score": 0.5136,
+      "relevant": false
+     },
+     {
+      "id": "26.15/fixed-001",
+      "score": 0.5115,
+      "relevant": false
+     },
+     {
+      "id": "26.16/fixed-020",
+      "score": 0.5065,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-001",
+      "score": 0.5026,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-001",
+      "score": 0.5013,
+      "relevant": false
+     },
+     {
+      "id": "26.20/fixed-001",
+      "score": 0.4951,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-016",
+      "score": 0.4838,
+      "relevant": false
+     }
+    ]
+   },
+   "Tamaño fijo · Hybrid": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.0,
+     "R@3": 0.0,
+     "P@5": 0.0,
+     "R@5": 0.0,
+     "P@10": 0.0,
+     "R@10": 0.0,
+     "MRR": 0.0
+    },
+    "retrieved": [
+     {
+      "id": "26.19/fixed-016",
+      "score": 0.0325,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-001",
+      "score": 0.0311,
+      "relevant": false
+     },
+     {
+      "id": "26.16/fixed-001",
+      "score": 0.0311,
+      "relevant": false
+     },
+     {
+      "id": "26.16/fixed-020",
+      "score": 0.031,
+      "relevant": false
+     },
+     {
+      "id": "26.15/fixed-001",
+      "score": 0.031,
+      "relevant": false
+     },
+     {
+      "id": "26.16/fixed-021",
+      "score": 0.0293,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-001",
+      "score": 0.0287,
+      "relevant": false
+     },
+     {
+      "id": "26.16/fixed-024",
+      "score": 0.0285,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-001",
+      "score": 0.0279,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-023",
+      "score": 0.0278,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · BM25 solo": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.5,
+     "P@3": 0.6666666666666666,
+     "R@3": 1.0,
+     "P@5": 0.4,
+     "R@5": 1.0,
+     "P@10": 0.2,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.21/ARENA/Champions/Bel'Veth/Q - Void Surge",
+      "score": 11.6624,
+      "relevant": true
+     },
+     {
+      "id": "26.21/ARENA/Champions/Bel'Veth/R - Endless Banquet",
+      "score": 11.0331,
+      "relevant": true
+     },
+     {
+      "id": "26.15/CHAMPIONS/Bel'Veth/Developer note",
+      "score": 9.8685,
+      "relevant": false
+     },
+     {
+      "id": "26.16/ARENA/Champions/Bel'Veth/R - Endless Banquet",
+      "score": 9.2562,
+      "relevant": false
+     },
+     {
+      "id": "26.19/ARENA/Champions/Bel'Veth/E - Royal Maelstrom",
+      "score": 9.0867,
+      "relevant": false
+     },
+     {
+      "id": "26.19/ARENA/Champions/Bel'Veth/R - Endless Banquet",
+      "score": 9.0867,
+      "relevant": false
+     },
+     {
+      "id": "26.16/ARENA/Champions/Bel'Veth/Passive - Death in Lavender",
+      "score": 8.9232,
+      "relevant": false
+     },
+     {
+      "id": "26.21/ARENA",
+      "score": 8.5614,
+      "relevant": false
+     },
+     {
+      "id": "26.16/UPCOMING SKINS & CHROMAS",
+      "score": 7.8836,
+      "relevant": false
+     },
+     {
+      "id": "26.16/CHAMPIONS/Bel'Veth/Base Stats",
+      "score": 7.5817,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · Hybrid sin cifras": {
+    "metrics": {
+     "P@1": 0.0,
+     "R@1": 0.0,
+     "P@3": 0.3333333333333333,
+     "R@3": 0.5,
+     "P@5": 0.4,
+     "R@5": 1.0,
+     "P@10": 0.2,
+     "R@10": 1.0,
+     "MRR": 0.3333333333333333
+    },
+    "retrieved": [
+     {
+      "id": "26.16/ARENA/Champions/Bel'Veth/R - Endless Banquet",
+      "score": 0.032,
+      "relevant": false
+     },
+     {
+      "id": "26.15/CHAMPIONS/Bel'Veth/Developer note",
+      "score": 0.0318,
+      "relevant": false
+     },
+     {
+      "id": "26.21/ARENA/Champions/Bel'Veth/Q - Void Surge",
+      "score": 0.0318,
+      "relevant": true
+     },
+     {
+      "id": "26.21/ARENA/Champions/Bel'Veth/R - Endless Banquet",
+      "score": 0.03,
+      "relevant": true
+     },
+     {
+      "id": "26.19/ARENA/Champions/Bel'Veth/E - Royal Maelstrom",
+      "score": 0.0299,
+      "relevant": false
+     },
+     {
+      "id": "26.19/ARENA/Champions/Bel'Veth/R - Endless Banquet",
+      "score": 0.0299,
+      "relevant": false
+     },
+     {
+      "id": "26.20/ARAM/Champions/Bel'Veth",
+      "score": 0.0292,
+      "relevant": false
+     },
+     {
+      "id": "26.16/CHAMPIONS/Bel'Veth/Base Stats",
+      "score": 0.0292,
+      "relevant": false
+     },
+     {
+      "id": "26.16/ARENA/Champions/Bel'Veth/Passive - Death in Lavender",
+      "score": 0.0289,
+      "relevant": false
+     },
+     {
+      "id": "26.21/ARENA",
+      "score": 0.0288,
+      "relevant": false
+     }
+    ]
+   }
+  }
+ },
+ "q10": {
+  "query": "When does TFT move to its own standalone client, and what happens to TFT cosmetics in League?",
+  "relevant_units": [
+   "26.22/TFT STANDALONE CLIENT/Developer note",
+   "26.22/TFT STANDALONE CLIENT"
+  ],
+  "configs": {
+   "Por habilidad · Dense": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.5,
+     "P@3": 0.6666666666666666,
+     "R@3": 1.0,
+     "P@5": 0.4,
+     "R@5": 1.0,
+     "P@10": 0.2,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.22/TFT STANDALONE CLIENT",
+      "score": 0.7778,
+      "relevant": true
+     },
+     {
+      "id": "26.22/TFT STANDALONE CLIENT/Developer note",
+      "score": 0.7531,
+      "relevant": true
+     },
+     {
+      "id": "26.18/CLASSIC/Developer note",
+      "score": 0.4638,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CHAMPIONS/Twisted Fate/Developer note",
+      "score": 0.4435,
+      "relevant": false
+     },
+     {
+      "id": "26.19/CLASSIC/Champions/Twisted Fate/Developer note",
+      "score": 0.4418,
+      "relevant": false
+     },
+     {
+      "id": "26.19/OVERVIEW/Developer note",
+      "score": 0.4387,
+      "relevant": false
+     },
+     {
+      "id": "26.16/CLASSIC/Champions/Twitch/Developer note",
+      "score": 0.4346,
+      "relevant": false
+     },
+     {
+      "id": "26.19/SYSTEMS/Teleport Cooldown/Developer note",
+      "score": 0.4238,
+      "relevant": false
+     },
+     {
+      "id": "26.19/OVERVIEW",
+      "score": 0.4215,
+      "relevant": false
+     },
+     {
+      "id": "26.15/OVERVIEW",
+      "score": 0.4146,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · Hybrid": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.5,
+     "P@3": 0.6666666666666666,
+     "R@3": 1.0,
+     "P@5": 0.4,
+     "R@5": 1.0,
+     "P@10": 0.2,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.22/TFT STANDALONE CLIENT",
+      "score": 0.0325,
+      "relevant": true
+     },
+     {
+      "id": "26.22/TFT STANDALONE CLIENT/Developer note",
+      "score": 0.0325,
+      "relevant": true
+     },
+     {
+      "id": "26.19/OVERVIEW",
+      "score": 0.0304,
+      "relevant": false
+     },
+     {
+      "id": "26.15/OVERVIEW",
+      "score": 0.0297,
+      "relevant": false
+     },
+     {
+      "id": "26.18/OVERVIEW#2",
+      "score": 0.0289,
+      "relevant": false
+     },
+     {
+      "id": "26.19/CLASSIC/Systems/Council Vote/Developer note",
+      "score": 0.0275,
+      "relevant": false
+     },
+     {
+      "id": "26.17/CLASSIC/Items/Wriggle's Lantern and Feral Flare/Developer note",
+      "score": 0.0263,
+      "relevant": false
+     },
+     {
+      "id": "26.18/CLASSIC/Developer note",
+      "score": 0.0263,
+      "relevant": false
+     },
+     {
+      "id": "26.19/CLASSIC/Champions/Twisted Fate/Developer note",
+      "score": 0.0239,
+      "relevant": false
+     },
+     {
+      "id": "26.16/CLASSIC SKINS AND COSMETICS/Developer note",
+      "score": 0.0226,
+      "relevant": false
+     }
+    ]
+   },
+   "Tamaño fijo · Dense": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 1.0,
+     "P@3": 0.3333333333333333,
+     "R@3": 1.0,
+     "P@5": 0.2,
+     "R@5": 1.0,
+     "P@10": 0.1,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.22/fixed-001",
+      "score": 0.6949,
+      "relevant": true
+     },
+     {
+      "id": "26.19/fixed-007",
+      "score": 0.4515,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-001",
+      "score": 0.4266,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-023",
+      "score": 0.4083,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-007",
+      "score": 0.4018,
+      "relevant": false
+     },
+     {
+      "id": "26.20/fixed-006",
+      "score": 0.3993,
+      "relevant": false
+     },
+     {
+      "id": "26.16/fixed-024",
+      "score": 0.3956,
+      "relevant": false
+     },
+     {
+      "id": "26.16/fixed-001",
+      "score": 0.3951,
+      "relevant": false
+     },
+     {
+      "id": "26.15/fixed-001",
+      "score": 0.3897,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-022",
+      "score": 0.3878,
+      "relevant": false
+     }
+    ]
+   },
+   "Tamaño fijo · Hybrid": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 1.0,
+     "P@3": 0.3333333333333333,
+     "R@3": 1.0,
+     "P@5": 0.2,
+     "R@5": 1.0,
+     "P@10": 0.1,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.22/fixed-001",
+      "score": 0.0328,
+      "relevant": true
+     },
+     {
+      "id": "26.19/fixed-001",
+      "score": 0.0315,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-007",
+      "score": 0.0306,
+      "relevant": false
+     },
+     {
+      "id": "26.15/fixed-001",
+      "score": 0.0304,
+      "relevant": false
+     },
+     {
+      "id": "26.18/fixed-001",
+      "score": 0.0295,
+      "relevant": false
+     },
+     {
+      "id": "26.20/fixed-006",
+      "score": 0.0294,
+      "relevant": false
+     },
+     {
+      "id": "26.21/fixed-023",
+      "score": 0.0288,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-010",
+      "score": 0.0272,
+      "relevant": false
+     },
+     {
+      "id": "26.19/fixed-014",
+      "score": 0.0272,
+      "relevant": false
+     },
+     {
+      "id": "26.17/fixed-015",
+      "score": 0.027,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · BM25 solo": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.5,
+     "P@3": 0.6666666666666666,
+     "R@3": 1.0,
+     "P@5": 0.4,
+     "R@5": 1.0,
+     "P@10": 0.2,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.22/TFT STANDALONE CLIENT/Developer note",
+      "score": 36.5109,
+      "relevant": true
+     },
+     {
+      "id": "26.22/TFT STANDALONE CLIENT",
+      "score": 34.0458,
+      "relevant": true
+     },
+     {
+      "id": "26.19/OVERVIEW",
+      "score": 11.8188,
+      "relevant": false
+     },
+     {
+      "id": "26.16/CLASSIC SKINS AND COSMETICS/Developer note",
+      "score": 9.9621,
+      "relevant": false
+     },
+     {
+      "id": "26.15/OVERVIEW",
+      "score": 9.823,
+      "relevant": false
+     },
+     {
+      "id": "26.18/OVERVIEW#2",
+      "score": 9.2995,
+      "relevant": false
+     },
+     {
+      "id": "26.21/CLASSIC/Champions/Mordekaiser",
+      "score": 8.4688,
+      "relevant": false
+     },
+     {
+      "id": "26.19/CLASSIC/Systems/Council Vote/Developer note",
+      "score": 8.0056,
+      "relevant": false
+     },
+     {
+      "id": "26.19/CLASSIC",
+      "score": 7.3993,
+      "relevant": false
+     },
+     {
+      "id": "26.18/HALL OF LEGENDS#1",
+      "score": 7.093,
+      "relevant": false
+     }
+    ]
+   },
+   "Por habilidad · Hybrid sin cifras": {
+    "metrics": {
+     "P@1": 1.0,
+     "R@1": 0.5,
+     "P@3": 0.6666666666666666,
+     "R@3": 1.0,
+     "P@5": 0.4,
+     "R@5": 1.0,
+     "P@10": 0.2,
+     "R@10": 1.0,
+     "MRR": 1.0
+    },
+    "retrieved": [
+     {
+      "id": "26.22/TFT STANDALONE CLIENT",
+      "score": 0.0325,
+      "relevant": true
+     },
+     {
+      "id": "26.22/TFT STANDALONE CLIENT/Developer note",
+      "score": 0.0325,
+      "relevant": true
+     },
+     {
+      "id": "26.19/OVERVIEW",
+      "score": 0.0304,
+      "relevant": false
+     },
+     {
+      "id": "26.15/OVERVIEW",
+      "score": 0.0297,
+      "relevant": false
+     },
+     {
+      "id": "26.18/OVERVIEW#2",
+      "score": 0.0289,
+      "relevant": false
+     },
+     {
+      "id": "26.19/CLASSIC/Systems/Council Vote/Developer note",
+      "score": 0.0275,
+      "relevant": false
+     },
+     {
+      "id": "26.17/CLASSIC/Items/Wriggle's Lantern and Feral Flare/Developer note",
+      "score": 0.0263,
+      "relevant": false
+     },
+     {
+      "id": "26.18/CLASSIC/Developer note",
+      "score": 0.0252,
+      "relevant": false
+     },
+     {
+      "id": "26.19/CLASSIC/Champions/Twisted Fate/Developer note",
+      "score": 0.0237,
+      "relevant": false
+     },
+     {
+      "id": "26.16/CLASSIC SKINS AND COSMETICS/Developer note",
+      "score": 0.0226,
+      "relevant": false
+     }
+    ]
+   }
+  }
+ }
+}

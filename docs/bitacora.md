@@ -415,5 +415,60 @@ Hay 3 trampas, todas de tipos distintos:
 - **Ejemplo real (q05, Mel 26.22, 7 unidades):**
   - Por habilidad · Hybrid cubre 5/7 (0.71).
   - Tamaño fijo · Hybrid cubre 4/7 (0.57).
-  - Por habilidad · Dense cubre solo 2/7 (0.29).
+  - Por habilidad · Dense cubre 3/7 (0.43). La primera medición había dado 2/7 por un problema de la búsqueda aproximada de Chroma (P-16).
 - **Quién decidió:** Santiago, sobre la propuesta de Claude, después de pedir que se le explicara qué es una unidad.
+
+### D-33 · Precision@k estándar, con el sesgo a favor del tamaño fijo explicado
+- **Decisión:** `Precision@k = chunks relevantes en los top-k / k`. Un chunk es relevante si contiene al menos una unidad correcta.
+- **Sesgos que se explican al presentar:**
+  - **A favor del tamaño fijo:** un chunk de 8 unidades cuenta como relevante aunque 7 no lo sean.
+  - **Techo bajo del chunking por habilidad con k grande:** con 1 unidad relevante, P@10 no pasa de 0.10.
+- **Por qué:** una "precisión por tokens" corregiría el primer sesgo, pero complica la explicación.
+- **Quién decidió:** Santiago, sobre la propuesta de Claude.
+
+### D-34 · Las preguntas trampa no entran en las métricas de retrieval
+- **Decisión:** P@k, R@k y MRR se calculan sobre las 10 preguntas normales. Las 2 trampas (q11, q12) se evalúan en la generación: ¿el modelo se niega o inventa?
+- **Por qué:** sin unidades relevantes, el Recall es 0/0 y la Precision siempre 0. Solo bajarían todos los promedios por igual.
+- **Quién decidió:** Santiago, sobre la propuesta de Claude.
+
+### D-35 · k = 1, 3, 5 y 10; seis configuraciones; MRR como extra
+- **Configuraciones:**
+  - Por habilidad · Dense
+  - Por habilidad · Hybrid (la comparación principal)
+  - Tamaño fijo · Dense
+  - Tamaño fijo · Hybrid
+  - Por habilidad · BM25 solo (referencia)
+  - Por habilidad · Hybrid sin cifras (el interruptor de D-27)
+- **MRR:** promedio de 1 / posición del primer chunk relevante.
+- **Quién decidió:** Santiago, sobre la propuesta de Claude.
+
+### P-16 · La búsqueda aproximada de Chroma omitía chunks
+- **Contexto:** al repetir el ejemplo de Mel, "Por habilidad · Dense" cubrió 3/7 unidades; horas antes había dado 2/7 con la misma pregunta y el mismo índice. Se comparó la búsqueda de Chroma (HNSW, aproximada) contra una búsqueda exacta sobre los mismos vectores. Con la configuración por defecto (`ef_search = 10`), el top-10 de Chroma difería del exacto en 5 de 12 preguntas, y en 2 le faltaba un chunk. Aun con `ef_search = 200` seguía faltando un chunk en 3 preguntas, con diferencias de similitud reales (0.554 contra 0.557), no empates. No se pudo explicar del todo la diferencia entre las dos corridas.
+- **Opciones:** subir más `ef_search`; reconstruir el índice con otros parámetros; o búsqueda exacta.
+- **Solución:** el retriever denso lee los vectores, textos y metadatos de Chroma una vez, y busca de forma exacta (producto punto contra todos los vectores normalizados). Chroma sigue siendo el almacén de vectores (D-21); solo se deja de usar su búsqueda aproximada.
+- **Por qué:** con 1,149 vectores, la búsqueda exacta es una multiplicación de matrices de menos de un milisegundo, y hace la evaluación reproducible: tres corridas seguidas dan resultados idénticos. La búsqueda aproximada solo se justifica a gran escala, lo cual es un punto para la sección de producción (con 500 documentos, unos 70 mil chunks, sí se usaría HNSW con `ef_search` ajustado y medido contra la búsqueda exacta).
+- **Lección:** una métrica que cambia entre corridas sin cambios en los datos es un bug, no ruido. Se detectó porque el ejemplo del documento de métricas no coincidía con la evaluación.
+
+### Resultados del retrieval (`eval/resultados/`)
+10 preguntas normales, búsqueda exacta, resultados reproducibles.
+
+| Configuración | P@1 | P@5 | R@5 | R@10 | MRR |
+|---|---|---|---|---|---|
+| Por habilidad · Dense | 0.60 | 0.32 | 0.66 | 0.76 | 0.70 |
+| **Por habilidad · Hybrid** | 0.60 | 0.38 | **0.83** | **0.84** | **0.75** |
+| Tamaño fijo · Dense | 0.30 | 0.14 | 0.51 | 0.61 | 0.41 |
+| Tamaño fijo · Hybrid | 0.40 | 0.14 | 0.57 | 0.61 | 0.49 |
+| Por habilidad · BM25 solo | 0.60 | 0.32 | 0.76 | 0.82 | 0.72 |
+| Por habilidad · Hybrid sin cifras | 0.60 | 0.38 | 0.83 | 0.84 | 0.75 |
+
+**Hallazgos:**
+- **Hybrid supera a Dense con el chunking por habilidad.** La ganancia sale de 3 preguntas: q05 Mel (0.43 → 0.71), q09 Bel'Veth en Arena (0.50 → 1.00) y q02 Locke Q, donde la respuesta sube del lugar 8 al 4.
+- **El chunking por habilidad supera al de tamaño fijo.** El de tamaño fijo no trae ningún chunk relevante en q02, q08 ni q09.
+- **BM25 solo es casi tan bueno como el híbrido** (0.82). El corpus es muy léxico: nombres propios y números de parche.
+- **"Sin cifras"** empata en R@10 y MRR, mejora R@3 (0.59 → 0.69) y sube la q02 al lugar 2.
+
+**Errores principales:**
+- **q06 (Locke W en dos parches):** ninguna configuración trae la W de 26.21. El número de parche pesa poco, y la pregunta ya no tiene el nombre de la habilidad (D-31).
+- **q08 (campeones nuevos en Classic):** R@10 de 0.20 o menos en todas. La pregunta dice "added" y las notas dicen "is back" o "four more ghosts". Además, hay notas de Classic muy parecidas en 26.16, 26.17 y 26.18.
+- **q02 (Locke Q):** el ruido sí habla de Locke, pero de otro parche o modo: el sonido de su Q en 26.16 y su daño en ARAM en 26.20.
+- **q05 (Mel):** una pregunta general se parece a la nota del diseñador más que a los chunks de números, así que Dense trae solo 3 de 7 unidades.
