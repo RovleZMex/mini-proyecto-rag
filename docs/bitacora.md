@@ -571,3 +571,17 @@ Juez: Claude Sonnet 5.5, 190 llamadas, USD 1.14.
   - **q08 (0.82):** limitación de la métrica. Las afirmaciones descontadas son sobre lo que *falta* ("falta la parte de los otros campeones", "no puedo listar a Mordekaiser"). El juez no puede verificarlas contra el contexto y las marca como no respaldadas, aunque son la conducta correcta pedida por la regla 5 del prompt.
 - **Answer correctness baja donde falló el retriever:** q06 0.29 (falta la W de 26.21), q08 0.36 (solo Lucian), q05 0.51 (5 de 7 partes). Haiku respondió con honestidad lo que tenía, pero la respuesta queda incompleta frente a la ideal. Confirma que el cuello de botella es el retrieval, no la generación.
 - **La métrica también castiga lo que sobra:** answer_correctness baja en respuestas correctas que agregan aclaraciones sobre lo que no está (q02 0.64). Es una propiedad de la métrica a mencionar en la presentación.
+
+---
+
+## Fase 10 · Presentación (12 nov 2026)
+
+### D-43 · Cuellos de botella al escalar a 500 documentos: parsing y retrieval
+- **Postura:** hay dos cuellos de botella principales.
+  - **Parsing:** Docling necesitó varias adaptaciones a mano en solo 8 documentos (P-04 a P-13): la barra que tapaba texto, los encabezados dentro de imágenes, las líneas unidas, las listas fusionadas y los cambios omitidos. Con 500 documentos (~1.5 h de Docling a ~10 s cada uno) no es viable revisar cada salida, y los errores silenciosos llegarían al índice.
+  - **Retrieval:** el problema principal que se midió fue distinguir documentos muy parecidos (el mismo campeón en varios parches). Con 500 documentos hay muchos más casi duplicados, y la evaluación mostró que el retrieval es lo que limita la respuesta final (faithfulness 0.97 contra answer correctness 0.68).
+- **Quién decidió:** Santiago, a partir de los candidatos propuestos por Claude.
+
+### D-44 · Estilo de la presentación
+- **Decisión:** estilo académico, pulcro y limpio, sin tono de venta, con el logo de la Universidad de Sonora.
+- **Quién decidió:** Santiago.
