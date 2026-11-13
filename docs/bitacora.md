@@ -384,3 +384,20 @@ Hay 3 trampas, todas de tipos distintos:
 - **Dato que las notas no dan:** win rate de Locke. Hay contexto relacionado, pero no el dato.
 
 **Verificación:** todas las unidades citadas existen en el índice. Al redactar la candidata de Classic 26.21, la primera idea era "Hecarim y Lucian"; revisando la nota de la sección resultaron ser cuatro campeones nuevos (también Mordekaiser y Yorick).
+
+### D-30 · Ground truth final: 12 preguntas (10 normales y 2 trampa)
+- **Contexto:** de las 16 candidatas, Santiago eligió 12. El enunciado dice "un set de 10 queries".
+- **Decisión:** quedarse con las 12 (`eval/ground_truth.json`, ids `q01` a `q12`).
+  - **Fuera:** RISE! (ARAM: Mayhem), límite de replays, Hall of Legends y la trampa de Teemo.
+  - **Trampas que quedan:** el parche 26.23 (no existe) y el win rate de Locke (las notas no lo dan).
+- **Por qué:** 12 cumple el mínimo y da algo más de señal para comparar retrievers. La desviación de la letra del enunciado es hacia arriba.
+- **Quién decidió:** Santiago.
+
+### D-31 · Preguntas sin el nombre de la habilidad
+- **Contexto:** Santiago cambió dos preguntas:
+  - *"What changes did Locke's Q - Ritual Nails receive in patch 26.22?"* → *"What changes did Locke's Q get in patch 26.22?"*
+  - *"How did Locke's W - Soul Ignition change…"* → *"How did Locke's W change…"*
+- **Por qué (Santiago):** es más realista; un usuario escribe "la Q", no el nombre de la habilidad.
+- **Consecuencia para la evaluación:** las dos preguntas se vuelven más difíciles. BM25 pierde los términos "Ritual Nails" y "Soul Ignition", y el único vínculo léxico entre "Q" y el chunk es el encabezado de contexto (`… › Locke › Q - Ritual Nails`). La q02 combina además el problema de distinguir el parche (Locke Q cambió en 26.15, 26.21 y 26.22): es la pregunta que más debería separar a Dense de Hybrid.
+- **Corrección menor:** al editarla, a la q02 le faltaba el verbo. Se corrigió a "get" con la aprobación de Santiago.
+- **Quién decidió:** Santiago.

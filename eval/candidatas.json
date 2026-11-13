@@ -8,21 +8,21 @@
    "26.21/CHAMPIONS/Darius/Q - Decimate"
   ],
   "trap": false,
-  "selected": false,
+  "selected": true,
   "notes": "",
   "claude_note": "Pregunta directa. Ojo: este cambio lo recuperamos de la capa de texto del PDF (Docling lo había perdido)."
  },
  {
   "order": 2,
   "type": "Mismo campeón en varios parches",
-  "query": "What changes did Locke's Q - Ritual Nails receive in patch 26.22?",
+  "query": "What changes did Locke's Q get in patch 26.22?",
   "answer": "In patch 26.22, Locke's Q (Ritual Nails) was nerfed: Stack Bonus Damage went from 18 / 26 / 34 / 42 / 50 to 15 / 22 / 29 / 36 / 43, and Maximum Stack Damage from 75.6 / 109.2 / 142.8 / 176.4 / 210 to 63 / 92.4 / 121.8 / 151.2 / 180.6.",
   "units": [
    "26.22/CHAMPIONS/Locke/Q - Ritual Nails"
   ],
   "trap": false,
-  "selected": false,
-  "notes": "",
+  "selected": true,
+  "notes": "Le quite el nombre de la habilidad por que siento que es una query mas realista asi.",
   "claude_note": "El caso difícil: Locke Q también cambió en 26.15 y 26.21. Pone a prueba si el retriever distingue el parche."
  },
  {
@@ -36,7 +36,7 @@
    "26.22/CHAMPIONS/Thresh/R - The Box"
   ],
   "trap": false,
-  "selected": false,
+  "selected": true,
   "notes": "",
   "claude_note": "Mezcla nota del diseñador con cambios numéricos."
  },
@@ -50,7 +50,7 @@
    "26.19/CHAMPIONS/Draven/Base Stats"
   ],
   "trap": false,
-  "selected": false,
+  "selected": true,
   "notes": "",
   "claude_note": "El sistema tiene que encontrar el parche por sí solo. También es un cambio recuperado de la capa de texto del PDF."
  },
@@ -69,22 +69,22 @@
    "26.22/CHAMPIONS/Mel/R - Golden Eclipse"
   ],
   "trap": false,
-  "selected": false,
+  "selected": true,
   "notes": "",
   "claude_note": "7 unidades: pone a prueba el Recall@10 con chunking por habilidad. La respuesta ideal resume; ajústala al nivel de detalle que quieras exigir."
  },
  {
   "order": 6,
   "type": "Comparación entre parches",
-  "query": "How did Locke's W - Soul Ignition change in patches 26.21 and 26.22?",
+  "query": "How did Locke's W change in patches 26.21 and 26.22?",
   "answer": "In 26.21, Soul Ignition's mana cost rose from 50 / 55 / 60 / 65 / 70 to 60 / 65 / 70 / 75 / 80, the grey health stored based on current health went from 40 - 200 to 20 - 200, and the current health store went from 150 - 450 to 100 - 500 (+60% AP). In 26.22, its duration was reduced from 6s to 5s.",
   "units": [
    "26.21/CHAMPIONS/Locke/W - Soul Ignition",
    "26.22/CHAMPIONS/Locke/W - Soul Ignition"
   ],
   "trap": false,
-  "selected": false,
-  "notes": "",
+  "selected": true,
+  "notes": "Lo mismo que la otra, le quito el nombre de la habilidad por que creo que es asi mas realista",
   "claude_note": "Necesita dos chunks de parches distintos. Locke W también cambió en 26.15 (no se pregunta)."
  },
  {
@@ -97,7 +97,7 @@
    "26.22/ITEMS/Doran's Bow"
   ],
   "trap": false,
-  "selected": false,
+  "selected": true,
   "notes": "",
   "claude_note": ""
  },
@@ -114,7 +114,7 @@
    "26.21/CLASSIC/Champions/Lucian/Developer note"
   ],
   "trap": false,
-  "selected": false,
+  "selected": true,
   "notes": "",
   "claude_note": "Ojo: en Classic 26.21 también aparecen Aatrox, Irelia, Karma y Kassadin, pero con ajustes de balance, no como nuevos. Buena prueba de precisión."
  },
@@ -141,7 +141,7 @@
    "26.21/ARENA/Champions/Bel'Veth/R - Endless Banquet"
   ],
   "trap": false,
-  "selected": false,
+  "selected": true,
   "notes": "",
   "claude_note": "Bel'Veth también tuvo un gameplay update grande en la Grieta (26.15): el retriever no debe confundir modo ni parche."
  },
@@ -169,7 +169,7 @@
    "26.22/TFT STANDALONE CLIENT"
   ],
   "trap": false,
-  "selected": false,
+  "selected": true,
   "notes": "",
   "claude_note": "Pregunta sin número de parche y con fechas."
  },
@@ -194,7 +194,7 @@
   "answer": "The available patch notes only cover patches 26.15 to 26.22, so there is no information about the balance changes in patch 26.23.",
   "units": [],
   "trap": true,
-  "selected": false,
+  "selected": true,
   "notes": "",
   "claude_note": "El 26.23 todavía no sale. El sistema debe decir que no tiene la información."
  },
@@ -216,7 +216,7 @@
   "answer": "The patch notes do not report win rates. They only state that Riot considers Locke still clearly too strong for players who have mastered him, especially in the early game, which is why his Q and W were nerfed in 26.22.",
   "units": [],
   "trap": true,
-  "selected": false,
+  "selected": true,
   "notes": "",
   "claude_note": "Hay contexto relacionado (Locke 26.22) pero no el dato pedido. El riesgo es que el modelo invente un porcentaje."
  }
