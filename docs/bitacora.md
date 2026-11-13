@@ -325,3 +325,31 @@ Es la primera evidencia del problema anticipado en D-14: el retriever denso casi
   - **La variante 4b** (sin cifras) arregla Locke pero baja a Vel'Koz al lugar 2. Bajar `b` a 0.3 no ayudó.
 - **Conclusión:** con 4 preguntas no se puede elegir entre 2, 3, 4 y 4b; difieren en casos que estas preguntas no tocan. Se decide con el ground truth.
 - **Error propio corregido:** en el primer intento de la variante 4b, el filtro de cifras también borraba el `26.22` del encabezado, que es justo el token que había que conservar. Se detectó al imprimir los tokens, antes de sacar conclusiones.
+
+### D-26 · Tokenizador de dominio para BM25
+- **Opciones:** espacios, regex `\w+`, clásico (regex + stopwords + Porter), de dominio.
+- **Decisión:** de dominio (`src/tokenizador.py`):
+  - minúsculas;
+  - posesivos fuera;
+  - apóstrofos internos unidos (`velkoz`);
+  - números con punto como un solo token (`26.21`);
+  - tokens de una letra conservados (Q, W, E, R);
+  - stopwords fuera;
+  - stemming de Porter, salvo los nombres de campeón de Data Dragon.
+- **Por qué:** es el único que resuelve los casos difíciles del corpus por diseño y no por casualidad (ver el experimento de tokenización).
+- **Quién decidió:** Santiago, sobre la propuesta de Claude.
+
+### D-27 · "Quitar cifras" como interruptor, a decidir con el ground truth
+- **Decisión:** `tokenizar(texto, quitar_cifras=...)` y `BM25Retriever(..., quitar_cifras=...)`. Con el interruptor activado se descartan las cifras salvo el número de parche. Se medirán las dos variantes.
+- **Por qué:** en el experimento, quitar cifras arregló a Locke pero empeoró a Vel'Koz. Con 4 preguntas no hay base para decidir.
+- **Quién decidió:** Santiago, sobre la propuesta de Claude.
+
+### D-28 · El híbrido fusiona los rankings completos
+- **Contexto:** RRF suele aplicarse sobre los top-N de cada retriever, lo que agrega otro parámetro (N).
+- **Decisión:** fusionar los rankings completos (los 1,149 chunks de D o los 151 de A).
+- **Por qué:** con un corpus de este tamaño cuesta lo mismo (~0.06 s por query), y evita un parámetro arbitrario. Con 500 documentos habría que limitar N, lo cual es un punto para la sección de producción.
+- **Quién decidió:** Claude.
+
+### Implementación · Los retrievers (`src/retrievers.py`)
+- `DenseRetriever`, `BM25Retriever` y `HybridRetriever` comparten la interfaz `buscar(query, k=10) -> list[Resultado]`, con id, score, `unit_ids` y texto. Cada uno se instancia sobre "D" o "A", lo que da 4 combinaciones para la evaluación (más 2 si se mide el interruptor de cifras).
+- **Prueba rápida, ilustrativa:** en D, el híbrido pone el chunk correcto en el lugar 1 en las 4 preguntas, incluido Locke 26.22, donde BM25 solo lo dejaba en el lugar 2. En A, el denso falla 2 de 4 dentro del top-10. Latencia por query: Dense ≈ 0.4 s (incluye el embedding de la query en MPS), BM25 < 0.01 s, Hybrid ≈ 0.06 s una vez cargado el modelo.
